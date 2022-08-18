@@ -27,6 +27,8 @@ type Service interface {
 	AlertGroupingTimeout() *string
 	SetAlertGroupingTimeout(val *string)
 	AlertGroupingTimeoutInput() *string
+	AutoPauseNotificationsParameters() ServiceAutoPauseNotificationsParametersOutputReference
+	AutoPauseNotificationsParametersInput() *ServiceAutoPauseNotificationsParameters
 	AutoResolveTimeout() *string
 	SetAutoResolveTimeout(val *string)
 	AutoResolveTimeoutInput() *string
@@ -87,6 +89,9 @@ type Service interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResponsePlay() *string
+	SetResponsePlay(val *string)
+	ResponsePlayInput() *string
 	ScheduledActions() ServiceScheduledActionsList
 	ScheduledActionsInput() interface{}
 	Status() *string
@@ -125,6 +130,7 @@ type Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlertGroupingParameters(value *ServiceAlertGroupingParameters)
+	PutAutoPauseNotificationsParameters(value *ServiceAutoPauseNotificationsParameters)
 	PutIncidentUrgencyRule(value *ServiceIncidentUrgencyRule)
 	PutScheduledActions(value interface{})
 	PutSupportHours(value *ServiceSupportHours)
@@ -133,6 +139,7 @@ type Service interface {
 	ResetAlertGrouping()
 	ResetAlertGroupingParameters()
 	ResetAlertGroupingTimeout()
+	ResetAutoPauseNotificationsParameters()
 	ResetAutoResolveTimeout()
 	ResetDescription()
 	ResetId()
@@ -140,6 +147,7 @@ type Service interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResponsePlay()
 	ResetScheduledActions()
 	ResetSupportHours()
 	SynthesizeAttributes() *map[string]interface{}
@@ -252,6 +260,26 @@ func (j *jsiiProxy_Service) AlertGroupingTimeoutInput() *string {
 	_jsii_.Get(
 		j,
 		"alertGroupingTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) AutoPauseNotificationsParameters() ServiceAutoPauseNotificationsParametersOutputReference {
+	var returns ServiceAutoPauseNotificationsParametersOutputReference
+	_jsii_.Get(
+		j,
+		"autoPauseNotificationsParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) AutoPauseNotificationsParametersInput() *ServiceAutoPauseNotificationsParameters {
+	var returns *ServiceAutoPauseNotificationsParameters
+	_jsii_.Get(
+		j,
+		"autoPauseNotificationsParametersInput",
 		&returns,
 	)
 	return returns
@@ -537,6 +565,26 @@ func (j *jsiiProxy_Service) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Service) ResponsePlay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responsePlay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Service) ResponsePlayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responsePlayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Service) ScheduledActions() ServiceScheduledActionsList {
 	var returns ServiceScheduledActionsList
 	_jsii_.Get(
@@ -782,6 +830,14 @@ func (j *jsiiProxy_Service) SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Service) SetResponsePlay(val *string) {
+	_jsii_.Set(
+		j,
+		"responsePlay",
+		val,
+	)
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -979,6 +1035,14 @@ func (s *jsiiProxy_Service) PutAlertGroupingParameters(value *ServiceAlertGroupi
 	)
 }
 
+func (s *jsiiProxy_Service) PutAutoPauseNotificationsParameters(value *ServiceAutoPauseNotificationsParameters) {
+	_jsii_.InvokeVoid(
+		s,
+		"putAutoPauseNotificationsParameters",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Service) PutIncidentUrgencyRule(value *ServiceIncidentUrgencyRule) {
 	_jsii_.InvokeVoid(
 		s,
@@ -1043,6 +1107,14 @@ func (s *jsiiProxy_Service) ResetAlertGroupingTimeout() {
 	)
 }
 
+func (s *jsiiProxy_Service) ResetAutoPauseNotificationsParameters() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoPauseNotificationsParameters",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Service) ResetAutoResolveTimeout() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1079,6 +1151,14 @@ func (s *jsiiProxy_Service) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Service) ResetResponsePlay() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResponsePlay",
 		nil, // no parameters
 	)
 }

@@ -36,6 +36,10 @@ type ServiceConfig struct {
 	AlertGroupingParameters *ServiceAlertGroupingParameters `field:"optional" json:"alertGroupingParameters" yaml:"alertGroupingParameters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_timeout Service#alert_grouping_timeout}.
 	AlertGroupingTimeout *string `field:"optional" json:"alertGroupingTimeout" yaml:"alertGroupingTimeout"`
+	// auto_pause_notifications_parameters block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
+	AutoPauseNotificationsParameters *ServiceAutoPauseNotificationsParameters `field:"optional" json:"autoPauseNotificationsParameters" yaml:"autoPauseNotificationsParameters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_resolve_timeout Service#auto_resolve_timeout}.
 	AutoResolveTimeout *string `field:"optional" json:"autoResolveTimeout" yaml:"autoResolveTimeout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#description Service#description}.
@@ -49,6 +53,8 @@ type ServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#incident_urgency_rule Service#incident_urgency_rule}
 	IncidentUrgencyRule *ServiceIncidentUrgencyRule `field:"optional" json:"incidentUrgencyRule" yaml:"incidentUrgencyRule"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#response_play Service#response_play}.
+	ResponsePlay *string `field:"optional" json:"responsePlay" yaml:"responsePlay"`
 	// scheduled_actions block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#scheduled_actions Service#scheduled_actions}
