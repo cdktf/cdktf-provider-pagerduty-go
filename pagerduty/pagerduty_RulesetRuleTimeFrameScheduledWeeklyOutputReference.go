@@ -247,6 +247,9 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) WeekdaysI
 func NewRulesetRuleTimeFrameScheduledWeeklyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRuleTimeFrameScheduledWeeklyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleTimeFrameScheduledWeeklyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewRulesetRuleTimeFrameScheduledWeeklyOutputReference_Override(r RulesetRul
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetDuration(val *float64) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetDuration(val *float64) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duration",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetDurati
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetStartTime(val *float64) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetStartTime(val *float64) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetStartT
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetTimezone(val *string) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetTimezone(val *string) {
+	if err := j.validateSetTimezoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timezone",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetTimezo
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) SetWeekdays(val *[]*float64) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference)SetWeekdays(val *[]*float64) {
+	if err := j.validateSetWeekdaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weekdays",
@@ -354,6 +384,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) ComputeFq
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetAnyMap
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetBoolea
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetBoolea
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetListAt
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetNumber
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetNumber
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetNumber
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetString
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) Interpola
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) ResetWeek
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

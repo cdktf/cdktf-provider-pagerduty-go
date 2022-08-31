@@ -111,6 +111,9 @@ func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) WrapsSe
 func NewEventOrchestrationUnroutedSetRuleActionsVariableList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationUnroutedSetRuleActionsVariableList {
 	_init_.Initialize()
 
+	if err := validateNewEventOrchestrationUnroutedSetRuleActionsVariableListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewEventOrchestrationUnroutedSetRuleActionsVariableList_Override(e EventOrc
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetInte
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) Compute
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) Get(index *float64) EventOrchestrationUnroutedSetRuleActionsVariableOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EventOrchestrationUnroutedSetRuleActionsVariableOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) Get(ind
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsVariableList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

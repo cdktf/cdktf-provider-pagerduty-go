@@ -360,6 +360,9 @@ func (j *jsiiProxy_TagAssignment) TerraformResourceType() *string {
 func NewTagAssignment(scope constructs.Construct, id *string, config *TagAssignmentConfig) TagAssignment {
 	_init_.Initialize()
 
+	if err := validateNewTagAssignmentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TagAssignment{}
 
 	_jsii_.Create(
@@ -382,7 +385,10 @@ func NewTagAssignment_Override(t TagAssignment, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetConnection(val interface{}) {
+func (j *jsiiProxy_TagAssignment)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -390,7 +396,7 @@ func (j *jsiiProxy_TagAssignment) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetCount(val *float64) {
+func (j *jsiiProxy_TagAssignment)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -398,7 +404,7 @@ func (j *jsiiProxy_TagAssignment) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TagAssignment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -406,7 +412,10 @@ func (j *jsiiProxy_TagAssignment) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetEntityId(val *string) {
+func (j *jsiiProxy_TagAssignment)SetEntityId(val *string) {
+	if err := j.validateSetEntityIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entityId",
@@ -414,7 +423,10 @@ func (j *jsiiProxy_TagAssignment) SetEntityId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetEntityType(val *string) {
+func (j *jsiiProxy_TagAssignment)SetEntityType(val *string) {
+	if err := j.validateSetEntityTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entityType",
@@ -422,7 +434,7 @@ func (j *jsiiProxy_TagAssignment) SetEntityType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TagAssignment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -430,7 +442,10 @@ func (j *jsiiProxy_TagAssignment) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetId(val *string) {
+func (j *jsiiProxy_TagAssignment)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -438,7 +453,10 @@ func (j *jsiiProxy_TagAssignment) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TagAssignment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -446,7 +464,7 @@ func (j *jsiiProxy_TagAssignment) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TagAssignment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -454,7 +472,10 @@ func (j *jsiiProxy_TagAssignment) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TagAssignment)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -462,7 +483,10 @@ func (j *jsiiProxy_TagAssignment) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TagAssignment) SetTagId(val *string) {
+func (j *jsiiProxy_TagAssignment)SetTagId(val *string) {
+	if err := j.validateSetTagIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagId",
@@ -490,6 +514,9 @@ func (j *jsiiProxy_TagAssignment) SetTagId(val *string) {
 func TagAssignment_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTagAssignment_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -514,6 +541,9 @@ func TagAssignment_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TagAssignment) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -522,6 +552,9 @@ func (t *jsiiProxy_TagAssignment) AddOverride(path *string, value interface{}) {
 }
 
 func (t *jsiiProxy_TagAssignment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -535,6 +568,9 @@ func (t *jsiiProxy_TagAssignment) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (t *jsiiProxy_TagAssignment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -548,6 +584,9 @@ func (t *jsiiProxy_TagAssignment) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (t *jsiiProxy_TagAssignment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -561,6 +600,9 @@ func (t *jsiiProxy_TagAssignment) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (t *jsiiProxy_TagAssignment) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -574,6 +616,9 @@ func (t *jsiiProxy_TagAssignment) GetListAttribute(terraformAttribute *string) *
 }
 
 func (t *jsiiProxy_TagAssignment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -587,6 +632,9 @@ func (t *jsiiProxy_TagAssignment) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (t *jsiiProxy_TagAssignment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -600,6 +648,9 @@ func (t *jsiiProxy_TagAssignment) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (t *jsiiProxy_TagAssignment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -613,6 +664,9 @@ func (t *jsiiProxy_TagAssignment) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (t *jsiiProxy_TagAssignment) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -626,6 +680,9 @@ func (t *jsiiProxy_TagAssignment) GetStringAttribute(terraformAttribute *string)
 }
 
 func (t *jsiiProxy_TagAssignment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -639,6 +696,9 @@ func (t *jsiiProxy_TagAssignment) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (t *jsiiProxy_TagAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -652,6 +712,9 @@ func (t *jsiiProxy_TagAssignment) InterpolationForAttribute(terraformAttribute *
 }
 
 func (t *jsiiProxy_TagAssignment) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

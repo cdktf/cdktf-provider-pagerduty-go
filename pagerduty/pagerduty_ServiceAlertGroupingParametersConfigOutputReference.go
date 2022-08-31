@@ -223,6 +223,9 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) TimeoutI
 func NewServiceAlertGroupingParametersConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceAlertGroupingParametersConfigOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceAlertGroupingParametersConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewServiceAlertGroupingParametersConfigOutputReference_Override(s ServiceAl
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetAggregate(val *string) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetAggregate(val *string) {
+	if err := j.validateSetAggregateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregate",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetAggre
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetFields(val *[]*string) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetFields(val *[]*string) {
+	if err := j.validateSetFieldsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fields",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetField
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetInternalValue(val *ServiceAlertGroupingParametersConfig) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetInternalValue(val *ServiceAlertGroupingParametersConfig) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) SetTimeout(val *float64) {
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeout",
@@ -322,6 +349,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) ComputeF
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetAnyMa
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetBoole
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetBoole
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetListA
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetNumbe
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetNumbe
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetNumbe
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetStrin
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) Interpol
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) ResetTim
 }
 
 func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

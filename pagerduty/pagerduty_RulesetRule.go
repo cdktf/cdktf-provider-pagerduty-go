@@ -482,6 +482,9 @@ func (j *jsiiProxy_RulesetRule) VariableInput() interface{} {
 func NewRulesetRule(scope constructs.Construct, id *string, config *RulesetRuleConfig) RulesetRule {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRule{}
 
 	_jsii_.Create(
@@ -504,7 +507,10 @@ func NewRulesetRule_Override(r RulesetRule, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetCatchAll(val interface{}) {
+func (j *jsiiProxy_RulesetRule)SetCatchAll(val interface{}) {
+	if err := j.validateSetCatchAllParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"catchAll",
@@ -512,7 +518,10 @@ func (j *jsiiProxy_RulesetRule) SetCatchAll(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetConnection(val interface{}) {
+func (j *jsiiProxy_RulesetRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -520,7 +529,7 @@ func (j *jsiiProxy_RulesetRule) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetCount(val *float64) {
+func (j *jsiiProxy_RulesetRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -528,7 +537,7 @@ func (j *jsiiProxy_RulesetRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RulesetRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -536,7 +545,10 @@ func (j *jsiiProxy_RulesetRule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetDisabled(val interface{}) {
+func (j *jsiiProxy_RulesetRule)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disabled",
@@ -544,7 +556,7 @@ func (j *jsiiProxy_RulesetRule) SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RulesetRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +564,10 @@ func (j *jsiiProxy_RulesetRule) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetId(val *string) {
+func (j *jsiiProxy_RulesetRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -560,7 +575,10 @@ func (j *jsiiProxy_RulesetRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RulesetRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -568,7 +586,10 @@ func (j *jsiiProxy_RulesetRule) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetPosition(val *float64) {
+func (j *jsiiProxy_RulesetRule)SetPosition(val *float64) {
+	if err := j.validateSetPositionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"position",
@@ -576,7 +597,7 @@ func (j *jsiiProxy_RulesetRule) SetPosition(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RulesetRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -584,7 +605,10 @@ func (j *jsiiProxy_RulesetRule) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RulesetRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -592,7 +616,10 @@ func (j *jsiiProxy_RulesetRule) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRule) SetRuleset(val *string) {
+func (j *jsiiProxy_RulesetRule)SetRuleset(val *string) {
+	if err := j.validateSetRulesetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ruleset",
@@ -620,6 +647,9 @@ func (j *jsiiProxy_RulesetRule) SetRuleset(val *string) {
 func RulesetRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRulesetRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -644,6 +674,9 @@ func RulesetRule_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RulesetRule) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -652,6 +685,9 @@ func (r *jsiiProxy_RulesetRule) AddOverride(path *string, value interface{}) {
 }
 
 func (r *jsiiProxy_RulesetRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -665,6 +701,9 @@ func (r *jsiiProxy_RulesetRule) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (r *jsiiProxy_RulesetRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -678,6 +717,9 @@ func (r *jsiiProxy_RulesetRule) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (r *jsiiProxy_RulesetRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -691,6 +733,9 @@ func (r *jsiiProxy_RulesetRule) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (r *jsiiProxy_RulesetRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -704,6 +749,9 @@ func (r *jsiiProxy_RulesetRule) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (r *jsiiProxy_RulesetRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -717,6 +765,9 @@ func (r *jsiiProxy_RulesetRule) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (r *jsiiProxy_RulesetRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -730,6 +781,9 @@ func (r *jsiiProxy_RulesetRule) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (r *jsiiProxy_RulesetRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -743,6 +797,9 @@ func (r *jsiiProxy_RulesetRule) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (r *jsiiProxy_RulesetRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -756,6 +813,9 @@ func (r *jsiiProxy_RulesetRule) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (r *jsiiProxy_RulesetRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -769,6 +829,9 @@ func (r *jsiiProxy_RulesetRule) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (r *jsiiProxy_RulesetRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -782,6 +845,9 @@ func (r *jsiiProxy_RulesetRule) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (r *jsiiProxy_RulesetRule) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
@@ -790,6 +856,9 @@ func (r *jsiiProxy_RulesetRule) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (r *jsiiProxy_RulesetRule) PutActions(value *RulesetRuleActions) {
+	if err := r.validatePutActionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putActions",
@@ -798,6 +867,9 @@ func (r *jsiiProxy_RulesetRule) PutActions(value *RulesetRuleActions) {
 }
 
 func (r *jsiiProxy_RulesetRule) PutConditions(value *RulesetRuleConditions) {
+	if err := r.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putConditions",
@@ -806,6 +878,9 @@ func (r *jsiiProxy_RulesetRule) PutConditions(value *RulesetRuleConditions) {
 }
 
 func (r *jsiiProxy_RulesetRule) PutTimeFrame(value *RulesetRuleTimeFrame) {
+	if err := r.validatePutTimeFrameParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeFrame",
@@ -814,6 +889,9 @@ func (r *jsiiProxy_RulesetRule) PutTimeFrame(value *RulesetRuleTimeFrame) {
 }
 
 func (r *jsiiProxy_RulesetRule) PutVariable(value interface{}) {
+	if err := r.validatePutVariableParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putVariable",

@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) WrapsSet() *bool {
 func NewRulesetRuleTimeFrameActiveBetweenList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleTimeFrameActiveBetweenList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleTimeFrameActiveBetweenListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRuleTimeFrameActiveBetweenList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRuleTimeFrameActiveBetweenList_Override(r RulesetRuleTimeFrameAct
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) Get(index *float64) RulesetRuleTimeFrameActiveBetweenOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRuleTimeFrameActiveBetweenOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) Get(index *float64) Ru
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

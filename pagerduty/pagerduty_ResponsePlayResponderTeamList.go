@@ -99,6 +99,9 @@ func (j *jsiiProxy_ResponsePlayResponderTeamList) WrapsSet() *bool {
 func NewResponsePlayResponderTeamList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderTeamList {
 	_init_.Initialize()
 
+	if err := validateNewResponsePlayResponderTeamListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ResponsePlayResponderTeamList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewResponsePlayResponderTeamList_Override(r ResponsePlayResponderTeamList, 
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderTeamList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ResponsePlayResponderTeamList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ResponsePlayResponderTeamList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderTeamList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResponsePlayResponderTeamList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ResponsePlayResponderTeamList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderTeamList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ResponsePlayResponderTeamList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (r *jsiiProxy_ResponsePlayResponderTeamList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_ResponsePlayResponderTeamList) Get(index *float64) ResponsePlayResponderTeamOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ResponsePlayResponderTeamOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (r *jsiiProxy_ResponsePlayResponderTeamList) Get(index *float64) ResponsePl
 }
 
 func (r *jsiiProxy_ResponsePlayResponderTeamList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

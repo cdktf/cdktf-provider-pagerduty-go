@@ -99,6 +99,9 @@ func (j *jsiiProxy_EventOrchestrationIntegrationParametersList) WrapsSet() *bool
 func NewEventOrchestrationIntegrationParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationIntegrationParametersList {
 	_init_.Initialize()
 
+	if err := validateNewEventOrchestrationIntegrationParametersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EventOrchestrationIntegrationParametersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewEventOrchestrationIntegrationParametersList_Override(e EventOrchestratio
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationIntegrationParametersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventOrchestrationIntegrationParametersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_EventOrchestrationIntegrationParametersList) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationIntegrationParametersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventOrchestrationIntegrationParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_EventOrchestrationIntegrationParametersList) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationIntegrationParametersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EventOrchestrationIntegrationParametersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (e *jsiiProxy_EventOrchestrationIntegrationParametersList) ComputeFqn() *st
 }
 
 func (e *jsiiProxy_EventOrchestrationIntegrationParametersList) Get(index *float64) EventOrchestrationIntegrationParametersOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EventOrchestrationIntegrationParametersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (e *jsiiProxy_EventOrchestrationIntegrationParametersList) Get(index *float
 }
 
 func (e *jsiiProxy_EventOrchestrationIntegrationParametersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) WrapsSet() *boo
 func NewServiceEventRuleTimeFrameScheduledWeeklyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceEventRuleTimeFrameScheduledWeeklyList {
 	_init_.Initialize()
 
+	if err := validateNewServiceEventRuleTimeFrameScheduledWeeklyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServiceEventRuleTimeFrameScheduledWeeklyList_Override(s ServiceEventRule
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) Get(index *float64) ServiceEventRuleTimeFrameScheduledWeeklyOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServiceEventRuleTimeFrameScheduledWeeklyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) Get(index *floa
 }
 
 func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

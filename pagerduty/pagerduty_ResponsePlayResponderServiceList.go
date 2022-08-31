@@ -99,6 +99,9 @@ func (j *jsiiProxy_ResponsePlayResponderServiceList) WrapsSet() *bool {
 func NewResponsePlayResponderServiceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderServiceList {
 	_init_.Initialize()
 
+	if err := validateNewResponsePlayResponderServiceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ResponsePlayResponderServiceList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewResponsePlayResponderServiceList_Override(r ResponsePlayResponderService
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderServiceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ResponsePlayResponderServiceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ResponsePlayResponderServiceList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderServiceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResponsePlayResponderServiceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ResponsePlayResponderServiceList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderServiceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ResponsePlayResponderServiceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (r *jsiiProxy_ResponsePlayResponderServiceList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_ResponsePlayResponderServiceList) Get(index *float64) ResponsePlayResponderServiceOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ResponsePlayResponderServiceOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (r *jsiiProxy_ResponsePlayResponderServiceList) Get(index *float64) Respons
 }
 
 func (r *jsiiProxy_ResponsePlayResponderServiceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

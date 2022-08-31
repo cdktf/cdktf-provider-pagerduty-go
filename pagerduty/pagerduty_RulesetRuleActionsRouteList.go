@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRuleActionsRouteList) WrapsSet() *bool {
 func NewRulesetRuleActionsRouteList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsRouteList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleActionsRouteListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRuleActionsRouteList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRuleActionsRouteList_Override(r RulesetRuleActionsRouteList, terr
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsRouteList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRuleActionsRouteList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRuleActionsRouteList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsRouteList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRuleActionsRouteList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRuleActionsRouteList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsRouteList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRuleActionsRouteList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRuleActionsRouteList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsRouteList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRuleActionsRouteList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRuleActionsRouteList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RulesetRuleActionsRouteList) Get(index *float64) RulesetRuleActionsRouteOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRuleActionsRouteOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRuleActionsRouteList) Get(index *float64) RulesetRuleA
 }
 
 func (r *jsiiProxy_RulesetRuleActionsRouteList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

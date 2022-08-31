@@ -246,6 +246,9 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) UrgencyInput() *st
 func NewServiceIncidentUrgencyRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceIncidentUrgencyRuleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceIncidentUrgencyRuleOutputReference{}
 
 	_jsii_.Create(
@@ -267,7 +270,10 @@ func NewServiceIncidentUrgencyRuleOutputReference_Override(s ServiceIncidentUrge
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -275,7 +281,10 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -283,7 +292,10 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetInternalValue(val *ServiceIncidentUrgencyRule) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetInternalValue(val *ServiceIncidentUrgencyRule) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -291,7 +303,10 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +314,10 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -307,7 +325,10 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -315,7 +336,10 @@ func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetType(val *strin
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) SetUrgency(val *string) {
+func (j *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference)SetUrgency(val *string) {
+	if err := j.validateSetUrgencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"urgency",
@@ -337,6 +361,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) ComputeFqn() *stri
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -350,6 +377,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetAnyMapAttribute
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -363,6 +393,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetBooleanAttribut
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -376,6 +409,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetBooleanMapAttri
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -389,6 +425,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetListAttribute(t
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -402,6 +441,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetNumberAttribute
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -415,6 +457,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetNumberListAttri
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -428,6 +473,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetNumberMapAttrib
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -441,6 +489,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetStringAttribute
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -467,6 +518,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) InterpolationAsLis
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +534,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) InterpolationForAt
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) PutDuringSupportHours(value *ServiceIncidentUrgencyRuleDuringSupportHours) {
+	if err := s.validatePutDuringSupportHoursParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDuringSupportHours",
@@ -488,6 +545,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) PutDuringSupportHo
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) PutOutsideSupportHours(value *ServiceIncidentUrgencyRuleOutsideSupportHours) {
+	if err := s.validatePutOutsideSupportHoursParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putOutsideSupportHours",
@@ -520,6 +580,9 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) ResetUrgency() {
 }
 
 func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) WrapsSet() *b
 func NewDataPagerdutyEventOrchestrationIntegrationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyEventOrchestrationIntegrationList {
 	_init_.Initialize()
 
+	if err := validateNewDataPagerdutyEventOrchestrationIntegrationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataPagerdutyEventOrchestrationIntegrationList_Override(d DataPagerdutyE
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) Get(index *float64) DataPagerdutyEventOrchestrationIntegrationOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataPagerdutyEventOrchestrationIntegrationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) Get(index *fl
 }
 
 func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

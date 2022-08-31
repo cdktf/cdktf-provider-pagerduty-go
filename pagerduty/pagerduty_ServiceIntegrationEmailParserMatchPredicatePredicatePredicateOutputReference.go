@@ -220,6 +220,9 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 func NewServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetMatcher(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetMatcher(val *string) {
+	if err := j.validateSetMatcherParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matcher",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetPart(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetPart(val *string) {
+	if err := j.validateSetPartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"part",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -319,6 +346,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

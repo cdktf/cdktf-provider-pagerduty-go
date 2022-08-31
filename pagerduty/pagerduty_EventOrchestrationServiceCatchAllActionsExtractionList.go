@@ -111,6 +111,9 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) Wraps
 func NewEventOrchestrationServiceCatchAllActionsExtractionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceCatchAllActionsExtractionList {
 	_init_.Initialize()
 
+	if err := validateNewEventOrchestrationServiceCatchAllActionsExtractionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewEventOrchestrationServiceCatchAllActionsExtractionList_Override(e EventO
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetIn
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetTe
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetTe
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) Compu
 }
 
 func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) Get(index *float64) EventOrchestrationServiceCatchAllActionsExtractionOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EventOrchestrationServiceCatchAllActionsExtractionOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) Get(i
 }
 
 func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsExtractionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

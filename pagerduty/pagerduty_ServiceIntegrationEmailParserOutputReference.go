@@ -232,6 +232,9 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) ValueExtractorI
 func NewServiceIntegrationEmailParserOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceIntegrationEmailParserOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceIntegrationEmailParserOutputReference{}
 
 	_jsii_.Create(
@@ -253,7 +256,10 @@ func NewServiceIntegrationEmailParserOutputReference_Override(s ServiceIntegrati
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetAction(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"action",
@@ -261,7 +267,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetAction(val *
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -269,7 +278,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -277,7 +289,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -285,7 +300,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -293,7 +311,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -315,6 +336,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -328,6 +352,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetAnyMapAttrib
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -341,6 +368,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetBooleanAttri
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -354,6 +384,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetBooleanMapAt
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetListAttribut
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetNumberAttrib
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetNumberListAt
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetNumberMapAtt
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetStringAttrib
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -445,6 +493,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) InterpolationAs
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -458,6 +509,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) InterpolationFo
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) PutMatchPredicate(value *ServiceIntegrationEmailParserMatchPredicate) {
+	if err := s.validatePutMatchPredicateParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putMatchPredicate",
@@ -466,6 +520,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) PutMatchPredica
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) PutValueExtractor(value interface{}) {
+	if err := s.validatePutValueExtractorParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putValueExtractor",
@@ -482,6 +539,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) ResetValueExtra
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

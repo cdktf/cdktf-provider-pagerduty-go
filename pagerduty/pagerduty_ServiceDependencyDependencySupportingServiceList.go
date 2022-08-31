@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) WrapsSet() 
 func NewServiceDependencyDependencySupportingServiceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencySupportingServiceList {
 	_init_.Initialize()
 
+	if err := validateNewServiceDependencyDependencySupportingServiceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceDependencyDependencySupportingServiceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServiceDependencyDependencySupportingServiceList_Override(s ServiceDepen
 	)
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetInternal
 	)
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceDependencyDependencySupportingServiceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServiceDependencyDependencySupportingServiceList) ComputeFqn(
 }
 
 func (s *jsiiProxy_ServiceDependencyDependencySupportingServiceList) Get(index *float64) ServiceDependencyDependencySupportingServiceOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServiceDependencyDependencySupportingServiceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServiceDependencyDependencySupportingServiceList) Get(index *
 }
 
 func (s *jsiiProxy_ServiceDependencyDependencySupportingServiceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

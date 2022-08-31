@@ -271,6 +271,9 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) TypeInput() *string {
 func NewServiceSupportHoursOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceSupportHoursOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceSupportHoursOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceSupportHoursOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewServiceSupportHoursOutputReference_Override(s ServiceSupportHoursOutputR
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetDaysOfWeek(val *[]*float64) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetDaysOfWeek(val *[]*float64) {
+	if err := j.validateSetDaysOfWeekParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"daysOfWeek",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetDaysOfWeek(val *[]*flo
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetEndTime(val *string) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetEndTime(val *string) {
+	if err := j.validateSetEndTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endTime",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetEndTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetInternalValue(val *ServiceSupportHours) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetInternalValue(val *ServiceSupportHours) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -332,7 +350,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetInternalValue(val *Ser
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetStartTime(val *string) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -340,7 +361,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetStartTime(val *string)
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -348,7 +372,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -356,7 +383,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetTimeZone(val *string) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeZone",
@@ -364,7 +394,10 @@ func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetTimeZone(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ServiceSupportHoursOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ServiceSupportHoursOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -386,6 +419,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -399,6 +435,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -412,6 +451,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetBooleanAttribute(terra
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -425,6 +467,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetBooleanMapAttribute(te
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -438,6 +483,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetListAttribute(terrafor
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -451,6 +499,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetNumberAttribute(terraf
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -464,6 +515,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetNumberListAttribute(te
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -477,6 +531,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetNumberMapAttribute(ter
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -490,6 +547,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetStringAttribute(terraf
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -516,6 +576,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) InterpolationAsList() cdk
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +632,9 @@ func (s *jsiiProxy_ServiceSupportHoursOutputReference) ResetType() {
 }
 
 func (s *jsiiProxy_ServiceSupportHoursOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

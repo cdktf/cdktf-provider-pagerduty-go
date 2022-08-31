@@ -111,6 +111,9 @@ func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) WrapsSet()
 func NewWebhookSubscriptionDeliveryMethodCustomHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebhookSubscriptionDeliveryMethodCustomHeaderList {
 	_init_.Initialize()
 
+	if err := validateNewWebhookSubscriptionDeliveryMethodCustomHeaderListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewWebhookSubscriptionDeliveryMethodCustomHeaderList_Override(w WebhookSubs
 	)
 }
 
-func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetInterna
 	)
 }
 
-func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) ComputeFqn
 }
 
 func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) Get(index *float64) WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference {
+	if err := w.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) Get(index 
 }
 
 func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

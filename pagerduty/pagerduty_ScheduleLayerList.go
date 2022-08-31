@@ -111,6 +111,9 @@ func (j *jsiiProxy_ScheduleLayerList) WrapsSet() *bool {
 func NewScheduleLayerList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScheduleLayerList {
 	_init_.Initialize()
 
+	if err := validateNewScheduleLayerListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ScheduleLayerList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewScheduleLayerList_Override(s ScheduleLayerList, terraformResource cdktf.
 	)
 }
 
-func (j *jsiiProxy_ScheduleLayerList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ScheduleLayerList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ScheduleLayerList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ScheduleLayerList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ScheduleLayerList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ScheduleLayerList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ScheduleLayerList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ScheduleLayerList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ScheduleLayerList) SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_ScheduleLayerList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ScheduleLayerList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ScheduleLayerList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ScheduleLayerList) Get(index *float64) ScheduleLayerOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ScheduleLayerOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ScheduleLayerList) Get(index *float64) ScheduleLayerOutputRef
 }
 
 func (s *jsiiProxy_ScheduleLayerList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

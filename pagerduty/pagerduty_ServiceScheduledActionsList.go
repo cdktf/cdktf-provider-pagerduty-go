@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServiceScheduledActionsList) WrapsSet() *bool {
 func NewServiceScheduledActionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceScheduledActionsList {
 	_init_.Initialize()
 
+	if err := validateNewServiceScheduledActionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceScheduledActionsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServiceScheduledActionsList_Override(s ServiceScheduledActionsList, terr
 	)
 }
 
-func (j *jsiiProxy_ServiceScheduledActionsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceScheduledActionsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServiceScheduledActionsList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ServiceScheduledActionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceScheduledActionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServiceScheduledActionsList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ServiceScheduledActionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceScheduledActionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServiceScheduledActionsList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_ServiceScheduledActionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceScheduledActionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServiceScheduledActionsList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServiceScheduledActionsList) Get(index *float64) ServiceScheduledActionsOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServiceScheduledActionsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServiceScheduledActionsList) Get(index *float64) ServiceSched
 }
 
 func (s *jsiiProxy_ServiceScheduledActionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

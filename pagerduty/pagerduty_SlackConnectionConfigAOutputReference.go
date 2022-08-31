@@ -222,6 +222,9 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) UrgencyInput() *string
 func NewSlackConnectionConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SlackConnectionConfigAOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSlackConnectionConfigAOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SlackConnectionConfigAOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewSlackConnectionConfigAOutputReference_Override(s SlackConnectionConfigAO
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetEvents(val *[]*string) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetEvents(val *[]*string) {
+	if err := j.validateSetEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"events",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetEvents(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetPriorities(val *[]*string) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetPriorities(val *[]*string) {
+	if err := j.validateSetPrioritiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priorities",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetPriorities(val *[]*
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_SlackConnectionConfigAOutputReference) SetUrgency(val *string) {
+func (j *jsiiProxy_SlackConnectionConfigAOutputReference)SetUrgency(val *string) {
+	if err := j.validateSetUrgencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"urgency",
@@ -321,6 +348,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetAnyMapAttribute(ter
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetBooleanAttribute(te
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetBooleanMapAttribute
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetListAttribute(terra
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetNumberAttribute(ter
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetNumberListAttribute
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetNumberMapAttribute(
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetStringAttribute(ter
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) InterpolationAsList() 
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) ResetUrgency() {
 }
 
 func (s *jsiiProxy_SlackConnectionConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

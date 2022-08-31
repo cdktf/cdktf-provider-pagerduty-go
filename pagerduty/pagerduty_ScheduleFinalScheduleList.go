@@ -99,6 +99,9 @@ func (j *jsiiProxy_ScheduleFinalScheduleList) WrapsSet() *bool {
 func NewScheduleFinalScheduleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScheduleFinalScheduleList {
 	_init_.Initialize()
 
+	if err := validateNewScheduleFinalScheduleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ScheduleFinalScheduleList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewScheduleFinalScheduleList_Override(s ScheduleFinalScheduleList, terrafor
 	)
 }
 
-func (j *jsiiProxy_ScheduleFinalScheduleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ScheduleFinalScheduleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ScheduleFinalScheduleList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ScheduleFinalScheduleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ScheduleFinalScheduleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ScheduleFinalScheduleList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_ScheduleFinalScheduleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ScheduleFinalScheduleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (s *jsiiProxy_ScheduleFinalScheduleList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ScheduleFinalScheduleList) Get(index *float64) ScheduleFinalScheduleOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ScheduleFinalScheduleOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (s *jsiiProxy_ScheduleFinalScheduleList) Get(index *float64) ScheduleFinalS
 }
 
 func (s *jsiiProxy_ScheduleFinalScheduleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

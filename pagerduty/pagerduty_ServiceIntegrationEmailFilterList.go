@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServiceIntegrationEmailFilterList) WrapsSet() *bool {
 func NewServiceIntegrationEmailFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceIntegrationEmailFilterList {
 	_init_.Initialize()
 
+	if err := validateNewServiceIntegrationEmailFilterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceIntegrationEmailFilterList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServiceIntegrationEmailFilterList_Override(s ServiceIntegrationEmailFilt
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailFilterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailFilterList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIntegrationEmailFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailFilterList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceIntegrationEmailFilterList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailFilterList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailFilterList) Get(index *float64) ServiceIntegrationEmailFilterOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServiceIntegrationEmailFilterOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailFilterList) Get(index *float64) Servic
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

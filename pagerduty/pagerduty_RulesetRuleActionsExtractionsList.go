@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRuleActionsExtractionsList) WrapsSet() *bool {
 func NewRulesetRuleActionsExtractionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsExtractionsList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleActionsExtractionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRuleActionsExtractionsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRuleActionsExtractionsList_Override(r RulesetRuleActionsExtractio
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRuleActionsExtractionsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRuleActionsExtractionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRuleActionsExtractionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsExtractionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRuleActionsExtractionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRuleActionsExtractionsList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RulesetRuleActionsExtractionsList) Get(index *float64) RulesetRuleActionsExtractionsOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRuleActionsExtractionsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRuleActionsExtractionsList) Get(index *float64) Rulese
 }
 
 func (r *jsiiProxy_RulesetRuleActionsExtractionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

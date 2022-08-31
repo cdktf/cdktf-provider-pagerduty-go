@@ -292,6 +292,9 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) V
 func NewServiceIntegrationEmailParserValueExtractorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserValueExtractorOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceIntegrationEmailParserValueExtractorOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference{}
 
 	_jsii_.Create(
@@ -313,7 +316,10 @@ func NewServiceIntegrationEmailParserValueExtractorOutputReference_Override(s Se
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -321,7 +327,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -329,7 +338,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetEndsBefore(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetEndsBefore(val *string) {
+	if err := j.validateSetEndsBeforeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endsBefore",
@@ -337,7 +349,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -345,7 +360,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetPart(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetPart(val *string) {
+	if err := j.validateSetPartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"part",
@@ -353,7 +371,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetRegex(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetRegex(val *string) {
+	if err := j.validateSetRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"regex",
@@ -361,7 +382,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetStartsAfter(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetStartsAfter(val *string) {
+	if err := j.validateSetStartsAfterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startsAfter",
@@ -369,7 +393,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -377,7 +404,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -385,7 +415,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -393,7 +426,10 @@ func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) SetValueName(val *string) {
+func (j *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference)SetValueName(val *string) {
+	if err := j.validateSetValueNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"valueName",
@@ -415,6 +451,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) C
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -428,6 +467,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -441,6 +483,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -454,6 +499,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -467,6 +515,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -480,6 +531,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -493,6 +547,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -506,6 +563,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -519,6 +579,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) G
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -545,6 +608,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) I
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -582,6 +648,9 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) R
 }
 
 func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

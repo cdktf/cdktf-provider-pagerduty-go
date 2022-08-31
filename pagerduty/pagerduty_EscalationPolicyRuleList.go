@@ -111,6 +111,9 @@ func (j *jsiiProxy_EscalationPolicyRuleList) WrapsSet() *bool {
 func NewEscalationPolicyRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EscalationPolicyRuleList {
 	_init_.Initialize()
 
+	if err := validateNewEscalationPolicyRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EscalationPolicyRuleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewEscalationPolicyRuleList_Override(e EscalationPolicyRuleList, terraformR
 	)
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationPolicyRuleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_EscalationPolicyRuleList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationPolicyRuleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_EscalationPolicyRuleList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPolicyRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_EscalationPolicyRuleList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EscalationPolicyRuleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_EscalationPolicyRuleList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_EscalationPolicyRuleList) Get(index *float64) EscalationPolicyRuleOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EscalationPolicyRuleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_EscalationPolicyRuleList) Get(index *float64) EscalationPolic
 }
 
 func (e *jsiiProxy_EscalationPolicyRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

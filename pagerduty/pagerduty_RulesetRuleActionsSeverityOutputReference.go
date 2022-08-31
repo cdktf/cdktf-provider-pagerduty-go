@@ -175,6 +175,9 @@ func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) ValueInput() *stri
 func NewRulesetRuleActionsSeverityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRuleActionsSeverityOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleActionsSeverityOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRuleActionsSeverityOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewRulesetRuleActionsSeverityOutputReference_Override(r RulesetRuleActionsS
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_RulesetRuleActionsSeverityOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -258,6 +279,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) ComputeFqn() *stri
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetAnyMapAttribute
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetBooleanAttribut
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetBooleanMapAttri
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetListAttribute(t
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetNumberAttribute
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetNumberListAttri
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetNumberMapAttrib
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetStringAttribute
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) InterpolationAsLis
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) ResetValue() {
 }
 
 func (r *jsiiProxy_RulesetRuleActionsSeverityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

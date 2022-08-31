@@ -582,6 +582,9 @@ func (j *jsiiProxy_ExtensionServicenow) TypeInput() *string {
 func NewExtensionServicenow(scope constructs.Construct, id *string, config *ExtensionServicenowConfig) ExtensionServicenow {
 	_init_.Initialize()
 
+	if err := validateNewExtensionServicenowParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ExtensionServicenow{}
 
 	_jsii_.Create(
@@ -604,7 +607,10 @@ func NewExtensionServicenow_Override(e ExtensionServicenow, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetConnection(val interface{}) {
+func (j *jsiiProxy_ExtensionServicenow)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -612,7 +618,7 @@ func (j *jsiiProxy_ExtensionServicenow) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetCount(val *float64) {
+func (j *jsiiProxy_ExtensionServicenow)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -620,7 +626,7 @@ func (j *jsiiProxy_ExtensionServicenow) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ExtensionServicenow)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -628,7 +634,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetEndpointUrl(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetEndpointUrl(val *string) {
+	if err := j.validateSetEndpointUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endpointUrl",
@@ -636,7 +645,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetEndpointUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetExtensionObjects(val *[]*string) {
+func (j *jsiiProxy_ExtensionServicenow)SetExtensionObjects(val *[]*string) {
+	if err := j.validateSetExtensionObjectsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extensionObjects",
@@ -644,7 +656,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetExtensionObjects(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetExtensionSchema(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetExtensionSchema(val *string) {
+	if err := j.validateSetExtensionSchemaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extensionSchema",
@@ -652,7 +667,7 @@ func (j *jsiiProxy_ExtensionServicenow) SetExtensionSchema(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ExtensionServicenow)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -660,7 +675,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetId(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -668,7 +686,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ExtensionServicenow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -676,7 +697,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetName(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -684,7 +708,7 @@ func (j *jsiiProxy_ExtensionServicenow) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ExtensionServicenow)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -692,7 +716,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ExtensionServicenow)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -700,7 +727,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetReferer(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetReferer(val *string) {
+	if err := j.validateSetRefererParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"referer",
@@ -708,7 +738,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetReferer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetSnowPassword(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetSnowPassword(val *string) {
+	if err := j.validateSetSnowPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snowPassword",
@@ -716,7 +749,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetSnowPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetSnowUser(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetSnowUser(val *string) {
+	if err := j.validateSetSnowUserParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snowUser",
@@ -724,7 +760,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetSnowUser(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetSummary(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetSummary(val *string) {
+	if err := j.validateSetSummaryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"summary",
@@ -732,7 +771,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetSummary(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetSyncOptions(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetSyncOptions(val *string) {
+	if err := j.validateSetSyncOptionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"syncOptions",
@@ -740,7 +782,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetSyncOptions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetTarget(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetTarget(val *string) {
+	if err := j.validateSetTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"target",
@@ -748,7 +793,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetTaskType(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetTaskType(val *string) {
+	if err := j.validateSetTaskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskType",
@@ -756,7 +804,10 @@ func (j *jsiiProxy_ExtensionServicenow) SetTaskType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ExtensionServicenow) SetType(val *string) {
+func (j *jsiiProxy_ExtensionServicenow)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -784,6 +835,9 @@ func (j *jsiiProxy_ExtensionServicenow) SetType(val *string) {
 func ExtensionServicenow_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateExtensionServicenow_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -808,6 +862,9 @@ func ExtensionServicenow_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_ExtensionServicenow) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -816,6 +873,9 @@ func (e *jsiiProxy_ExtensionServicenow) AddOverride(path *string, value interfac
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -829,6 +889,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -842,6 +905,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetBooleanAttribute(terraformAttribute *
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -855,6 +921,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -868,6 +937,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetListAttribute(terraformAttribute *str
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -881,6 +953,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetNumberAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -894,6 +969,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetNumberListAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -907,6 +985,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetNumberMapAttribute(terraformAttribute
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -920,6 +1001,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetStringAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_ExtensionServicenow) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -933,6 +1017,9 @@ func (e *jsiiProxy_ExtensionServicenow) GetStringMapAttribute(terraformAttribute
 }
 
 func (e *jsiiProxy_ExtensionServicenow) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -946,6 +1033,9 @@ func (e *jsiiProxy_ExtensionServicenow) InterpolationForAttribute(terraformAttri
 }
 
 func (e *jsiiProxy_ExtensionServicenow) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",

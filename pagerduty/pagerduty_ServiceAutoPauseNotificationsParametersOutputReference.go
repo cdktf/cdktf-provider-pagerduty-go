@@ -199,6 +199,9 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) Timeo
 func NewServiceAutoPauseNotificationsParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceAutoPauseNotificationsParametersOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceAutoPauseNotificationsParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewServiceAutoPauseNotificationsParametersOutputReference_Override(s Servic
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetEn
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetInternalValue(val *ServiceAutoPauseNotificationsParameters) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetInternalValue(val *ServiceAutoPauseNotificationsParameters) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetIn
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) SetTimeout(val *float64) {
+func (j *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeout",
@@ -290,6 +314,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) Compu
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetAn
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetBo
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetBo
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetLi
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetNu
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetNu
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetNu
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetSt
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) Inter
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) Reset
 }
 
 func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -258,6 +258,9 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Var
 func NewEventOrchestrationUnroutedCatchAllActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventOrchestrationUnroutedCatchAllActionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewEventOrchestrationUnroutedCatchAllActionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference{}
 
 	_jsii_.Create(
@@ -279,7 +282,10 @@ func NewEventOrchestrationUnroutedCatchAllActionsOutputReference_Override(e Even
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -287,7 +293,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -295,7 +304,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetEventAction(val *string) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetEventAction(val *string) {
+	if err := j.validateSetEventActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eventAction",
@@ -303,7 +315,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetInternalValue(val *EventOrchestrationUnroutedCatchAllActions) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetInternalValue(val *EventOrchestrationUnroutedCatchAllActions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -311,7 +326,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetSeverity(val *string) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetSeverity(val *string) {
+	if err := j.validateSetSeverityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"severity",
@@ -319,7 +337,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -327,7 +348,10 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -349,6 +373,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Com
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -362,6 +389,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -375,6 +405,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -388,6 +421,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -401,6 +437,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -414,6 +453,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -427,6 +469,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -440,6 +485,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -453,6 +501,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Get
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -479,6 +530,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Int
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -492,6 +546,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Int
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) PutExtraction(value interface{}) {
+	if err := e.validatePutExtractionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putExtraction",
@@ -500,6 +557,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Put
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) PutVariable(value interface{}) {
+	if err := e.validatePutVariableParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putVariable",
@@ -540,6 +600,9 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Res
 }
 
 func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

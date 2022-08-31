@@ -360,6 +360,9 @@ func (j *jsiiProxy_EventOrchestrationService) TerraformResourceType() *string {
 func NewEventOrchestrationService(scope constructs.Construct, id *string, config *EventOrchestrationServiceConfig) EventOrchestrationService {
 	_init_.Initialize()
 
+	if err := validateNewEventOrchestrationServiceParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EventOrchestrationService{}
 
 	_jsii_.Create(
@@ -382,7 +385,10 @@ func NewEventOrchestrationService_Override(e EventOrchestrationService, scope co
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetConnection(val interface{}) {
+func (j *jsiiProxy_EventOrchestrationService)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -390,7 +396,7 @@ func (j *jsiiProxy_EventOrchestrationService) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetCount(val *float64) {
+func (j *jsiiProxy_EventOrchestrationService)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -398,7 +404,7 @@ func (j *jsiiProxy_EventOrchestrationService) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EventOrchestrationService)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -406,7 +412,7 @@ func (j *jsiiProxy_EventOrchestrationService) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EventOrchestrationService)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -414,7 +420,10 @@ func (j *jsiiProxy_EventOrchestrationService) SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetId(val *string) {
+func (j *jsiiProxy_EventOrchestrationService)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -422,7 +431,10 @@ func (j *jsiiProxy_EventOrchestrationService) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EventOrchestrationService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -430,7 +442,7 @@ func (j *jsiiProxy_EventOrchestrationService) SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EventOrchestrationService)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +450,10 @@ func (j *jsiiProxy_EventOrchestrationService) SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EventOrchestrationService)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -446,7 +461,10 @@ func (j *jsiiProxy_EventOrchestrationService) SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_EventOrchestrationService) SetService(val *string) {
+func (j *jsiiProxy_EventOrchestrationService)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"service",
@@ -474,6 +492,9 @@ func (j *jsiiProxy_EventOrchestrationService) SetService(val *string) {
 func EventOrchestrationService_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateEventOrchestrationService_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -498,6 +519,9 @@ func EventOrchestrationService_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_EventOrchestrationService) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -506,6 +530,9 @@ func (e *jsiiProxy_EventOrchestrationService) AddOverride(path *string, value in
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -519,6 +546,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetAnyMapAttribute(terraformAttrib
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -532,6 +562,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetBooleanAttribute(terraformAttri
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -545,6 +578,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetBooleanMapAttribute(terraformAt
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -558,6 +594,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetListAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -571,6 +610,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetNumberAttribute(terraformAttrib
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -584,6 +626,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetNumberListAttribute(terraformAt
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -597,6 +642,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetNumberMapAttribute(terraformAtt
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -610,6 +658,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetStringAttribute(terraformAttrib
 }
 
 func (e *jsiiProxy_EventOrchestrationService) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -623,6 +674,9 @@ func (e *jsiiProxy_EventOrchestrationService) GetStringMapAttribute(terraformAtt
 }
 
 func (e *jsiiProxy_EventOrchestrationService) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -636,6 +690,9 @@ func (e *jsiiProxy_EventOrchestrationService) InterpolationForAttribute(terrafor
 }
 
 func (e *jsiiProxy_EventOrchestrationService) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
@@ -644,6 +701,9 @@ func (e *jsiiProxy_EventOrchestrationService) OverrideLogicalId(newLogicalId *st
 }
 
 func (e *jsiiProxy_EventOrchestrationService) PutCatchAll(value *EventOrchestrationServiceCatchAll) {
+	if err := e.validatePutCatchAllParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putCatchAll",
@@ -652,6 +712,9 @@ func (e *jsiiProxy_EventOrchestrationService) PutCatchAll(value *EventOrchestrat
 }
 
 func (e *jsiiProxy_EventOrchestrationService) PutSet(value interface{}) {
+	if err := e.validatePutSetParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putSet",

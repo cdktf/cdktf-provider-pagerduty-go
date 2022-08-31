@@ -99,6 +99,9 @@ func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) WrapsSet() *bo
 func NewResponsePlayResponderEscalationRuleTargetList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderEscalationRuleTargetList {
 	_init_.Initialize()
 
+	if err := validateNewResponsePlayResponderEscalationRuleTargetListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ResponsePlayResponderEscalationRuleTargetList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewResponsePlayResponderEscalationRuleTargetList_Override(r ResponsePlayRes
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) ComputeFqn() *
 }
 
 func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) Get(index *float64) ResponsePlayResponderEscalationRuleTargetOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ResponsePlayResponderEscalationRuleTargetOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) Get(index *flo
 }
 
 func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Wra
 func NewDataPagerdutyEventOrchestrationIntegrationParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyEventOrchestrationIntegrationParametersList {
 	_init_.Initialize()
 
+	if err := validateNewDataPagerdutyEventOrchestrationIntegrationParametersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataPagerdutyEventOrchestrationIntegrationParametersList_Override(d Data
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Set
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Set
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Com
 }
 
 func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Get(index *float64) DataPagerdutyEventOrchestrationIntegrationParametersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataPagerdutyEventOrchestrationIntegrationParametersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Get
 }
 
 func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) WrapsSet() *bool {
 func NewServiceEventRuleActionsSuppressList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceEventRuleActionsSuppressList {
 	_init_.Initialize()
 
+	if err := validateNewServiceEventRuleActionsSuppressListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceEventRuleActionsSuppressList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewServiceEventRuleActionsSuppressList_Override(s ServiceEventRuleActionsSu
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceEventRuleActionsSuppressList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceEventRuleActionsSuppressList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceEventRuleActionsSuppressList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRuleActionsSuppressList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceEventRuleActionsSuppressList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_ServiceEventRuleActionsSuppressList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServiceEventRuleActionsSuppressList) Get(index *float64) ServiceEventRuleActionsSuppressOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ServiceEventRuleActionsSuppressOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_ServiceEventRuleActionsSuppressList) Get(index *float64) Serv
 }
 
 func (s *jsiiProxy_ServiceEventRuleActionsSuppressList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

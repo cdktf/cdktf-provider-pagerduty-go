@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) WrapsSet() *bool {
 func NewRulesetRuleTimeFrameScheduledWeeklyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleTimeFrameScheduledWeeklyList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRuleTimeFrameScheduledWeeklyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRuleTimeFrameScheduledWeeklyList_Override(r RulesetRuleTimeFrameS
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) ComputeFqn() *string
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) Get(index *float64) RulesetRuleTimeFrameScheduledWeeklyOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRuleTimeFrameScheduledWeeklyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) Get(index *float64) 
 }
 
 func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

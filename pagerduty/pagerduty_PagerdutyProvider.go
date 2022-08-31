@@ -304,6 +304,9 @@ func (j *jsiiProxy_PagerdutyProvider) UserTokenInput() *string {
 func NewPagerdutyProvider(scope constructs.Construct, id *string, config *PagerdutyProviderConfig) PagerdutyProvider {
 	_init_.Initialize()
 
+	if err := validateNewPagerdutyProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PagerdutyProvider{}
 
 	_jsii_.Create(
@@ -326,7 +329,7 @@ func NewPagerdutyProvider_Override(p PagerdutyProvider, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_PagerdutyProvider) SetAlias(val *string) {
+func (j *jsiiProxy_PagerdutyProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -334,7 +337,7 @@ func (j *jsiiProxy_PagerdutyProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PagerdutyProvider) SetApiUrlOverride(val *string) {
+func (j *jsiiProxy_PagerdutyProvider)SetApiUrlOverride(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUrlOverride",
@@ -342,7 +345,7 @@ func (j *jsiiProxy_PagerdutyProvider) SetApiUrlOverride(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PagerdutyProvider) SetServiceRegion(val *string) {
+func (j *jsiiProxy_PagerdutyProvider)SetServiceRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceRegion",
@@ -350,7 +353,10 @@ func (j *jsiiProxy_PagerdutyProvider) SetServiceRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PagerdutyProvider) SetSkipCredentialsValidation(val interface{}) {
+func (j *jsiiProxy_PagerdutyProvider)SetSkipCredentialsValidation(val interface{}) {
+	if err := j.validateSetSkipCredentialsValidationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipCredentialsValidation",
@@ -358,7 +364,7 @@ func (j *jsiiProxy_PagerdutyProvider) SetSkipCredentialsValidation(val interface
 	)
 }
 
-func (j *jsiiProxy_PagerdutyProvider) SetToken(val *string) {
+func (j *jsiiProxy_PagerdutyProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -366,7 +372,7 @@ func (j *jsiiProxy_PagerdutyProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PagerdutyProvider) SetUserToken(val *string) {
+func (j *jsiiProxy_PagerdutyProvider)SetUserToken(val *string) {
 	_jsii_.Set(
 		j,
 		"userToken",
@@ -394,6 +400,9 @@ func (j *jsiiProxy_PagerdutyProvider) SetUserToken(val *string) {
 func PagerdutyProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePagerdutyProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -418,6 +427,9 @@ func PagerdutyProvider_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PagerdutyProvider) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -426,6 +438,9 @@ func (p *jsiiProxy_PagerdutyProvider) AddOverride(path *string, value interface{
 }
 
 func (p *jsiiProxy_PagerdutyProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
