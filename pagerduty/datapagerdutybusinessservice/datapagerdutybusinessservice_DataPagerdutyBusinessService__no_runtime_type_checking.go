@@ -56,6 +56,14 @@ func validateDataPagerdutyBusinessService_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataPagerdutyBusinessService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataPagerdutyBusinessService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyBusinessService) validateSetIdParameters(val *string) error {
 	return nil
 }

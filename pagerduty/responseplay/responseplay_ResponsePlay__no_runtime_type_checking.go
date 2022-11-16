@@ -64,6 +64,14 @@ func validateResponsePlay_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateResponsePlay_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateResponsePlay_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResponsePlay) validateSetConferenceNumberParameters(val *string) error {
 	return nil
 }

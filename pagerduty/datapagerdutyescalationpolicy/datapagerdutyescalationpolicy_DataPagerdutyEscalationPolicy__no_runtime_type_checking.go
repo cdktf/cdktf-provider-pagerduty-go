@@ -56,6 +56,14 @@ func validateDataPagerdutyEscalationPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataPagerdutyEscalationPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataPagerdutyEscalationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyEscalationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

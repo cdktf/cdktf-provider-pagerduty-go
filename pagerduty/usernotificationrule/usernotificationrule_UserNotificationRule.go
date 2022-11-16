@@ -2,10 +2,10 @@ package usernotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/usernotificationrule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/usernotificationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -555,6 +555,44 @@ func UserNotificationRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserNotificationRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserNotificationRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserNotificationRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserNotificationRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateServiceIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceIntegration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceIntegration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceIntegration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

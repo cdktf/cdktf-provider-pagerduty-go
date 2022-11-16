@@ -56,6 +56,14 @@ func validateExtensionServicenow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateExtensionServicenow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExtensionServicenow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExtensionServicenow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

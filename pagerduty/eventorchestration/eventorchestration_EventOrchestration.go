@@ -2,10 +2,10 @@ package eventorchestration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/eventorchestration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/eventorchestration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -558,6 +558,44 @@ func EventOrchestration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-pagerduty.eventOrchestration.EventOrchestration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EventOrchestration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEventOrchestration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.eventOrchestration.EventOrchestration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EventOrchestration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEventOrchestration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.eventOrchestration.EventOrchestration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

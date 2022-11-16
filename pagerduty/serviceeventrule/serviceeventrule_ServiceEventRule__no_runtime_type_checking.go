@@ -72,6 +72,14 @@ func validateServiceEventRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceEventRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceEventRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceEventRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

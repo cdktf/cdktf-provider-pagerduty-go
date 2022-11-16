@@ -39,6 +39,22 @@ func validatePagerdutyProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePagerdutyProvider_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validatePagerdutyProvider_IsTerraformProviderParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PagerdutyProvider) validateSetSkipCredentialsValidationParameters(val interface{}) error {
 	switch val.(type) {
 	case *bool:

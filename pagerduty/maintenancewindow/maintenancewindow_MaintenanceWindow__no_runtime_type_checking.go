@@ -56,6 +56,14 @@ func validateMaintenanceWindow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMaintenanceWindow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMaintenanceWindow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceWindow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

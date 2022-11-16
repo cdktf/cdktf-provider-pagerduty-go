@@ -56,6 +56,14 @@ func validateAddon_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAddon_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAddon_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Addon) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

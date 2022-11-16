@@ -72,6 +72,14 @@ func validateRulesetRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRulesetRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRulesetRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRule) validateSetCatchAllParameters(val interface{}) error {
 	return nil
 }

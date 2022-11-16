@@ -60,6 +60,14 @@ func validateEscalationPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEscalationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEscalationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EscalationPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

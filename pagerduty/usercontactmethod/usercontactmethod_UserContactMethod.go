@@ -2,10 +2,10 @@ package usercontactmethod
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/usercontactmethod/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/usercontactmethod/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -647,6 +647,44 @@ func UserContactMethod_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-pagerduty.userContactMethod.UserContactMethod",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserContactMethod_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserContactMethod_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.userContactMethod.UserContactMethod",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserContactMethod_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserContactMethod_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.userContactMethod.UserContactMethod",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

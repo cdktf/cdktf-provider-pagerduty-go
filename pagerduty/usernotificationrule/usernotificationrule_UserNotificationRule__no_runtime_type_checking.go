@@ -56,6 +56,14 @@ func validateUserNotificationRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateUserNotificationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserNotificationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserNotificationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

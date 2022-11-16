@@ -56,6 +56,14 @@ func validateDataPagerdutyPriority_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataPagerdutyPriority_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataPagerdutyPriority_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyPriority) validateSetIdParameters(val *string) error {
 	return nil
 }

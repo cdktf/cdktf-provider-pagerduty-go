@@ -56,6 +56,14 @@ func validateDataPagerdutyExtensionSchema_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataPagerdutyExtensionSchema_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataPagerdutyExtensionSchema_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyExtensionSchema) validateSetIdParameters(val *string) error {
 	return nil
 }

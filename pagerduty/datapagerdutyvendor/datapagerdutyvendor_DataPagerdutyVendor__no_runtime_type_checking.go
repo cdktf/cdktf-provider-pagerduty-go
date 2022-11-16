@@ -56,6 +56,14 @@ func validateDataPagerdutyVendor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataPagerdutyVendor_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataPagerdutyVendor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyVendor) validateSetIdParameters(val *string) error {
 	return nil
 }

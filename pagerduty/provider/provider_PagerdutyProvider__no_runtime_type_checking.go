@@ -16,6 +16,14 @@ func validatePagerdutyProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePagerdutyProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePagerdutyProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagerdutyProvider) validateSetSkipCredentialsValidationParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateEventOrchestrationService_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateEventOrchestrationService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventOrchestrationService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

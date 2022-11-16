@@ -2,9 +2,9 @@ package datapagerdutyusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/datapagerdutyusers/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/datapagerdutyusers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

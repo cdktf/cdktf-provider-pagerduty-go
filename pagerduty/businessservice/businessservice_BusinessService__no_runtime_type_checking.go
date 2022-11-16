@@ -56,6 +56,14 @@ func validateBusinessService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBusinessService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBusinessService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BusinessService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

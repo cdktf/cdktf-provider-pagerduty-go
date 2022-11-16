@@ -56,6 +56,14 @@ func validateDataPagerdutyUserContactMethod_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataPagerdutyUserContactMethod_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataPagerdutyUserContactMethod_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyUserContactMethod) validateSetIdParameters(val *string) error {
 	return nil
 }

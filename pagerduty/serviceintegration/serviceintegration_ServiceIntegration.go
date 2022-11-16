@@ -2,10 +2,10 @@ package serviceintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v3/serviceintegration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v4/serviceintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -792,6 +792,44 @@ func ServiceIntegration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServiceIntegration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServiceIntegration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServiceIntegration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServiceIntegration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

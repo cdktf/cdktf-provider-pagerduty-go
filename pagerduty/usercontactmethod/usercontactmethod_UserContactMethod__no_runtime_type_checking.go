@@ -56,6 +56,14 @@ func validateUserContactMethod_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateUserContactMethod_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserContactMethod_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserContactMethod) validateSetAddressParameters(val *string) error {
 	return nil
 }

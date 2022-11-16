@@ -56,6 +56,14 @@ func validateEventRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventRule) validateSetActionJsonParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Service) validateSetAcknowledgementTimeoutParameters(val *string) error {
 	return nil
 }
