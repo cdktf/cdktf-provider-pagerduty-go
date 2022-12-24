@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package escalationpolicy
+package incidentworkflow
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (e *jsiiProxy_EscalationPolicyRuleList) validateGetParameters(index *float64) error {
+func (i *jsiiProxy_IncidentWorkflowStepInputList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (e *jsiiProxy_EscalationPolicyRuleList) validateGetParameters(index *float6
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentWorkflowStepInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -26,19 +26,19 @@ func (e *jsiiProxy_EscalationPolicyRuleList) validateResolveParameters(_context 
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentWorkflowStepInputList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*EscalationPolicyRule:
-		val := val.(*[]*EscalationPolicyRule)
+	case *[]*IncidentWorkflowStepInput:
+		val := val.(*[]*IncidentWorkflowStepInput)
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
 				return err
 			}
 		}
-	case []*EscalationPolicyRule:
-		val_ := val.([]*EscalationPolicyRule)
+	case []*IncidentWorkflowStepInput:
+		val_ := val.([]*IncidentWorkflowStepInput)
 		val := &val_
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
@@ -47,14 +47,14 @@ func (j *jsiiProxy_EscalationPolicyRuleList) validateSetInternalValueParameters(
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*EscalationPolicyRule; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*IncidentWorkflowStepInput; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_IncidentWorkflowStepInputList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func (j *jsiiProxy_EscalationPolicyRuleList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IncidentWorkflowStepInputList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -70,7 +70,7 @@ func (j *jsiiProxy_EscalationPolicyRuleList) validateSetTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicyRuleList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_IncidentWorkflowStepInputList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -78,7 +78,7 @@ func (j *jsiiProxy_EscalationPolicyRuleList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewEscalationPolicyRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIncidentWorkflowStepInputListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

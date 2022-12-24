@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package escalationpolicy
+package incidentworkflowtrigger
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (e *jsiiProxy_EscalationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (e *jsiiProxy_EscalationPolicy) validateAddOverrideParameters(path *string,
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetAnyMapAttributeParameters(terraf
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetBooleanAttributeParameters(terra
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetBooleanMapAttributeParameters(te
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetListAttributeParameters(terrafor
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetNumberAttributeParameters(terraf
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetNumberListAttributeParameters(te
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetNumberMapAttributeParameters(ter
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetStringAttributeParameters(terraf
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (e *jsiiProxy_EscalationPolicy) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (e *jsiiProxy_EscalationPolicy) validateInterpolationForAttributeParameters
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,38 +111,7 @@ func (e *jsiiProxy_EscalationPolicy) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicy) validatePutRuleParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*EscalationPolicyRule:
-		value := value.(*[]*EscalationPolicyRule)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*EscalationPolicyRule:
-		value_ := value.([]*EscalationPolicyRule)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EscalationPolicyRule; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func validateEscalationPolicy_IsConstructParameters(x interface{}) error {
+func validateIncidentWorkflowTrigger_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -150,7 +119,7 @@ func validateEscalationPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEscalationPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateIncidentWorkflowTrigger_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -158,7 +127,7 @@ func validateEscalationPolicy_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateEscalationPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateIncidentWorkflowTrigger_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +135,15 @@ func validateEscalationPolicy_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetConditionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -199,7 +176,7 @@ func (j *jsiiProxy_EscalationPolicy) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicy) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,15 +184,7 @@ func (j *jsiiProxy_EscalationPolicy) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicy) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EscalationPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -223,23 +192,7 @@ func (j *jsiiProxy_EscalationPolicy) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicy) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EscalationPolicy) validateSetNumLoopsParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EscalationPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -285,7 +238,7 @@ func (j *jsiiProxy_EscalationPolicy) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPolicy) validateSetTeamsParameters(val *[]*string) error {
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetServicesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -293,7 +246,43 @@ func (j *jsiiProxy_EscalationPolicy) validateSetTeamsParameters(val *[]*string) 
 	return nil
 }
 
-func validateNewEscalationPolicyParameters(scope constructs.Construct, id *string, config *EscalationPolicyConfig) error {
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetSubscribedToAllServicesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IncidentWorkflowTrigger) validateSetWorkflowParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewIncidentWorkflowTriggerParameters(scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
