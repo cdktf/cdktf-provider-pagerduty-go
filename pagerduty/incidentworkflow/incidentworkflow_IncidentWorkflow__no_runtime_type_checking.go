@@ -92,6 +92,10 @@ func (j *jsiiProxy_IncidentWorkflow) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_IncidentWorkflow) validateSetTeamParameters(val *string) error {
+	return nil
+}
+
 func validateNewIncidentWorkflowParameters(scope constructs.Construct, id *string, config *IncidentWorkflowConfig) error {
 	return nil
 }
