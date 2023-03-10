@@ -29,6 +29,8 @@ type EventOrchestrationServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_orchestration_service#set EventOrchestrationService#set}
 	Set interface{} `field:"required" json:"set" yaml:"set"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}.
+	EnableEventOrchestrationForService interface{} `field:"optional" json:"enableEventOrchestrationForService" yaml:"enableEventOrchestrationForService"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_orchestration_service#id EventOrchestrationService#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

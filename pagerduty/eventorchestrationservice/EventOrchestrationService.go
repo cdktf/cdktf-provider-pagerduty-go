@@ -30,6 +30,9 @@ type EventOrchestrationService interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableEventOrchestrationForService() interface{}
+	SetEnableEventOrchestrationForService(val interface{})
+	EnableEventOrchestrationForServiceInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -95,6 +98,7 @@ type EventOrchestrationService interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCatchAll(value *EventOrchestrationServiceCatchAll)
 	PutSet(value interface{})
+	ResetEnableEventOrchestrationForService()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -179,6 +183,26 @@ func (j *jsiiProxy_EventOrchestrationService) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationService) EnableEventOrchestrationForService() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableEventOrchestrationForService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationService) EnableEventOrchestrationForServiceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableEventOrchestrationForServiceInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +431,17 @@ func (j *jsiiProxy_EventOrchestrationService)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationService)SetEnableEventOrchestrationForService(val interface{}) {
+	if err := j.validateSetEnableEventOrchestrationForServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableEventOrchestrationForService",
 		val,
 	)
 }
@@ -756,6 +791,14 @@ func (e *jsiiProxy_EventOrchestrationService) PutSet(value interface{}) {
 		e,
 		"putSet",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationService) ResetEnableEventOrchestrationForService() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEnableEventOrchestrationForService",
+		nil, // no parameters
 	)
 }
 
