@@ -32,6 +32,7 @@ type DataPagerdutyAutomationActionsActionActionDataReferenceOutputReference inte
 	InvocationCommand() *string
 	ProcessAutomationJobArguments() *string
 	ProcessAutomationJobId() *string
+	ProcessAutomationNodeFilter() *string
 	Script() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsActionActionDataReferenceOutput
 	_jsii_.Get(
 		j,
 		"processAutomationJobId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsActionActionDataReferenceOutputReference) ProcessAutomationNodeFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"processAutomationNodeFilter",
 		&returns,
 	)
 	return returns

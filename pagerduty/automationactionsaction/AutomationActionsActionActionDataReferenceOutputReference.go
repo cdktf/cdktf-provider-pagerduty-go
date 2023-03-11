@@ -38,6 +38,9 @@ type AutomationActionsActionActionDataReferenceOutputReference interface {
 	ProcessAutomationJobId() *string
 	SetProcessAutomationJobId(val *string)
 	ProcessAutomationJobIdInput() *string
+	ProcessAutomationNodeFilter() *string
+	SetProcessAutomationNodeFilter(val *string)
+	ProcessAutomationNodeFilterInput() *string
 	Script() *string
 	SetScript(val *string)
 	ScriptInput() *string
@@ -76,6 +79,7 @@ type AutomationActionsActionActionDataReferenceOutputReference interface {
 	ResetInvocationCommand()
 	ResetProcessAutomationJobArguments()
 	ResetProcessAutomationJobId()
+	ResetProcessAutomationNodeFilter()
 	ResetScript()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) Pr
 	_jsii_.Get(
 		j,
 		"processAutomationJobIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) ProcessAutomationNodeFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"processAutomationNodeFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) ProcessAutomationNodeFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"processAutomationNodeFilterInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +356,17 @@ func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference)Set
 	_jsii_.Set(
 		j,
 		"processAutomationJobId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference)SetProcessAutomationNodeFilter(val *string) {
+	if err := j.validateSetProcessAutomationNodeFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"processAutomationNodeFilter",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (a *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) Re
 	_jsii_.InvokeVoid(
 		a,
 		"resetProcessAutomationJobId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) ResetProcessAutomationNodeFilter() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProcessAutomationNodeFilter",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) validateSetProcessAutomationNodeFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationActionsActionActionDataReferenceOutputReference) validateSetScriptParameters(val *string) error {
 	return nil
 }

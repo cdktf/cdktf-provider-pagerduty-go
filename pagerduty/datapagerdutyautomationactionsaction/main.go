@@ -123,6 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "invocationCommand", GoGetter: "InvocationCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "processAutomationJobArguments", GoGetter: "ProcessAutomationJobArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "processAutomationJobId", GoGetter: "ProcessAutomationJobId"},
+			_jsii_.MemberProperty{JsiiProperty: "processAutomationNodeFilter", GoGetter: "ProcessAutomationNodeFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "script", GoGetter: "Script"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
