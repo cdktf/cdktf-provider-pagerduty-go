@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service pagerduty_service}.
 type DataPagerdutyService interface {
 	cdktf.TerraformDataSource
+	AcknowledgementTimeout() *float64
+	AlertCreation() *string
+	AutoResolveTimeout() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,6 +27,8 @@ type DataPagerdutyService interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	EscalationPolicy() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +55,7 @@ type DataPagerdutyService interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Teams() DataPagerdutyServiceTeamsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,6 +107,36 @@ type jsiiProxy_DataPagerdutyService struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataPagerdutyService) AcknowledgementTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"acknowledgementTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyService) AlertCreation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyService) AutoResolveTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoResolveTimeout",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyService) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -136,6 +172,26 @@ func (j *jsiiProxy_DataPagerdutyService) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyService) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyService) EscalationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationPolicy",
 		&returns,
 	)
 	return returns
@@ -246,6 +302,16 @@ func (j *jsiiProxy_DataPagerdutyService) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyService) Teams() DataPagerdutyServiceTeamsList {
+	var returns DataPagerdutyServiceTeamsList
+	_jsii_.Get(
+		j,
+		"teams",
 		&returns,
 	)
 	return returns
