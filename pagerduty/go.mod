@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5
+module github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6
 
 go 1.18
 

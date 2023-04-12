@@ -2,9 +2,9 @@ package slackconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/slackconnection/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/slackconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
