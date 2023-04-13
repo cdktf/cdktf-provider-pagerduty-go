@@ -1,0 +1,6 @@
+package datapagerdutyeventorchestrationintegration
+
+
+type DataPagerdutyEventOrchestrationIntegrationParametersA struct {
+}
+

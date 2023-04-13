@@ -30,6 +30,7 @@ type DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationOutputReferen
 	Id() *string
 	InternalValue() *DataPagerdutyEventOrchestrationsEventOrchestrationsIntegration
 	SetInternalValue(val *DataPagerdutyEventOrchestrationsEventOrchestrationsIntegration)
+	Label() *string
 	Parameters() DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersList
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationsEventOrchestrationsIntegratio
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationOutputReference) Label() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"label",
 		&returns,
 	)
 	return returns
