@@ -54,6 +54,9 @@ type User interface {
 	JobTitle() *string
 	SetJobTitle(val *string)
 	JobTitleInput() *string
+	License() *string
+	SetLicense(val *string)
+	LicenseInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -117,6 +120,7 @@ type User interface {
 	ResetDescription()
 	ResetId()
 	ResetJobTitle()
+	ResetLicense()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -343,6 +347,26 @@ func (j *jsiiProxy_User) JobTitleInput() *string {
 	_jsii_.Get(
 		j,
 		"jobTitleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) License() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"license",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) LicenseInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +648,17 @@ func (j *jsiiProxy_User)SetJobTitle(val *string) {
 	_jsii_.Set(
 		j,
 		"jobTitle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetLicense(val *string) {
+	if err := j.validateSetLicenseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"license",
 		val,
 	)
 }
@@ -996,6 +1031,14 @@ func (u *jsiiProxy_User) ResetJobTitle() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetJobTitle",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetLicense() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetLicense",
 		nil, // no parameters
 	)
 }

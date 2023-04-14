@@ -88,6 +88,10 @@ func (j *jsiiProxy_User) validateSetJobTitleParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetLicenseParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

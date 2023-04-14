@@ -1,4 +1,4 @@
-package user
+package datapagerdutylicense
 
 import (
 	"reflect"
@@ -8,22 +8,20 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-pagerduty.user.User",
-		reflect.TypeOf((*User)(nil)).Elem(),
+		"@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense",
+		reflect.TypeOf((*DataPagerdutyLicense)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "avatarUrl", GoGetter: "AvatarUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "allocationsAvailable", GoGetter: "AllocationsAvailable"},
+			_jsii_.MemberProperty{JsiiProperty: "allocationsAvailableInput", GoGetter: "AllocationsAvailableInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
-			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "currentValue", GoGetter: "CurrentValue"},
+			_jsii_.MemberProperty{JsiiProperty: "currentValueInput", GoGetter: "CurrentValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "email", GoGetter: "Email"},
-			_jsii_.MemberProperty{JsiiProperty: "emailInput", GoGetter: "EmailInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -37,53 +35,55 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "htmlUrl", GoGetter: "HtmlUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "htmlUrlInput", GoGetter: "HtmlUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "invitationSent", GoGetter: "InvitationSent"},
-			_jsii_.MemberProperty{JsiiProperty: "jobTitle", GoGetter: "JobTitle"},
-			_jsii_.MemberProperty{JsiiProperty: "jobTitleInput", GoGetter: "JobTitleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "license", GoGetter: "License"},
-			_jsii_.MemberProperty{JsiiProperty: "licenseInput", GoGetter: "LicenseInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetColor", GoMethod: "ResetColor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllocationsAvailable", GoMethod: "ResetAllocationsAvailable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCurrentValue", GoMethod: "ResetCurrentValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHtmlUrl", GoMethod: "ResetHtmlUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetJobTitle", GoMethod: "ResetJobTitle"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLicense", GoMethod: "ResetLicense"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRole", GoMethod: "ResetRole"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTeams", GoMethod: "ResetTeams"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeZone", GoMethod: "ResetTimeZone"},
-			_jsii_.MemberProperty{JsiiProperty: "role", GoGetter: "Role"},
-			_jsii_.MemberProperty{JsiiProperty: "roleInput", GoGetter: "RoleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRoleGroup", GoMethod: "ResetRoleGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSelfAttribute", GoMethod: "ResetSelfAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSummary", GoMethod: "ResetSummary"},
+			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidRoles", GoMethod: "ResetValidRoles"},
+			_jsii_.MemberProperty{JsiiProperty: "roleGroup", GoGetter: "RoleGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "roleGroupInput", GoGetter: "RoleGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "selfAttribute", GoGetter: "SelfAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "selfAttributeInput", GoGetter: "SelfAttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "summary", GoGetter: "Summary"},
+			_jsii_.MemberProperty{JsiiProperty: "summaryInput", GoGetter: "SummaryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
-			_jsii_.MemberProperty{JsiiProperty: "teams", GoGetter: "Teams"},
-			_jsii_.MemberProperty{JsiiProperty: "teamsInput", GoGetter: "TeamsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "timeZone", GoGetter: "TimeZone"},
-			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "validRoles", GoGetter: "ValidRoles"},
+			_jsii_.MemberProperty{JsiiProperty: "validRolesInput", GoGetter: "ValidRolesInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_User{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			j := jsiiProxy_DataPagerdutyLicense{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-pagerduty.user.UserConfig",
-		reflect.TypeOf((*UserConfig)(nil)).Elem(),
+		"@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicenseConfig",
+		reflect.TypeOf((*DataPagerdutyLicenseConfig)(nil)).Elem(),
 	)
 }

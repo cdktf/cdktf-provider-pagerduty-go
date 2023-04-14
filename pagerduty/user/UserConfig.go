@@ -34,6 +34,8 @@ type UserConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}.
 	JobTitle *string `field:"optional" json:"jobTitle" yaml:"jobTitle"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
+	License *string `field:"optional" json:"license" yaml:"license"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}.
 	Role *string `field:"optional" json:"role" yaml:"role"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}.
