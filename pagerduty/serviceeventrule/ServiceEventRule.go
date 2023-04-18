@@ -2,14 +2,14 @@ package serviceeventrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/serviceeventrule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/serviceeventrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule pagerduty_service_event_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service_event_rule pagerduty_service_event_rule}.
 type ServiceEventRule interface {
 	cdktf.TerraformResource
 	Actions() ServiceEventRuleActionsOutputReference
@@ -25,9 +25,9 @@ type ServiceEventRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ServiceEventRule) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ServiceEventRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceEventRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ServiceEventRule) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule pagerduty_service_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
 func NewServiceEventRule(scope constructs.Construct, id *string, config *ServiceEventRuleConfig) ServiceEventRule {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewServiceEventRule(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule pagerduty_service_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
 func NewServiceEventRule_Override(s ServiceEventRule, scope constructs.Construct, id *string, config *ServiceEventRuleConfig) {
 	_init_.Initialize()
 
@@ -493,7 +493,10 @@ func (j *jsiiProxy_ServiceEventRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceEventRule)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceEventRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

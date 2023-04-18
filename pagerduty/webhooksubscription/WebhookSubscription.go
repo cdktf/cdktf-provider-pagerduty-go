@@ -2,14 +2,14 @@ package webhooksubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/webhooksubscription/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/webhooksubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/webhook_subscription pagerduty_webhook_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/webhook_subscription pagerduty_webhook_subscription}.
 type WebhookSubscription interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -24,9 +24,9 @@ type WebhookSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeliveryMethod() WebhookSubscriptionDeliveryMethodList
 	DeliveryMethodInput() interface{}
 	// Experimental.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_WebhookSubscription) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_WebhookSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WebhookSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_WebhookSubscription) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/webhook_subscription pagerduty_webhook_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource.
 func NewWebhookSubscription(scope constructs.Construct, id *string, config *WebhookSubscriptionConfig) WebhookSubscription {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewWebhookSubscription(scope constructs.Construct, id *string, config *Webh
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/webhook_subscription pagerduty_webhook_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource.
 func NewWebhookSubscription_Override(w WebhookSubscription, scope constructs.Construct, id *string, config *WebhookSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_WebhookSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebhookSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_WebhookSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

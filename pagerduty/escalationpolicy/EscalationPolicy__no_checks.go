@@ -72,6 +72,10 @@ func (j *jsiiProxy_EscalationPolicy) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EscalationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EscalationPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

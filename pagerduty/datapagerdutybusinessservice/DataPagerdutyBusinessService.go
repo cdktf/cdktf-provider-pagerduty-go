@@ -2,14 +2,14 @@ package datapagerdutybusinessservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutybusinessservice/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutybusinessservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service pagerduty_business_service}.
 type DataPagerdutyBusinessService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPagerdutyBusinessService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataPagerdutyBusinessService) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyBusinessService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyBusinessService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataPagerdutyBusinessService) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service pagerduty_business_service} Data Source.
 func NewDataPagerdutyBusinessService(scope constructs.Construct, id *string, config *DataPagerdutyBusinessServiceConfig) DataPagerdutyBusinessService {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataPagerdutyBusinessService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service pagerduty_business_service} Data Source.
 func NewDataPagerdutyBusinessService_Override(d DataPagerdutyBusinessService, scope constructs.Construct, id *string, config *DataPagerdutyBusinessServiceConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataPagerdutyBusinessService_Override(d DataPagerdutyBusinessService, sc
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyBusinessService)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyBusinessService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

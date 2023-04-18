@@ -64,6 +64,10 @@ func validateDataPagerdutyVendor_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyVendor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyVendor) validateSetIdParameters(val *string) error {
 	return nil
 }

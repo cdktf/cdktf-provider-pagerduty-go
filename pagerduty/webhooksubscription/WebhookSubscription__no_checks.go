@@ -80,6 +80,10 @@ func (j *jsiiProxy_WebhookSubscription) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_WebhookSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebhookSubscription) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

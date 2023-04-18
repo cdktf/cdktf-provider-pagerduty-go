@@ -72,6 +72,10 @@ func (j *jsiiProxy_IncidentWorkflow) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_IncidentWorkflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IncidentWorkflow) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

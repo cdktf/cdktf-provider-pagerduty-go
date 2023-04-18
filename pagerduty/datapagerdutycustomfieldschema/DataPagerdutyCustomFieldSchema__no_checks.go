@@ -64,6 +64,10 @@ func validateDataPagerdutyCustomFieldSchema_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyCustomFieldSchema) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyCustomFieldSchema) validateSetIdParameters(val *string) error {
 	return nil
 }

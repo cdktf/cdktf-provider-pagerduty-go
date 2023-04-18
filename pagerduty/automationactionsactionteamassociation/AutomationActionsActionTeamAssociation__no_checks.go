@@ -72,6 +72,10 @@ func (j *jsiiProxy_AutomationActionsActionTeamAssociation) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_AutomationActionsActionTeamAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationActionsActionTeamAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

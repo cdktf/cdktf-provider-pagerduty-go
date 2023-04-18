@@ -2,14 +2,14 @@ package datapagerdutyserviceintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyserviceintegration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutyserviceintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration pagerduty_service_integration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/service_integration pagerduty_service_integration}.
 type DataPagerdutyServiceIntegration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPagerdutyServiceIntegration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataPagerdutyServiceIntegration) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyServiceIntegration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyServiceIntegration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataPagerdutyServiceIntegration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration pagerduty_service_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/service_integration pagerduty_service_integration} Data Source.
 func NewDataPagerdutyServiceIntegration(scope constructs.Construct, id *string, config *DataPagerdutyServiceIntegrationConfig) DataPagerdutyServiceIntegration {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataPagerdutyServiceIntegration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration pagerduty_service_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/service_integration pagerduty_service_integration} Data Source.
 func NewDataPagerdutyServiceIntegration_Override(d DataPagerdutyServiceIntegration, scope constructs.Construct, id *string, config *DataPagerdutyServiceIntegrationConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataPagerdutyServiceIntegration_Override(d DataPagerdutyServiceIntegrati
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyServiceIntegration)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyServiceIntegration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

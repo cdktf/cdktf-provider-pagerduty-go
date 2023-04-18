@@ -76,6 +76,10 @@ func (j *jsiiProxy_EventOrchestrationGlobal) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationGlobal) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationGlobal) validateSetEventOrchestrationParameters(val *string) error {
 	return nil
 }

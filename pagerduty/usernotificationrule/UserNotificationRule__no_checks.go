@@ -72,6 +72,10 @@ func (j *jsiiProxy_UserNotificationRule) validateSetContactMethodParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_UserNotificationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserNotificationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataPagerdutyEventOrchestrationIntegrationA_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationA) validateSetEventOrchestrationParameters(val *string) error {
 	return nil
 }

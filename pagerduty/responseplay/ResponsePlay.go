@@ -2,14 +2,14 @@ package responseplay
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/responseplay/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/responseplay/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play pagerduty_response_play}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/response_play pagerduty_response_play}.
 type ResponsePlay interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type ResponsePlay interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ResponsePlay) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ResponsePlay) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ResponsePlay) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -572,7 +572,7 @@ func (j *jsiiProxy_ResponsePlay) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play pagerduty_response_play} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/response_play pagerduty_response_play} Resource.
 func NewResponsePlay(scope constructs.Construct, id *string, config *ResponsePlayConfig) ResponsePlay {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewResponsePlay(scope constructs.Construct, id *string, config *ResponsePla
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play pagerduty_response_play} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/response_play pagerduty_response_play} Resource.
 func NewResponsePlay_Override(r ResponsePlay, scope constructs.Construct, id *string, config *ResponsePlayConfig) {
 	_init_.Initialize()
 
@@ -634,7 +634,10 @@ func (j *jsiiProxy_ResponsePlay)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ResponsePlay)SetCount(val *float64) {
+func (j *jsiiProxy_ResponsePlay)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

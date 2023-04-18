@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServiceIntegration) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ServiceIntegration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceIntegration) validateSetEmailFilterModeParameters(val *string) error {
 	return nil
 }

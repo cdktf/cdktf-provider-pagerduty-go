@@ -2,14 +2,14 @@ package usernotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/usernotificationrule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/usernotificationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule pagerduty_user_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/user_notification_rule pagerduty_user_notification_rule}.
 type UserNotificationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type UserNotificationRule interface {
 	SetContactMethod(val *map[string]*string)
 	ContactMethodInput() *map[string]*string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_UserNotificationRule) ContactMethodInput() *map[string]*strin
 	return returns
 }
 
-func (j *jsiiProxy_UserNotificationRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserNotificationRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_UserNotificationRule) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule pagerduty_user_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/user_notification_rule pagerduty_user_notification_rule} Resource.
 func NewUserNotificationRule(scope constructs.Construct, id *string, config *UserNotificationRuleConfig) UserNotificationRule {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewUserNotificationRule(scope constructs.Construct, id *string, config *Use
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule pagerduty_user_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/user_notification_rule pagerduty_user_notification_rule} Resource.
 func NewUserNotificationRule_Override(u UserNotificationRule, scope constructs.Construct, id *string, config *UserNotificationRuleConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_UserNotificationRule)SetContactMethod(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_UserNotificationRule)SetCount(val *float64) {
+func (j *jsiiProxy_UserNotificationRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datapagerdutyautomationactionsaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutyautomationactionsaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/automation_actions_action pagerduty_automation_actions_action}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}.
 type DataPagerdutyAutomationActionsAction interface {
 	cdktf.TerraformDataSource
 	ActionClassification() *string
@@ -22,9 +22,9 @@ type DataPagerdutyAutomationActionsAction interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTime() *string
 	SetCreationTime(val *string)
 	CreationTimeInput() *string
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/automation_actions_action pagerduty_automation_actions_action} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
 func NewDataPagerdutyAutomationActionsAction(scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsActionConfig) DataPagerdutyAutomationActionsAction {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewDataPagerdutyAutomationActionsAction(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/automation_actions_action pagerduty_automation_actions_action} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
 func NewDataPagerdutyAutomationActionsAction_Override(d DataPagerdutyAutomationActionsAction, scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsActionConfig) {
 	_init_.Initialize()
 
@@ -498,7 +498,10 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetActionClassification(
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

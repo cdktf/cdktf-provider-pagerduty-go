@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataPagerdutyLicense) validateSetAllocationsAvailableParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyLicense) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetCurrentValueParameters(val *float64) error {
 	return nil
 }

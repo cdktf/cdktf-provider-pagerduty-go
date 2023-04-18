@@ -84,6 +84,10 @@ func (j *jsiiProxy_ResponsePlay) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ResponsePlay) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResponsePlay) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetActionClassi
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetCreationTimeParameters(val *string) error {
 	return nil
 }

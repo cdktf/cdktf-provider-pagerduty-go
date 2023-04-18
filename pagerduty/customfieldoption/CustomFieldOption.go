@@ -2,14 +2,14 @@ package customfieldoption
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldoption/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldoption/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_option pagerduty_custom_field_option}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_option pagerduty_custom_field_option}.
 type CustomFieldOption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CustomFieldOption interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Datatype() *string
 	SetDatatype(val *string)
 	DatatypeInput() *string
@@ -144,8 +144,8 @@ func (j *jsiiProxy_CustomFieldOption) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_CustomFieldOption) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomFieldOption) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_CustomFieldOption) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_option pagerduty_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_option pagerduty_custom_field_option} Resource.
 func NewCustomFieldOption(scope constructs.Construct, id *string, config *CustomFieldOptionConfig) CustomFieldOption {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewCustomFieldOption(scope constructs.Construct, id *string, config *Custom
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_option pagerduty_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_option pagerduty_custom_field_option} Resource.
 func NewCustomFieldOption_Override(c CustomFieldOption, scope constructs.Construct, id *string, config *CustomFieldOptionConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_CustomFieldOption)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomFieldOption)SetCount(val *float64) {
+func (j *jsiiProxy_CustomFieldOption)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataPagerdutyTeam_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyTeam) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyTeam) validateSetIdParameters(val *string) error {
 	return nil
 }

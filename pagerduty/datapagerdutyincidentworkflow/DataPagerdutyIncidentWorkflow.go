@@ -2,14 +2,14 @@ package datapagerdutyincidentworkflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyincidentworkflow/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutyincidentworkflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow pagerduty_incident_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/incident_workflow pagerduty_incident_workflow}.
 type DataPagerdutyIncidentWorkflow interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPagerdutyIncidentWorkflow interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataPagerdutyIncidentWorkflow) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyIncidentWorkflow) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyIncidentWorkflow) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataPagerdutyIncidentWorkflow) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow pagerduty_incident_workflow} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/incident_workflow pagerduty_incident_workflow} Data Source.
 func NewDataPagerdutyIncidentWorkflow(scope constructs.Construct, id *string, config *DataPagerdutyIncidentWorkflowConfig) DataPagerdutyIncidentWorkflow {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataPagerdutyIncidentWorkflow(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow pagerduty_incident_workflow} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/incident_workflow pagerduty_incident_workflow} Data Source.
 func NewDataPagerdutyIncidentWorkflow_Override(d DataPagerdutyIncidentWorkflow, scope constructs.Construct, id *string, config *DataPagerdutyIncidentWorkflowConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataPagerdutyIncidentWorkflow_Override(d DataPagerdutyIncidentWorkflow, 
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyIncidentWorkflow)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyIncidentWorkflow)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

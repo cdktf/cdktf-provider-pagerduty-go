@@ -2,14 +2,14 @@ package customfieldschemaassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschemaassignment/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldschemaassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment pagerduty_custom_field_schema_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment pagerduty_custom_field_schema_assignment}.
 type CustomFieldSchemaAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CustomFieldSchemaAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_CustomFieldSchemaAssignment) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_CustomFieldSchemaAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomFieldSchemaAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_CustomFieldSchemaAssignment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment pagerduty_custom_field_schema_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment pagerduty_custom_field_schema_assignment} Resource.
 func NewCustomFieldSchemaAssignment(scope constructs.Construct, id *string, config *CustomFieldSchemaAssignmentConfig) CustomFieldSchemaAssignment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewCustomFieldSchemaAssignment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment pagerduty_custom_field_schema_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment pagerduty_custom_field_schema_assignment} Resource.
 func NewCustomFieldSchemaAssignment_Override(c CustomFieldSchemaAssignment, scope constructs.Construct, id *string, config *CustomFieldSchemaAssignmentConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_CustomFieldSchemaAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomFieldSchemaAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_CustomFieldSchemaAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

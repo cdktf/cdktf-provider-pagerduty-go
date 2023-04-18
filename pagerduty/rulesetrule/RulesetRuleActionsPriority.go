@@ -2,7 +2,7 @@ package rulesetrule
 
 
 type RulesetRuleActionsPriority struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset_rule#value RulesetRule#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

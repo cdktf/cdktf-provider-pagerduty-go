@@ -2,14 +2,14 @@ package datapagerdutylicenses
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutylicenses/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutylicenses/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/licenses pagerduty_licenses}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/licenses pagerduty_licenses}.
 type DataPagerdutyLicenses interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPagerdutyLicenses interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataPagerdutyLicenses) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicenses) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyLicenses) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataPagerdutyLicenses) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/licenses pagerduty_licenses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/licenses pagerduty_licenses} Data Source.
 func NewDataPagerdutyLicenses(scope constructs.Construct, id *string, config *DataPagerdutyLicensesConfig) DataPagerdutyLicenses {
 	_init_.Initialize()
 
@@ -300,7 +300,7 @@ func NewDataPagerdutyLicenses(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/licenses pagerduty_licenses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/licenses pagerduty_licenses} Data Source.
 func NewDataPagerdutyLicenses_Override(d DataPagerdutyLicenses, scope constructs.Construct, id *string, config *DataPagerdutyLicensesConfig) {
 	_init_.Initialize()
 
@@ -311,7 +311,10 @@ func NewDataPagerdutyLicenses_Override(d DataPagerdutyLicenses, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyLicenses)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyLicenses)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

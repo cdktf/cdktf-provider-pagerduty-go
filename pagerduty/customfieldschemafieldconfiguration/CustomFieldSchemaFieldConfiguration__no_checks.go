@@ -68,6 +68,10 @@ func (j *jsiiProxy_CustomFieldSchemaFieldConfiguration) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_CustomFieldSchemaFieldConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomFieldSchemaFieldConfiguration) validateSetDefaultValueParameters(val *string) error {
 	return nil
 }

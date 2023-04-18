@@ -64,6 +64,10 @@ func validateDataPagerdutyEscalationPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyEscalationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyEscalationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

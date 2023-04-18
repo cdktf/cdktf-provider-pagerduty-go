@@ -2,14 +2,14 @@ package datapagerdutycustomfieldschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutycustomfieldschema/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutycustomfieldschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema pagerduty_custom_field_schema}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema pagerduty_custom_field_schema}.
 type DataPagerdutyCustomFieldSchema interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPagerdutyCustomFieldSchema interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataPagerdutyCustomFieldSchema) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyCustomFieldSchema) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyCustomFieldSchema) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataPagerdutyCustomFieldSchema) TitleInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema pagerduty_custom_field_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema pagerduty_custom_field_schema} Data Source.
 func NewDataPagerdutyCustomFieldSchema(scope constructs.Construct, id *string, config *DataPagerdutyCustomFieldSchemaConfig) DataPagerdutyCustomFieldSchema {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataPagerdutyCustomFieldSchema(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema pagerduty_custom_field_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema pagerduty_custom_field_schema} Data Source.
 func NewDataPagerdutyCustomFieldSchema_Override(d DataPagerdutyCustomFieldSchema, scope constructs.Construct, id *string, config *DataPagerdutyCustomFieldSchemaConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataPagerdutyCustomFieldSchema_Override(d DataPagerdutyCustomFieldSchema
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyCustomFieldSchema)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyCustomFieldSchema)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

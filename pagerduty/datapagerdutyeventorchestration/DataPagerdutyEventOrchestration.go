@@ -2,14 +2,14 @@ package datapagerdutyeventorchestration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyeventorchestration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutyeventorchestration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/event_orchestration pagerduty_event_orchestration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/event_orchestration pagerduty_event_orchestration}.
 type DataPagerdutyEventOrchestration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataPagerdutyEventOrchestration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestration) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPagerdutyEventOrchestration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/event_orchestration pagerduty_event_orchestration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/event_orchestration pagerduty_event_orchestration} Data Source.
 func NewDataPagerdutyEventOrchestration(scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationConfig) DataPagerdutyEventOrchestration {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataPagerdutyEventOrchestration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/event_orchestration pagerduty_event_orchestration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/event_orchestration pagerduty_event_orchestration} Data Source.
 func NewDataPagerdutyEventOrchestration_Override(d DataPagerdutyEventOrchestration, scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationConfig) {
 	_init_.Initialize()
 
@@ -334,7 +334,10 @@ func NewDataPagerdutyEventOrchestration_Override(d DataPagerdutyEventOrchestrati
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyEventOrchestration)SetCount(val *float64) {
+func (j *jsiiProxy_DataPagerdutyEventOrchestration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
