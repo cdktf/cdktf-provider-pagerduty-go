@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/tag pagerduty_tag}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/tag pagerduty_tag}.
 type DataPagerdutyTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataPagerdutyTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/tag pagerduty_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/tag pagerduty_tag} Data Source.
 func NewDataPagerdutyTag(scope constructs.Construct, id *string, config *DataPagerdutyTagConfig) DataPagerdutyTag {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataPagerdutyTag(scope constructs.Construct, id *string, config *DataPag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/tag pagerduty_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/tag pagerduty_tag} Data Source.
 func NewDataPagerdutyTag_Override(d DataPagerdutyTag, scope constructs.Construct, id *string, config *DataPagerdutyTagConfig) {
 	_init_.Initialize()
 
