@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}.
 type IncidentWorkflowTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_IncidentWorkflowTrigger) WorkflowInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
 func NewIncidentWorkflowTrigger(scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) IncidentWorkflowTrigger {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewIncidentWorkflowTrigger(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
 func NewIncidentWorkflowTrigger_Override(i IncidentWorkflowTrigger, scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) {
 	_init_.Initialize()
 
