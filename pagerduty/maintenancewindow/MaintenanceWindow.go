@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/maintenance_window pagerduty_maintenance_window}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/maintenance_window pagerduty_maintenance_window}.
 type MaintenanceWindow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_MaintenanceWindow) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/maintenance_window pagerduty_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/maintenance_window pagerduty_maintenance_window} Resource.
 func NewMaintenanceWindow(scope constructs.Construct, id *string, config *MaintenanceWindowConfig) MaintenanceWindow {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewMaintenanceWindow(scope constructs.Construct, id *string, config *Mainte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/maintenance_window pagerduty_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/maintenance_window pagerduty_maintenance_window} Resource.
 func NewMaintenanceWindow_Override(m MaintenanceWindow, scope constructs.Construct, id *string, config *MaintenanceWindowConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/data-sources/priority pagerduty_priority}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/priority pagerduty_priority}.
 type DataPagerdutyPriority interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataPagerdutyPriority) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/data-sources/priority pagerduty_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/priority pagerduty_priority} Data Source.
 func NewDataPagerdutyPriority(scope constructs.Construct, id *string, config *DataPagerdutyPriorityConfig) DataPagerdutyPriority {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataPagerdutyPriority(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/data-sources/priority pagerduty_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/priority pagerduty_priority} Data Source.
 func NewDataPagerdutyPriority_Override(d DataPagerdutyPriority, scope constructs.Construct, id *string, config *DataPagerdutyPriorityConfig) {
 	_init_.Initialize()
 
