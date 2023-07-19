@@ -2,14 +2,14 @@ package datapagerdutyeventorchestrationintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/datapagerdutyeventorchestrationintegration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutyeventorchestrationintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration}.
 type DataPagerdutyEventOrchestrationIntegrationA interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationA) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration} Data Source.
 func NewDataPagerdutyEventOrchestrationIntegrationA(scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationIntegrationAConfig) DataPagerdutyEventOrchestrationIntegrationA {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataPagerdutyEventOrchestrationIntegrationA(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration} Data Source.
 func NewDataPagerdutyEventOrchestrationIntegrationA_Override(d DataPagerdutyEventOrchestrationIntegrationA, scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationIntegrationAConfig) {
 	_init_.Initialize()
 

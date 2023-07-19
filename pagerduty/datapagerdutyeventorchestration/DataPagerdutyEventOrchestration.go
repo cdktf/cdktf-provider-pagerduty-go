@@ -2,14 +2,14 @@ package datapagerdutyeventorchestration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/datapagerdutyeventorchestration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutyeventorchestration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/event_orchestration pagerduty_event_orchestration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/event_orchestration pagerduty_event_orchestration}.
 type DataPagerdutyEventOrchestration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/event_orchestration pagerduty_event_orchestration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/event_orchestration pagerduty_event_orchestration} Data Source.
 func NewDataPagerdutyEventOrchestration(scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationConfig) DataPagerdutyEventOrchestration {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataPagerdutyEventOrchestration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/event_orchestration pagerduty_event_orchestration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/event_orchestration pagerduty_event_orchestration} Data Source.
 func NewDataPagerdutyEventOrchestration_Override(d DataPagerdutyEventOrchestration, scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationConfig) {
 	_init_.Initialize()
 

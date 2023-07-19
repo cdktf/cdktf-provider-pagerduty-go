@@ -2,14 +2,14 @@ package rulesetrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/rulesetrule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/rulesetrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset_rule pagerduty_ruleset_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule pagerduty_ruleset_rule}.
 type RulesetRule interface {
 	cdktf.TerraformResource
 	Actions() RulesetRuleActionsOutputReference
@@ -477,7 +477,7 @@ func (j *jsiiProxy_RulesetRule) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource.
 func NewRulesetRule(scope constructs.Construct, id *string, config *RulesetRuleConfig) RulesetRule {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewRulesetRule(scope constructs.Construct, id *string, config *RulesetRuleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource.
 func NewRulesetRule_Override(r RulesetRule, scope constructs.Construct, id *string, config *RulesetRuleConfig) {
 	_init_.Initialize()
 

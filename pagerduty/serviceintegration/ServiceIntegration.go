@@ -2,14 +2,14 @@ package serviceintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/serviceintegration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/serviceintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_integration pagerduty_service_integration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_integration pagerduty_service_integration}.
 type ServiceIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -560,7 +560,7 @@ func (j *jsiiProxy_ServiceIntegration) VendorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_integration pagerduty_service_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_integration pagerduty_service_integration} Resource.
 func NewServiceIntegration(scope constructs.Construct, id *string, config *ServiceIntegrationConfig) ServiceIntegration {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewServiceIntegration(scope constructs.Construct, id *string, config *Servi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_integration pagerduty_service_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_integration pagerduty_service_integration} Resource.
 func NewServiceIntegration_Override(s ServiceIntegration, scope constructs.Construct, id *string, config *ServiceIntegrationConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package addon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/addon/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/addon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/addon pagerduty_addon}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/addon pagerduty_addon}.
 type Addon interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_Addon) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/addon pagerduty_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/addon pagerduty_addon} Resource.
 func NewAddon(scope constructs.Construct, id *string, config *AddonConfig) Addon {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAddon(scope constructs.Construct, id *string, config *AddonConfig) Addon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/addon pagerduty_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/addon pagerduty_addon} Resource.
 func NewAddon_Override(a Addon, scope constructs.Construct, id *string, config *AddonConfig) {
 	_init_.Initialize()
 

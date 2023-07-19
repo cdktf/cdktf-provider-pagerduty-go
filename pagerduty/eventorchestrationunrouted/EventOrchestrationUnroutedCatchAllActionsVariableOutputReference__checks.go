@@ -165,6 +165,8 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsVariableOutputRefere
 
 func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsVariableOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EventOrchestrationUnroutedCatchAllActionsVariable:
 		val := val.(*EventOrchestrationUnroutedCatchAllActionsVariable)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsVariableOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EventOrchestrationUnroutedCatchAllActionsVariable, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EventOrchestrationUnroutedCatchAllActionsVariable; received %#v (a %T)", val, val)
 		}
 	}
 

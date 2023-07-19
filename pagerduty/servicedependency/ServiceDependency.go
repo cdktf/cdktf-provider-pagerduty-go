@@ -2,14 +2,14 @@ package servicedependency
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/servicedependency/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/servicedependency/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_dependency pagerduty_service_dependency}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_dependency pagerduty_service_dependency}.
 type ServiceDependency interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ServiceDependency) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_dependency pagerduty_service_dependency} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_dependency pagerduty_service_dependency} Resource.
 func NewServiceDependency(scope constructs.Construct, id *string, config *ServiceDependencyConfig) ServiceDependency {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewServiceDependency(scope constructs.Construct, id *string, config *Servic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_dependency pagerduty_service_dependency} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_dependency pagerduty_service_dependency} Resource.
 func NewServiceDependency_Override(s ServiceDependency, scope constructs.Construct, id *string, config *ServiceDependencyConfig) {
 	_init_.Initialize()
 

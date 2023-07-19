@@ -2,14 +2,14 @@ package serviceeventrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/serviceeventrule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/serviceeventrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_event_rule pagerduty_service_event_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_event_rule pagerduty_service_event_rule}.
 type ServiceEventRule interface {
 	cdktf.TerraformResource
 	Actions() ServiceEventRuleActionsOutputReference
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ServiceEventRule) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
 func NewServiceEventRule(scope constructs.Construct, id *string, config *ServiceEventRuleConfig) ServiceEventRule {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewServiceEventRule(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
 func NewServiceEventRule_Override(s ServiceEventRule, scope constructs.Construct, id *string, config *ServiceEventRuleConfig) {
 	_init_.Initialize()
 

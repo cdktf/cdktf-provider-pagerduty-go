@@ -2,14 +2,14 @@ package datapagerdutyvendor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/datapagerdutyvendor/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutyvendor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/vendor pagerduty_vendor}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/vendor pagerduty_vendor}.
 type DataPagerdutyVendor interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataPagerdutyVendor) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/vendor pagerduty_vendor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/vendor pagerduty_vendor} Data Source.
 func NewDataPagerdutyVendor(scope constructs.Construct, id *string, config *DataPagerdutyVendorConfig) DataPagerdutyVendor {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataPagerdutyVendor(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/data-sources/vendor pagerduty_vendor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/vendor pagerduty_vendor} Data Source.
 func NewDataPagerdutyVendor_Override(d DataPagerdutyVendor, scope constructs.Construct, id *string, config *DataPagerdutyVendorConfig) {
 	_init_.Initialize()
 

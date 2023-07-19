@@ -205,6 +205,8 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetIdPa
 
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataPagerdutyLicensesLicenses:
 		val := val.(*DataPagerdutyLicensesLicenses)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -216,11 +218,9 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataPagerdutyLicensesLicenses, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataPagerdutyLicensesLicenses; received %#v (a %T)", val, val)
 		}
 	}
 

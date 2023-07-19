@@ -2,9 +2,9 @@ package schedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/schedule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/schedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

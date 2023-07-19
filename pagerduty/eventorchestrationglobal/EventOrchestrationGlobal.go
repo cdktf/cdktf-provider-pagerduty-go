@@ -2,14 +2,14 @@ package eventorchestrationglobal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/eventorchestrationglobal/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}.
 type EventOrchestrationGlobal interface {
 	cdktf.TerraformResource
 	CatchAll() EventOrchestrationGlobalCatchAllOutputReference
@@ -355,7 +355,7 @@ func (j *jsiiProxy_EventOrchestrationGlobal) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource.
 func NewEventOrchestrationGlobal(scope constructs.Construct, id *string, config *EventOrchestrationGlobalConfig) EventOrchestrationGlobal {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewEventOrchestrationGlobal(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource.
 func NewEventOrchestrationGlobal_Override(e EventOrchestrationGlobal, scope constructs.Construct, id *string, config *EventOrchestrationGlobalConfig) {
 	_init_.Initialize()
 

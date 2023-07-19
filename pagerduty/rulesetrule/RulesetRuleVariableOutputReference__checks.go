@@ -196,6 +196,8 @@ func (j *jsiiProxy_RulesetRuleVariableOutputReference) validateSetComplexObjectI
 
 func (j *jsiiProxy_RulesetRuleVariableOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *RulesetRuleVariable:
 		val := val.(*RulesetRuleVariable)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_RulesetRuleVariableOutputReference) validateSetInternalValueP
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRuleVariable, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RulesetRuleVariable; received %#v (a %T)", val, val)
 		}
 	}
 

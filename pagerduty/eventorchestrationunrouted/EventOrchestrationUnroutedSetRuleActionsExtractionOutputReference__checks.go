@@ -165,6 +165,8 @@ func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsExtractionOutputRefer
 
 func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EventOrchestrationUnroutedSetRuleActionsExtraction:
 		val := val.(*EventOrchestrationUnroutedSetRuleActionsExtraction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_EventOrchestrationUnroutedSetRuleActionsExtractionOutputRefer
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EventOrchestrationUnroutedSetRuleActionsExtraction, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EventOrchestrationUnroutedSetRuleActionsExtraction; received %#v (a %T)", val, val)
 		}
 	}
 

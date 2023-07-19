@@ -197,6 +197,8 @@ func (j *jsiiProxy_ServiceIntegrationEmailFilterOutputReference) validateSetFrom
 
 func (j *jsiiProxy_ServiceIntegrationEmailFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ServiceIntegrationEmailFilter:
 		val := val.(*ServiceIntegrationEmailFilter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -208,11 +210,9 @@ func (j *jsiiProxy_ServiceIntegrationEmailFilterOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ServiceIntegrationEmailFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ServiceIntegrationEmailFilter; received %#v (a %T)", val, val)
 		}
 	}
 
