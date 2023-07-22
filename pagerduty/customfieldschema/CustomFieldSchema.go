@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/custom_field_schema pagerduty_custom_field_schema}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/custom_field_schema pagerduty_custom_field_schema}.
 type CustomFieldSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_CustomFieldSchema) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/custom_field_schema pagerduty_custom_field_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/custom_field_schema pagerduty_custom_field_schema} Resource.
 func NewCustomFieldSchema(scope constructs.Construct, id *string, config *CustomFieldSchemaConfig) CustomFieldSchema {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewCustomFieldSchema(scope constructs.Construct, id *string, config *Custom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/custom_field_schema pagerduty_custom_field_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/custom_field_schema pagerduty_custom_field_schema} Resource.
 func NewCustomFieldSchema_Override(c CustomFieldSchema, scope constructs.Construct, id *string, config *CustomFieldSchemaConfig) {
 	_init_.Initialize()
 

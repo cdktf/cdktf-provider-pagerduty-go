@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted}.
 type EventOrchestrationUnrouted interface {
 	cdktf.TerraformResource
 	CatchAll() EventOrchestrationUnroutedCatchAllOutputReference
@@ -355,7 +355,7 @@ func (j *jsiiProxy_EventOrchestrationUnrouted) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
 func NewEventOrchestrationUnrouted(scope constructs.Construct, id *string, config *EventOrchestrationUnroutedConfig) EventOrchestrationUnrouted {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewEventOrchestrationUnrouted(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
 func NewEventOrchestrationUnrouted_Override(e EventOrchestrationUnrouted, scope constructs.Construct, id *string, config *EventOrchestrationUnroutedConfig) {
 	_init_.Initialize()
 
