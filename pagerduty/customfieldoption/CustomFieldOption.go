@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/custom_field_option pagerduty_custom_field_option}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/custom_field_option pagerduty_custom_field_option}.
 type CustomFieldOption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_CustomFieldOption) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/custom_field_option pagerduty_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/custom_field_option pagerduty_custom_field_option} Resource.
 func NewCustomFieldOption(scope constructs.Construct, id *string, config *CustomFieldOptionConfig) CustomFieldOption {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewCustomFieldOption(scope constructs.Construct, id *string, config *Custom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/custom_field_option pagerduty_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/custom_field_option pagerduty_custom_field_option} Resource.
 func NewCustomFieldOption_Override(c CustomFieldOption, scope constructs.Construct, id *string, config *CustomFieldOptionConfig) {
 	_init_.Initialize()
 
