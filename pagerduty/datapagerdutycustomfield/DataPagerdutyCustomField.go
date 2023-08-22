@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/custom_field pagerduty_custom_field}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/custom_field pagerduty_custom_field}.
 type DataPagerdutyCustomField interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataPagerdutyCustomField) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/custom_field pagerduty_custom_field} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/custom_field pagerduty_custom_field} Data Source.
 func NewDataPagerdutyCustomField(scope constructs.Construct, id *string, config *DataPagerdutyCustomFieldConfig) DataPagerdutyCustomField {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataPagerdutyCustomField(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/custom_field pagerduty_custom_field} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/custom_field pagerduty_custom_field} Data Source.
 func NewDataPagerdutyCustomField_Override(d DataPagerdutyCustomField, scope constructs.Construct, id *string, config *DataPagerdutyCustomFieldConfig) {
 	_init_.Initialize()
 
