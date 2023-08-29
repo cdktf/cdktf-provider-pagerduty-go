@@ -1,11 +1,14 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package tag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/tag/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/tag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

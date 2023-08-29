@@ -1,11 +1,14 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datapagerdutyautomationactionsaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutyautomationactionsaction/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyautomationactionsaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
