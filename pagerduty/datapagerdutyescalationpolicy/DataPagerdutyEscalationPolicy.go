@@ -5,14 +5,14 @@ package datapagerdutyescalationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyescalationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/datapagerdutyescalationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/escalation_policy pagerduty_escalation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/escalation_policy pagerduty_escalation_policy}.
 type DataPagerdutyEscalationPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataPagerdutyEscalationPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/escalation_policy pagerduty_escalation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/escalation_policy pagerduty_escalation_policy} Data Source.
 func NewDataPagerdutyEscalationPolicy(scope constructs.Construct, id *string, config *DataPagerdutyEscalationPolicyConfig) DataPagerdutyEscalationPolicy {
 	_init_.Initialize()
 
@@ -302,7 +302,7 @@ func NewDataPagerdutyEscalationPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/escalation_policy pagerduty_escalation_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/escalation_policy pagerduty_escalation_policy} Data Source.
 func NewDataPagerdutyEscalationPolicy_Override(d DataPagerdutyEscalationPolicy, scope constructs.Construct, id *string, config *DataPagerdutyEscalationPolicyConfig) {
 	_init_.Initialize()
 

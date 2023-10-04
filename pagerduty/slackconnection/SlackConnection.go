@@ -5,14 +5,14 @@ package slackconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/slackconnection/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/slackconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/slack_connection pagerduty_slack_connection}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/slack_connection pagerduty_slack_connection}.
 type SlackConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SlackConnection) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/slack_connection pagerduty_slack_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/slack_connection pagerduty_slack_connection} Resource.
 func NewSlackConnection(scope constructs.Construct, id *string, config *SlackConnectionConfig) SlackConnection {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewSlackConnection(scope constructs.Construct, id *string, config *SlackCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/slack_connection pagerduty_slack_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/slack_connection pagerduty_slack_connection} Resource.
 func NewSlackConnection_Override(s SlackConnection, scope constructs.Construct, id *string, config *SlackConnectionConfig) {
 	_init_.Initialize()
 

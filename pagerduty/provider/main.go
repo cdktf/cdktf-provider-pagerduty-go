@@ -32,6 +32,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceRegion", GoMethod: "ResetServiceRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipCredentialsValidation", GoMethod: "ResetSkipCredentialsValidation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseAppOauthScopedToken", GoMethod: "ResetUseAppOauthScopedToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserToken", GoMethod: "ResetUserToken"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRegion", GoGetter: "ServiceRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRegionInput", GoGetter: "ServiceRegionInput"},
@@ -46,6 +48,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "useAppOauthScopedToken", GoGetter: "UseAppOauthScopedToken"},
+			_jsii_.MemberProperty{JsiiProperty: "useAppOauthScopedTokenInput", GoGetter: "UseAppOauthScopedTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userToken", GoGetter: "UserToken"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenInput", GoGetter: "UserTokenInput"},
 		},
@@ -58,5 +62,9 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig",
 		reflect.TypeOf((*PagerdutyProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken",
+		reflect.TypeOf((*PagerdutyProviderUseAppOauthScopedToken)(nil)).Elem(),
 	)
 }

@@ -75,6 +75,14 @@ func (j *jsiiProxy_PagerdutyProvider) validateSetSkipCredentialsValidationParame
 	return nil
 }
 
+func (j *jsiiProxy_PagerdutyProvider) validateSetUseAppOauthScopedTokenParameters(val *PagerdutyProviderUseAppOauthScopedToken) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateNewPagerdutyProviderParameters(scope constructs.Construct, id *string, config *PagerdutyProviderConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -84,9 +92,6 @@ func validateNewPagerdutyProviderParameters(scope constructs.Construct, id *stri
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

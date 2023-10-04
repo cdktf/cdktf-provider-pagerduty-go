@@ -5,14 +5,14 @@ package incidentcustomfieldoption
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/incidentcustomfieldoption/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/incidentcustomfieldoption/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option}.
 type IncidentCustomFieldOption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_IncidentCustomFieldOption) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
 func NewIncidentCustomFieldOption(scope constructs.Construct, id *string, config *IncidentCustomFieldOptionConfig) IncidentCustomFieldOption {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewIncidentCustomFieldOption(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
 func NewIncidentCustomFieldOption_Override(i IncidentCustomFieldOption, scope constructs.Construct, id *string, config *IncidentCustomFieldOptionConfig) {
 	_init_.Initialize()
 

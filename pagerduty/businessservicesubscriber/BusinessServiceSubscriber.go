@@ -5,14 +5,14 @@ package businessservicesubscriber
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/businessservicesubscriber/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/businessservicesubscriber/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/business_service_subscriber pagerduty_business_service_subscriber}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/business_service_subscriber pagerduty_business_service_subscriber}.
 type BusinessServiceSubscriber interface {
 	cdktf.TerraformResource
 	BusinessServiceId() *string
@@ -358,7 +358,7 @@ func (j *jsiiProxy_BusinessServiceSubscriber) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/business_service_subscriber pagerduty_business_service_subscriber} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/business_service_subscriber pagerduty_business_service_subscriber} Resource.
 func NewBusinessServiceSubscriber(scope constructs.Construct, id *string, config *BusinessServiceSubscriberConfig) BusinessServiceSubscriber {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewBusinessServiceSubscriber(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/business_service_subscriber pagerduty_business_service_subscriber} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/business_service_subscriber pagerduty_business_service_subscriber} Resource.
 func NewBusinessServiceSubscriber_Override(b BusinessServiceSubscriber, scope constructs.Construct, id *string, config *BusinessServiceSubscriberConfig) {
 	_init_.Initialize()
 

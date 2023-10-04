@@ -5,14 +5,14 @@ package eventorchestration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/eventorchestration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/eventorchestration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/event_orchestration pagerduty_event_orchestration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/event_orchestration pagerduty_event_orchestration}.
 type EventOrchestration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -395,7 +395,7 @@ func (j *jsiiProxy_EventOrchestration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
 func NewEventOrchestration(scope constructs.Construct, id *string, config *EventOrchestrationConfig) EventOrchestration {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewEventOrchestration(scope constructs.Construct, id *string, config *Event
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
 func NewEventOrchestration_Override(e EventOrchestration, scope constructs.Construct, id *string, config *EventOrchestrationConfig) {
 	_init_.Initialize()
 

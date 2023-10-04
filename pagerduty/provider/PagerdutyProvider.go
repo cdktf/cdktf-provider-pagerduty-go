@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/provider/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs pagerduty}.
 type PagerdutyProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -50,6 +50,9 @@ type PagerdutyProvider interface {
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
+	UseAppOauthScopedToken() *PagerdutyProviderUseAppOauthScopedToken
+	SetUseAppOauthScopedToken(val *PagerdutyProviderUseAppOauthScopedToken)
+	UseAppOauthScopedTokenInput() *PagerdutyProviderUseAppOauthScopedToken
 	UserToken() *string
 	SetUserToken(val *string)
 	UserTokenInput() *string
@@ -65,6 +68,8 @@ type PagerdutyProvider interface {
 	ResetOverrideLogicalId()
 	ResetServiceRegion()
 	ResetSkipCredentialsValidation()
+	ResetToken()
+	ResetUseAppOauthScopedToken()
 	ResetUserToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -281,6 +286,26 @@ func (j *jsiiProxy_PagerdutyProvider) TokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PagerdutyProvider) UseAppOauthScopedToken() *PagerdutyProviderUseAppOauthScopedToken {
+	var returns *PagerdutyProviderUseAppOauthScopedToken
+	_jsii_.Get(
+		j,
+		"useAppOauthScopedToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagerdutyProvider) UseAppOauthScopedTokenInput() *PagerdutyProviderUseAppOauthScopedToken {
+	var returns *PagerdutyProviderUseAppOauthScopedToken
+	_jsii_.Get(
+		j,
+		"useAppOauthScopedTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagerdutyProvider) UserToken() *string {
 	var returns *string
 	_jsii_.Get(
@@ -302,7 +327,7 @@ func (j *jsiiProxy_PagerdutyProvider) UserTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs pagerduty} Resource.
 func NewPagerdutyProvider(scope constructs.Construct, id *string, config *PagerdutyProviderConfig) PagerdutyProvider {
 	_init_.Initialize()
 
@@ -320,7 +345,7 @@ func NewPagerdutyProvider(scope constructs.Construct, id *string, config *Pagerd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs pagerduty} Resource.
 func NewPagerdutyProvider_Override(p PagerdutyProvider, scope constructs.Construct, id *string, config *PagerdutyProviderConfig) {
 	_init_.Initialize()
 
@@ -370,6 +395,17 @@ func (j *jsiiProxy_PagerdutyProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagerdutyProvider)SetUseAppOauthScopedToken(val *PagerdutyProviderUseAppOauthScopedToken) {
+	if err := j.validateSetUseAppOauthScopedTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useAppOauthScopedToken",
 		val,
 	)
 }
@@ -524,6 +560,22 @@ func (p *jsiiProxy_PagerdutyProvider) ResetSkipCredentialsValidation() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSkipCredentialsValidation",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagerdutyProvider) ResetToken() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagerdutyProvider) ResetUseAppOauthScopedToken() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUseAppOauthScopedToken",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package datapagerdutyusercontactmethod
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyusercontactmethod/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/datapagerdutyusercontactmethod/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user_contact_method pagerduty_user_contact_method}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/user_contact_method pagerduty_user_contact_method}.
 type DataPagerdutyUserContactMethod interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataPagerdutyUserContactMethod) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user_contact_method pagerduty_user_contact_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/user_contact_method pagerduty_user_contact_method} Data Source.
 func NewDataPagerdutyUserContactMethod(scope constructs.Construct, id *string, config *DataPagerdutyUserContactMethodConfig) DataPagerdutyUserContactMethod {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataPagerdutyUserContactMethod(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user_contact_method pagerduty_user_contact_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/user_contact_method pagerduty_user_contact_method} Data Source.
 func NewDataPagerdutyUserContactMethod_Override(d DataPagerdutyUserContactMethod, scope constructs.Construct, id *string, config *DataPagerdutyUserContactMethodConfig) {
 	_init_.Initialize()
 

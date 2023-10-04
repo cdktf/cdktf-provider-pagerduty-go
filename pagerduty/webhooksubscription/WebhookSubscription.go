@@ -5,14 +5,14 @@ package webhooksubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/webhooksubscription/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/webhooksubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/webhook_subscription pagerduty_webhook_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/webhook_subscription pagerduty_webhook_subscription}.
 type WebhookSubscription interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -430,7 +430,7 @@ func (j *jsiiProxy_WebhookSubscription) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource.
 func NewWebhookSubscription(scope constructs.Construct, id *string, config *WebhookSubscriptionConfig) WebhookSubscription {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewWebhookSubscription(scope constructs.Construct, id *string, config *Webh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource.
 func NewWebhookSubscription_Override(w WebhookSubscription, scope constructs.Construct, id *string, config *WebhookSubscriptionConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package automationactionsactionteamassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/automationactionsactionteamassociation/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/automationactionsactionteamassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/automation_actions_action_team_association pagerduty_automation_actions_action_team_association}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/automation_actions_action_team_association pagerduty_automation_actions_action_team_association}.
 type AutomationActionsActionTeamAssociation interface {
 	cdktf.TerraformResource
 	ActionId() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_AutomationActionsActionTeamAssociation) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/automation_actions_action_team_association pagerduty_automation_actions_action_team_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/automation_actions_action_team_association pagerduty_automation_actions_action_team_association} Resource.
 func NewAutomationActionsActionTeamAssociation(scope constructs.Construct, id *string, config *AutomationActionsActionTeamAssociationConfig) AutomationActionsActionTeamAssociation {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewAutomationActionsActionTeamAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/automation_actions_action_team_association pagerduty_automation_actions_action_team_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/automation_actions_action_team_association pagerduty_automation_actions_action_team_association} Resource.
 func NewAutomationActionsActionTeamAssociation_Override(a AutomationActionsActionTeamAssociation, scope constructs.Construct, id *string, config *AutomationActionsActionTeamAssociationConfig) {
 	_init_.Initialize()
 

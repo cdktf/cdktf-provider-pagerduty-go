@@ -5,14 +5,14 @@ package datapagerdutyextensionschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyextensionschema/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/datapagerdutyextensionschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema pagerduty_extension_schema}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/extension_schema pagerduty_extension_schema}.
 type DataPagerdutyExtensionSchema interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataPagerdutyExtensionSchema) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
 func NewDataPagerdutyExtensionSchema(scope constructs.Construct, id *string, config *DataPagerdutyExtensionSchemaConfig) DataPagerdutyExtensionSchema {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataPagerdutyExtensionSchema(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
 func NewDataPagerdutyExtensionSchema_Override(d DataPagerdutyExtensionSchema, scope constructs.Construct, id *string, config *DataPagerdutyExtensionSchemaConfig) {
 	_init_.Initialize()
 

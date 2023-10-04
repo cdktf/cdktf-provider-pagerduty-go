@@ -5,14 +5,14 @@ package incidentworkflowtrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/incidentworkflowtrigger/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/incidentworkflowtrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}.
 type IncidentWorkflowTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_IncidentWorkflowTrigger) WorkflowInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
 func NewIncidentWorkflowTrigger(scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) IncidentWorkflowTrigger {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewIncidentWorkflowTrigger(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
 func NewIncidentWorkflowTrigger_Override(i IncidentWorkflowTrigger, scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) {
 	_init_.Initialize()
 

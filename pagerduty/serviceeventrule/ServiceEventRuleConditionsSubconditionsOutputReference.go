@@ -5,9 +5,9 @@ package serviceeventrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/serviceeventrule/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/serviceeventrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

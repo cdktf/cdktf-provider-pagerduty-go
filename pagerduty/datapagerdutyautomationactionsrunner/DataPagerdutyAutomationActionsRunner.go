@@ -5,14 +5,14 @@ package datapagerdutyautomationactionsrunner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyautomationactionsrunner/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/datapagerdutyautomationactionsrunner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/automation_actions_runner pagerduty_automation_actions_runner}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/automation_actions_runner pagerduty_automation_actions_runner}.
 type DataPagerdutyAutomationActionsRunner interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsRunner) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/automation_actions_runner pagerduty_automation_actions_runner} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/automation_actions_runner pagerduty_automation_actions_runner} Data Source.
 func NewDataPagerdutyAutomationActionsRunner(scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsRunnerConfig) DataPagerdutyAutomationActionsRunner {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataPagerdutyAutomationActionsRunner(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/automation_actions_runner pagerduty_automation_actions_runner} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/automation_actions_runner pagerduty_automation_actions_runner} Data Source.
 func NewDataPagerdutyAutomationActionsRunner_Override(d DataPagerdutyAutomationActionsRunner, scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsRunnerConfig) {
 	_init_.Initialize()
 

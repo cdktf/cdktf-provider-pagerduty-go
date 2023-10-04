@@ -31,6 +31,10 @@ func (j *jsiiProxy_PagerdutyProvider) validateSetSkipCredentialsValidationParame
 	return nil
 }
 
+func (j *jsiiProxy_PagerdutyProvider) validateSetUseAppOauthScopedTokenParameters(val *PagerdutyProviderUseAppOauthScopedToken) error {
+	return nil
+}
+
 func validateNewPagerdutyProviderParameters(scope constructs.Construct, id *string, config *PagerdutyProviderConfig) error {
 	return nil
 }

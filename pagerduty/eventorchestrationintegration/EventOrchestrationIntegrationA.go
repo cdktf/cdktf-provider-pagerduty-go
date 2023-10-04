@@ -5,14 +5,14 @@ package eventorchestrationintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/eventorchestrationintegration/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/eventorchestrationintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration}.
 type EventOrchestrationIntegrationA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_EventOrchestrationIntegrationA) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration} Resource.
 func NewEventOrchestrationIntegrationA(scope constructs.Construct, id *string, config *EventOrchestrationIntegrationAConfig) EventOrchestrationIntegrationA {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewEventOrchestrationIntegrationA(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration} Resource.
 func NewEventOrchestrationIntegrationA_Override(e EventOrchestrationIntegrationA, scope constructs.Construct, id *string, config *EventOrchestrationIntegrationAConfig) {
 	_init_.Initialize()
 
