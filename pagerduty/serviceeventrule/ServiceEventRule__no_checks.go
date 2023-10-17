@@ -7,6 +7,10 @@ package serviceeventrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceEventRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceEventRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServiceEventRule) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_ServiceEventRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceEventRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceEventRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_ServiceEventRule) validatePutTimeFrameParameters(value *Servi
 }
 
 func (s *jsiiProxy_ServiceEventRule) validatePutVariableParameters(value interface{}) error {
+	return nil
+}
+
+func validateServiceEventRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

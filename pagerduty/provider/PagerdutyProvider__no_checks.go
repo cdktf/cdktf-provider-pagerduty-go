@@ -15,6 +15,10 @@ func (p *jsiiProxy_PagerdutyProvider) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validatePagerdutyProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validatePagerdutyProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

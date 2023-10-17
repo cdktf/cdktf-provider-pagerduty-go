@@ -7,6 +7,10 @@ package eventrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EventRule) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (e *jsiiProxy_EventRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EventRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEventRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

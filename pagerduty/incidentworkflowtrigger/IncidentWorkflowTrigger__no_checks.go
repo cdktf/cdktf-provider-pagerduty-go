@@ -7,6 +7,10 @@ package incidentworkflowtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentWorkflowTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IncidentWorkflowTrigger) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentWorkflowTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentWorkflowTrigger) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIncidentWorkflowTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

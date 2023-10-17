@@ -7,6 +7,10 @@ package usernotificationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserNotificationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserNotificationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserNotificationRule) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (u *jsiiProxy_UserNotificationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserNotificationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserNotificationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserNotificationRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserNotificationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

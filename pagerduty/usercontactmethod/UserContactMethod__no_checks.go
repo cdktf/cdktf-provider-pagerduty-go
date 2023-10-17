@@ -7,6 +7,10 @@ package usercontactmethod
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserContactMethod) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserContactMethod) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserContactMethod) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (u *jsiiProxy_UserContactMethod) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserContactMethod) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserContactMethod) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserContactMethod) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserContactMethod_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

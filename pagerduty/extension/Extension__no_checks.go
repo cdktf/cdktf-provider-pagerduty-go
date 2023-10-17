@@ -7,6 +7,10 @@ package extension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Extension) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Extension) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_Extension) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (e *jsiiProxy_Extension) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Extension) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Extension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Extension) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateExtension_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

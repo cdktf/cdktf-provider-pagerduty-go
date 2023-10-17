@@ -7,6 +7,10 @@ package rulesetrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RulesetRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RulesetRule) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (r *jsiiProxy_RulesetRule) validatePutTimeFrameParameters(value *RulesetRul
 }
 
 func (r *jsiiProxy_RulesetRule) validatePutVariableParameters(value interface{}) error {
+	return nil
+}
+
+func validateRulesetRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

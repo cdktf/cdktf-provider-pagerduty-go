@@ -5,10 +5,10 @@ package eventorchestrationrouter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/eventorchestrationrouter/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -71,6 +71,9 @@ type EventOrchestrationRouter interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -92,7 +95,12 @@ type EventOrchestrationRouter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -477,6 +485,25 @@ func (j *jsiiProxy_EventOrchestrationRouter)SetProvisioners(val *[]interface{}) 
 	)
 }
 
+// Generates CDKTF code for importing a EventOrchestrationRouter resource upon running "cdktf plan <stack-name>".
+func EventOrchestrationRouter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateEventOrchestrationRouter_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouter",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -559,6 +586,17 @@ func EventOrchestrationRouter_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_EventOrchestrationRouter) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_EventOrchestrationRouter) AddOverride(path *string, value interface{}) {
@@ -716,6 +754,17 @@ func (e *jsiiProxy_EventOrchestrationRouter) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (e *jsiiProxy_EventOrchestrationRouter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_EventOrchestrationRouter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -730,6 +779,17 @@ func (e *jsiiProxy_EventOrchestrationRouter) InterpolationForAttribute(terraform
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EventOrchestrationRouter) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_EventOrchestrationRouter) OverrideLogicalId(newLogicalId *string) {

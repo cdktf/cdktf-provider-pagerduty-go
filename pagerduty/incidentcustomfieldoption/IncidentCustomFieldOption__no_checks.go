@@ -7,6 +7,10 @@ package incidentcustomfieldoption
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IncidentCustomFieldOption) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentCustomFieldOption) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IncidentCustomFieldOption) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (i *jsiiProxy_IncidentCustomFieldOption) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentCustomFieldOption) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IncidentCustomFieldOption) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentCustomFieldOption) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIncidentCustomFieldOption_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

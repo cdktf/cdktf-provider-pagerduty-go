@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataPagerdutyLicenses) validatePutLicensesParameters(value in
 	return nil
 }
 
+func validateDataPagerdutyLicenses_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataPagerdutyLicenses_IsConstructParameters(x interface{}) error {
 	return nil
 }

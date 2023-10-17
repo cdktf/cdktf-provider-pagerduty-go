@@ -7,6 +7,10 @@ package eventorchestrationrouter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventOrchestrationRouter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationRouter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventOrchestrationRouter) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationRouter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationRouter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventOrchestrationRouter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EventOrchestrationRouter) validatePutCatchAllParameters(value
 }
 
 func (e *jsiiProxy_EventOrchestrationRouter) validatePutSetParameters(value *EventOrchestrationRouterSet) error {
+	return nil
+}
+
+func validateEventOrchestrationRouter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

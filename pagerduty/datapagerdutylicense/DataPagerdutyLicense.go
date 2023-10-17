@@ -5,10 +5,10 @@ package datapagerdutylicense
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/datapagerdutylicense/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -695,6 +695,25 @@ func (j *jsiiProxy_DataPagerdutyLicense)SetValidRoles(val *[]*string) {
 		"validRoles",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataPagerdutyLicense resource upon running "cdktf plan <stack-name>".
+func DataPagerdutyLicense_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataPagerdutyLicense_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

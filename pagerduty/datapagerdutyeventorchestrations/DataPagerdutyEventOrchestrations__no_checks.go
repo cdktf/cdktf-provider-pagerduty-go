@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrations) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataPagerdutyEventOrchestrations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataPagerdutyEventOrchestrations_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package escalationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EscalationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EscalationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EscalationPolicy) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EscalationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EscalationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EscalationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EscalationPolicy) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (e *jsiiProxy_EscalationPolicy) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateEscalationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

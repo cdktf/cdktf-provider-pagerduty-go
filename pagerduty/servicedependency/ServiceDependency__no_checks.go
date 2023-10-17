@@ -7,6 +7,10 @@ package servicedependency
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceDependency) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDependency) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServiceDependency) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_ServiceDependency) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDependency) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceDependency) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServiceDependency) validateOverrideLogicalIdParameters(newLog
 }
 
 func (s *jsiiProxy_ServiceDependency) validatePutDependencyParameters(value *ServiceDependencyDependency) error {
+	return nil
+}
+
+func validateServiceDependency_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

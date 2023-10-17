@@ -7,6 +7,10 @@ package eventorchestrationunrouted
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventOrchestrationUnrouted) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationUnrouted) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventOrchestrationUnrouted) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationUnrouted) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationUnrouted) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventOrchestrationUnrouted) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EventOrchestrationUnrouted) validatePutCatchAllParameters(val
 }
 
 func (e *jsiiProxy_EventOrchestrationUnrouted) validatePutSetParameters(value interface{}) error {
+	return nil
+}
+
+func validateEventOrchestrationUnrouted_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

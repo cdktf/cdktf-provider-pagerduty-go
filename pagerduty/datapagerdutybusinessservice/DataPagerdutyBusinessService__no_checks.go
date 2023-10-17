@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataPagerdutyBusinessService) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataPagerdutyBusinessService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataPagerdutyBusinessService_IsConstructParameters(x interface{}) error {
 	return nil
 }

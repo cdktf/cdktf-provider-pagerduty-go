@@ -7,6 +7,10 @@ package automationactionsactionserviceassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateGetStringM
 	return nil
 }
 
+func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationActionsActionServiceAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAutomationActionsActionServiceAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package eventorchestrationglobal
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventOrchestrationGlobal) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationGlobal) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventOrchestrationGlobal) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationGlobal) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationGlobal) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventOrchestrationGlobal) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EventOrchestrationGlobal) validatePutCatchAllParameters(value
 }
 
 func (e *jsiiProxy_EventOrchestrationGlobal) validatePutSetParameters(value interface{}) error {
+	return nil
+}
+
+func validateEventOrchestrationGlobal_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

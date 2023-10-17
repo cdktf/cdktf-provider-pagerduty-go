@@ -7,6 +7,10 @@ package responseplay
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResponsePlay) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResponsePlay) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResponsePlay) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (r *jsiiProxy_ResponsePlay) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResponsePlay) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResponsePlay) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_ResponsePlay) validatePutResponderParameters(value interface{
 }
 
 func (r *jsiiProxy_ResponsePlay) validatePutSubscriberParameters(value interface{}) error {
+	return nil
+}
+
+func validateResponsePlay_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

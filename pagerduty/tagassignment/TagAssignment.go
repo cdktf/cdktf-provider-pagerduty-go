@@ -5,10 +5,10 @@ package tagassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v11/tagassignment/internal"
+	"github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/tagassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,6 +73,9 @@ type TagAssignment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -94,7 +97,12 @@ type TagAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -499,6 +507,25 @@ func (j *jsiiProxy_TagAssignment)SetTagId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a TagAssignment resource upon running "cdktf plan <stack-name>".
+func TagAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateTagAssignment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-pagerduty.tagAssignment.TagAssignment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -581,6 +608,17 @@ func TagAssignment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (t *jsiiProxy_TagAssignment) AddMoveTarget(moveTarget *string) {
+	if err := t.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (t *jsiiProxy_TagAssignment) AddOverride(path *string, value interface{}) {
@@ -738,6 +776,17 @@ func (t *jsiiProxy_TagAssignment) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (t *jsiiProxy_TagAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := t.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (t *jsiiProxy_TagAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -752,6 +801,17 @@ func (t *jsiiProxy_TagAssignment) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TagAssignment) MoveTo(moveTarget *string, index interface{}) {
+	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (t *jsiiProxy_TagAssignment) OverrideLogicalId(newLogicalId *string) {

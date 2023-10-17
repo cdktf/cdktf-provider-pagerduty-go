@@ -7,6 +7,10 @@ package extensionservicenow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ExtensionServicenow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExtensionServicenow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_ExtensionServicenow) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_ExtensionServicenow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExtensionServicenow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_ExtensionServicenow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExtensionServicenow) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateExtensionServicenow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

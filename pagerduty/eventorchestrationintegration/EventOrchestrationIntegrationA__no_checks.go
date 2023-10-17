@@ -7,6 +7,10 @@ package eventorchestrationintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventOrchestrationIntegrationA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationIntegrationA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EventOrchestrationIntegrationA) validateGetStringMapAttribute
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationIntegrationA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationIntegrationA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationIntegrationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationIntegrationA) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEventOrchestrationIntegrationA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

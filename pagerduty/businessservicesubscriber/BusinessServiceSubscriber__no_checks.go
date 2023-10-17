@@ -7,6 +7,10 @@ package businessservicesubscriber
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BusinessServiceSubscriber) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BusinessServiceSubscriber) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_BusinessServiceSubscriber) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (b *jsiiProxy_BusinessServiceSubscriber) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BusinessServiceSubscriber) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BusinessServiceSubscriber) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BusinessServiceSubscriber) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBusinessServiceSubscriber_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

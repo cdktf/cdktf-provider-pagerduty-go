@@ -7,6 +7,10 @@ package slackconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SlackConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SlackConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SlackConnection) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SlackConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SlackConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SlackConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SlackConnection) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_SlackConnection) validatePutConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateSlackConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

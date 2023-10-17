@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestration) validatePutIntegrationParame
 	return nil
 }
 
+func validateDataPagerdutyEventOrchestration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataPagerdutyEventOrchestration_IsConstructParameters(x interface{}) error {
 	return nil
 }

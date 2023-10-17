@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) validateOverrideLogical
 	return nil
 }
 
+func validateDataPagerdutyAutomationActionsAction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataPagerdutyAutomationActionsAction_IsConstructParameters(x interface{}) error {
 	return nil
 }

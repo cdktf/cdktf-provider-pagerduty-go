@@ -7,6 +7,10 @@ package webhooksubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebhookSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebhookSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebhookSubscription) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (w *jsiiProxy_WebhookSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebhookSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebhookSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (w *jsiiProxy_WebhookSubscription) validatePutDeliveryMethodParameters(valu
 }
 
 func (w *jsiiProxy_WebhookSubscription) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
+func validateWebhookSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
