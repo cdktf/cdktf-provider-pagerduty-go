@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/data-sources/team pagerduty_team}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/team pagerduty_team}.
 type DataPagerdutyTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,9 @@ type DataPagerdutyTeam interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultRole() *string
+	SetDefaultRole(val *string)
+	DefaultRoleInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -88,6 +91,7 @@ type DataPagerdutyTeam interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefaultRole()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_DataPagerdutyTeam) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyTeam) DefaultRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyTeam) DefaultRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRoleInput",
 		&returns,
 	)
 	return returns
@@ -319,7 +343,7 @@ func (j *jsiiProxy_DataPagerdutyTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/data-sources/team pagerduty_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/team pagerduty_team} Data Source.
 func NewDataPagerdutyTeam(scope constructs.Construct, id *string, config *DataPagerdutyTeamConfig) DataPagerdutyTeam {
 	_init_.Initialize()
 
@@ -337,7 +361,7 @@ func NewDataPagerdutyTeam(scope constructs.Construct, id *string, config *DataPa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/data-sources/team pagerduty_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/team pagerduty_team} Data Source.
 func NewDataPagerdutyTeam_Override(d DataPagerdutyTeam, scope constructs.Construct, id *string, config *DataPagerdutyTeamConfig) {
 	_init_.Initialize()
 
@@ -355,6 +379,17 @@ func (j *jsiiProxy_DataPagerdutyTeam)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataPagerdutyTeam)SetDefaultRole(val *string) {
+	if err := j.validateSetDefaultRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultRole",
 		val,
 	)
 }
@@ -709,6 +744,14 @@ func (d *jsiiProxy_DataPagerdutyTeam) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataPagerdutyTeam) ResetDefaultRole() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultRole",
+		nil, // no parameters
 	)
 }
 

@@ -91,6 +91,10 @@ func (j *jsiiProxy_Team) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Team) validateSetDefaultRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Team) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

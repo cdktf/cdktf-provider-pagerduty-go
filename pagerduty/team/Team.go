@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team pagerduty_team}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team pagerduty_team}.
 type Team interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type Team interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultRole() *string
+	SetDefaultRole(val *string)
+	DefaultRoleInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -107,6 +110,7 @@ type Team interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefaultRole()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -163,6 +167,26 @@ func (j *jsiiProxy_Team) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Team) DefaultRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Team) DefaultRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRoleInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +403,7 @@ func (j *jsiiProxy_Team) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team pagerduty_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team pagerduty_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team pagerduty_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team pagerduty_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 
@@ -426,6 +450,17 @@ func (j *jsiiProxy_Team)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Team)SetDefaultRole(val *string) {
+	if err := j.validateSetDefaultRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultRole",
 		val,
 	)
 }
@@ -835,6 +870,14 @@ func (t *jsiiProxy_Team) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (t *jsiiProxy_Team) ResetDefaultRole() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDefaultRole",
+		nil, // no parameters
 	)
 }
 

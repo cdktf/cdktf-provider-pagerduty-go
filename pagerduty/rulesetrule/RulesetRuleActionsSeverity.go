@@ -5,7 +5,7 @@ package rulesetrule
 
 
 type RulesetRuleActionsSeverity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/ruleset_rule#value RulesetRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/ruleset_rule#value RulesetRule#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

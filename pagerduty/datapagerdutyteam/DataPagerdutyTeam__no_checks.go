@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataPagerdutyTeam) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyTeam) validateSetDefaultRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyTeam) validateSetIdParameters(val *string) error {
 	return nil
 }

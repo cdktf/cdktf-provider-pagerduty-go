@@ -5,7 +5,7 @@ package eventorchestrationservice
 
 
 type EventOrchestrationServiceSetRuleCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/event_orchestration_service#expression EventOrchestrationService#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/event_orchestration_service#expression EventOrchestrationService#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 
