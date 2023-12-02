@@ -34,6 +34,8 @@ type IncidentWorkflowStepOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	InlineStepsInput() IncidentWorkflowStepInlineStepsInputList
+	InlineStepsInputInput() interface{}
 	Input() IncidentWorkflowStepInputList
 	InputInput() interface{}
 	InternalValue() interface{}
@@ -73,7 +75,9 @@ type IncidentWorkflowStepOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutInlineStepsInput(value interface{})
 	PutInput(value interface{})
+	ResetInlineStepsInput()
 	ResetInput()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -155,6 +159,26 @@ func (j *jsiiProxy_IncidentWorkflowStepOutputReference) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentWorkflowStepOutputReference) InlineStepsInput() IncidentWorkflowStepInlineStepsInputList {
+	var returns IncidentWorkflowStepInlineStepsInputList
+	_jsii_.Get(
+		j,
+		"inlineStepsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentWorkflowStepOutputReference) InlineStepsInputInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inlineStepsInputInput",
 		&returns,
 	)
 	return returns
@@ -521,6 +545,17 @@ func (i *jsiiProxy_IncidentWorkflowStepOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IncidentWorkflowStepOutputReference) PutInlineStepsInput(value interface{}) {
+	if err := i.validatePutInlineStepsInputParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putInlineStepsInput",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IncidentWorkflowStepOutputReference) PutInput(value interface{}) {
 	if err := i.validatePutInputParameters(value); err != nil {
 		panic(err)
@@ -529,6 +564,14 @@ func (i *jsiiProxy_IncidentWorkflowStepOutputReference) PutInput(value interface
 		i,
 		"putInput",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IncidentWorkflowStepOutputReference) ResetInlineStepsInput() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetInlineStepsInput",
+		nil, // no parameters
 	)
 }
 

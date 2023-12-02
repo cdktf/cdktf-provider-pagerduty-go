@@ -83,6 +83,10 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) validateSetTimeWindowParameters(val *float64) error {
+	return nil
+}
+
 func validateNewServiceAlertGroupingParametersConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

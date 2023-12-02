@@ -49,6 +49,9 @@ type ServiceAlertGroupingParametersConfigOutputReference interface {
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
+	TimeWindow() *float64
+	SetTimeWindow(val *float64)
+	TimeWindowInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type ServiceAlertGroupingParametersConfigOutputReference interface {
 	ResetAggregate()
 	ResetFields()
 	ResetTimeout()
+	ResetTimeWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) TimeoutI
 	return returns
 }
 
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) TimeWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) TimeWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewServiceAlertGroupingParametersConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceAlertGroupingParametersConfigOutputReference {
 	_init_.Initialize()
@@ -333,6 +357,17 @@ func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetTimeou
 	_jsii_.Set(
 		j,
 		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference)SetTimeWindow(val *float64) {
+	if err := j.validateSetTimeWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeWindow",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) ResetTim
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceAlertGroupingParametersConfigOutputReference) ResetTimeWindow() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeWindow",
 		nil, // no parameters
 	)
 }

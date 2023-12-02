@@ -47,6 +47,10 @@ func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validatePutInlineStepsInputParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validatePutInputParameters(value interface{}) error {
 	return nil
 }
