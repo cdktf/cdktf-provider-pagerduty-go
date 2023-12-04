@@ -59,7 +59,15 @@ func (i *jsiiProxy_IncidentWorkflowTrigger) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentWorkflowTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IncidentWorkflowTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

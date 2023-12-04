@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option}.
 type IncidentCustomFieldOption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type IncidentCustomFieldOption interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -366,7 +376,7 @@ func (j *jsiiProxy_IncidentCustomFieldOption) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
 func NewIncidentCustomFieldOption(scope constructs.Construct, id *string, config *IncidentCustomFieldOptionConfig) IncidentCustomFieldOption {
 	_init_.Initialize()
 
@@ -384,7 +394,7 @@ func NewIncidentCustomFieldOption(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/incident_custom_field_option pagerduty_incident_custom_field_option} Resource.
 func NewIncidentCustomFieldOption_Override(i IncidentCustomFieldOption, scope constructs.Construct, id *string, config *IncidentCustomFieldOptionConfig) {
 	_init_.Initialize()
 
@@ -776,6 +786,19 @@ func (i *jsiiProxy_IncidentCustomFieldOption) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (i *jsiiProxy_IncidentCustomFieldOption) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IncidentCustomFieldOption) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -803,6 +826,17 @@ func (i *jsiiProxy_IncidentCustomFieldOption) InterpolationForAttribute(terrafor
 	return returns
 }
 
+func (i *jsiiProxy_IncidentCustomFieldOption) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IncidentCustomFieldOption) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -811,6 +845,17 @@ func (i *jsiiProxy_IncidentCustomFieldOption) MoveTo(moveTarget *string, index i
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IncidentCustomFieldOption) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

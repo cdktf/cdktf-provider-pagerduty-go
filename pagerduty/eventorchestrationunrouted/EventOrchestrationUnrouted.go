@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted}.
 type EventOrchestrationUnrouted interface {
 	cdktf.TerraformResource
 	CatchAll() EventOrchestrationUnroutedCatchAllOutputReference
@@ -95,12 +95,22 @@ type EventOrchestrationUnrouted interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -366,7 +376,7 @@ func (j *jsiiProxy_EventOrchestrationUnrouted) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
 func NewEventOrchestrationUnrouted(scope constructs.Construct, id *string, config *EventOrchestrationUnroutedConfig) EventOrchestrationUnrouted {
 	_init_.Initialize()
 
@@ -384,7 +394,7 @@ func NewEventOrchestrationUnrouted(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/event_orchestration_unrouted pagerduty_event_orchestration_unrouted} Resource.
 func NewEventOrchestrationUnrouted_Override(e EventOrchestrationUnrouted, scope constructs.Construct, id *string, config *EventOrchestrationUnroutedConfig) {
 	_init_.Initialize()
 
@@ -754,6 +764,19 @@ func (e *jsiiProxy_EventOrchestrationUnrouted) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (e *jsiiProxy_EventOrchestrationUnrouted) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EventOrchestrationUnrouted) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -781,6 +804,17 @@ func (e *jsiiProxy_EventOrchestrationUnrouted) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (e *jsiiProxy_EventOrchestrationUnrouted) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EventOrchestrationUnrouted) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -789,6 +823,17 @@ func (e *jsiiProxy_EventOrchestrationUnrouted) MoveTo(moveTarget *string, index 
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationUnrouted) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

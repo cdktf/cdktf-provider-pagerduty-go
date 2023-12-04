@@ -59,7 +59,15 @@ func (e *jsiiProxy_EventOrchestrationGlobal) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationGlobal) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationGlobal) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventOrchestrationGlobal) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

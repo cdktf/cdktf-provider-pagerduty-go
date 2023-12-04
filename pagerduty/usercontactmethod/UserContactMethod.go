@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/user_contact_method pagerduty_user_contact_method}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method pagerduty_user_contact_method}.
 type UserContactMethod interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -108,12 +108,22 @@ type UserContactMethod interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -459,7 +469,7 @@ func (j *jsiiProxy_UserContactMethod) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
 func NewUserContactMethod(scope constructs.Construct, id *string, config *UserContactMethodConfig) UserContactMethod {
 	_init_.Initialize()
 
@@ -477,7 +487,7 @@ func NewUserContactMethod(scope constructs.Construct, id *string, config *UserCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
 func NewUserContactMethod_Override(u UserContactMethod, scope constructs.Construct, id *string, config *UserContactMethodConfig) {
 	_init_.Initialize()
 
@@ -902,6 +912,19 @@ func (u *jsiiProxy_UserContactMethod) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (u *jsiiProxy_UserContactMethod) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (u *jsiiProxy_UserContactMethod) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -929,6 +952,17 @@ func (u *jsiiProxy_UserContactMethod) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (u *jsiiProxy_UserContactMethod) MoveFromId(id *string) {
+	if err := u.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (u *jsiiProxy_UserContactMethod) MoveTo(moveTarget *string, index interface{}) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -937,6 +971,17 @@ func (u *jsiiProxy_UserContactMethod) MoveTo(moveTarget *string, index interface
 		u,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (u *jsiiProxy_UserContactMethod) MoveToId(id *string) {
+	if err := u.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/escalation_policy pagerduty_escalation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/escalation_policy pagerduty_escalation_policy}.
 type EscalationPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type EscalationPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -415,7 +425,7 @@ func (j *jsiiProxy_EscalationPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/escalation_policy pagerduty_escalation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/escalation_policy pagerduty_escalation_policy} Resource.
 func NewEscalationPolicy(scope constructs.Construct, id *string, config *EscalationPolicyConfig) EscalationPolicy {
 	_init_.Initialize()
 
@@ -433,7 +443,7 @@ func NewEscalationPolicy(scope constructs.Construct, id *string, config *Escalat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.1/docs/resources/escalation_policy pagerduty_escalation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/escalation_policy pagerduty_escalation_policy} Resource.
 func NewEscalationPolicy_Override(e EscalationPolicy, scope constructs.Construct, id *string, config *EscalationPolicyConfig) {
 	_init_.Initialize()
 
@@ -836,6 +846,19 @@ func (e *jsiiProxy_EscalationPolicy) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (e *jsiiProxy_EscalationPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EscalationPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -863,6 +886,17 @@ func (e *jsiiProxy_EscalationPolicy) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (e *jsiiProxy_EscalationPolicy) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EscalationPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -871,6 +905,17 @@ func (e *jsiiProxy_EscalationPolicy) MoveTo(moveTarget *string, index interface{
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EscalationPolicy) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

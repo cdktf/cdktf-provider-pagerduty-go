@@ -59,7 +59,15 @@ func (s *jsiiProxy_SlackConnection) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SlackConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SlackConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SlackConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

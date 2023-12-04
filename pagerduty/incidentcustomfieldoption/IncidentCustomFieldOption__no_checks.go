@@ -59,7 +59,15 @@ func (i *jsiiProxy_IncidentCustomFieldOption) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IncidentCustomFieldOption) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentCustomFieldOption) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IncidentCustomFieldOption) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
