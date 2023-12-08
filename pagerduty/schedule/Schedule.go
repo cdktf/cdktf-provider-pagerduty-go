@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/schedule pagerduty_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/schedule pagerduty_schedule}.
 type Schedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_Schedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/schedule pagerduty_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/schedule pagerduty_schedule} Resource.
 func NewSchedule(scope constructs.Construct, id *string, config *ScheduleConfig) Schedule {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewSchedule(scope constructs.Construct, id *string, config *ScheduleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/schedule pagerduty_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/schedule pagerduty_schedule} Resource.
 func NewSchedule_Override(s Schedule, scope constructs.Construct, id *string, config *ScheduleConfig) {
 	_init_.Initialize()
 

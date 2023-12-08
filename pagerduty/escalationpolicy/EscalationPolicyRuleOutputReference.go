@@ -31,6 +31,8 @@ type EscalationPolicyRuleOutputReference interface {
 	EscalationDelayInMinutes() *float64
 	SetEscalationDelayInMinutes(val *float64)
 	EscalationDelayInMinutesInput() *float64
+	EscalationRuleAssignmentStrategy() EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference
+	EscalationRuleAssignmentStrategyInput() *EscalationPolicyRuleEscalationRuleAssignmentStrategy
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -70,7 +72,9 @@ type EscalationPolicyRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEscalationRuleAssignmentStrategy(value *EscalationPolicyRuleEscalationRuleAssignmentStrategy)
 	PutTarget(value interface{})
+	ResetEscalationRuleAssignmentStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,6 +135,26 @@ func (j *jsiiProxy_EscalationPolicyRuleOutputReference) EscalationDelayInMinutes
 	_jsii_.Get(
 		j,
 		"escalationDelayInMinutesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EscalationPolicyRuleOutputReference) EscalationRuleAssignmentStrategy() EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference {
+	var returns EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"escalationRuleAssignmentStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EscalationPolicyRuleOutputReference) EscalationRuleAssignmentStrategyInput() *EscalationPolicyRuleEscalationRuleAssignmentStrategy {
+	var returns *EscalationPolicyRuleEscalationRuleAssignmentStrategy
+	_jsii_.Get(
+		j,
+		"escalationRuleAssignmentStrategyInput",
 		&returns,
 	)
 	return returns
@@ -486,6 +510,17 @@ func (e *jsiiProxy_EscalationPolicyRuleOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (e *jsiiProxy_EscalationPolicyRuleOutputReference) PutEscalationRuleAssignmentStrategy(value *EscalationPolicyRuleEscalationRuleAssignmentStrategy) {
+	if err := e.validatePutEscalationRuleAssignmentStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putEscalationRuleAssignmentStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EscalationPolicyRuleOutputReference) PutTarget(value interface{}) {
 	if err := e.validatePutTargetParameters(value); err != nil {
 		panic(err)
@@ -494,6 +529,14 @@ func (e *jsiiProxy_EscalationPolicyRuleOutputReference) PutTarget(value interfac
 		e,
 		"putTarget",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EscalationPolicyRuleOutputReference) ResetEscalationRuleAssignmentStrategy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEscalationRuleAssignmentStrategy",
+		nil, // no parameters
 	)
 }
 

@@ -47,6 +47,10 @@ func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validatePutEscalationRuleAssignmentStrategyParameters(value *EscalationPolicyRuleEscalationRuleAssignmentStrategy) error {
+	return nil
+}
+
 func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validatePutTargetParameters(value interface{}) error {
 	return nil
 }
