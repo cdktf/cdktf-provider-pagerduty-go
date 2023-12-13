@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/service_event_rule pagerduty_service_event_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/service_event_rule pagerduty_service_event_rule}.
 type ServiceEventRule interface {
 	cdktf.TerraformResource
 	Actions() ServiceEventRuleActionsOutputReference
@@ -474,7 +474,7 @@ func (j *jsiiProxy_ServiceEventRule) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
 func NewServiceEventRule(scope constructs.Construct, id *string, config *ServiceEventRuleConfig) ServiceEventRule {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewServiceEventRule(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/service_event_rule pagerduty_service_event_rule} Resource.
 func NewServiceEventRule_Override(s ServiceEventRule, scope constructs.Construct, id *string, config *ServiceEventRuleConfig) {
 	_init_.Initialize()
 
