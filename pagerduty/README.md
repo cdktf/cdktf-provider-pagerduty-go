@@ -1,40 +1,8 @@
-# CDKTF prebuilt bindings for PagerDuty/pagerduty provider version 3.3.1
+# CDKTF Go bindings for PagerDuty/pagerduty provider version 3.4.0
 
-This repo builds and publishes the [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.3.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.4.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
-## Available Packages
-
-### NPM
-
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-pagerduty](https://www.npmjs.com/package/@cdktf/provider-pagerduty).
-
-`npm install @cdktf/provider-pagerduty`
-
-### PyPI
-
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-pagerduty](https://pypi.org/project/cdktf-cdktf-provider-pagerduty).
-
-`pipenv install cdktf-cdktf-provider-pagerduty`
-
-### Nuget
-
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Pagerduty](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Pagerduty).
-
-`dotnet add package HashiCorp.Cdktf.Providers.Pagerduty`
-
-### Maven
-
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-pagerduty](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-pagerduty).
-
-```
-<dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-pagerduty</artifactId>
-    <version>[REPLACE WITH DESIRED VERSION]</version>
-</dependency>
-```
-
-### Go
+## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-pagerduty-go`](https://github.com/cdktf/cdktf-provider-pagerduty-go) package.
 
@@ -42,15 +10,8 @@ The go package is generated into the [`github.com/cdktf/cdktf-provider-pagerduty
 
 ## Docs
 
-Find auto-generated docs for this provider here:
+Find auto-generated docs for this provider [here](https://github.com/cdktf/cdktf-provider-pagerduty/blob/main/docs/API.go.md).
 
-* [Typescript](./docs/API.typescript.md)
-* [Python](./docs/API.python.md)
-* [Java](./docs/API.java.md)
-* [C#](./docs/API.csharp.md)
-* [Go](./docs/API.go.md)
-
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-pagerduty).
 
 ## Versioning
 
@@ -59,7 +20,7 @@ This project is explicitly not tracking the Terraform pagerduty provider version
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.3.1)
+* [Terraform pagerduty provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.4.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
@@ -81,9 +42,6 @@ This is mostly based on [Projen](https://github.com/projen/projen), which takes 
 
 There's a custom [project builder](https://github.com/cdktf/cdktf-provider-project) which encapsulate the common settings for all `cdktf` prebuilt providers.
 
-### Provider Version
-
-The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
 
 ### Repository Management
 

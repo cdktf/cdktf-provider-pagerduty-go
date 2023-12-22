@@ -5,15 +5,15 @@ package escalationpolicy
 
 
 type EscalationPolicyRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}.
 	EscalationDelayInMinutes *float64 `field:"required" json:"escalationDelayInMinutes" yaml:"escalationDelayInMinutes"`
 	// target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/escalation_policy#target EscalationPolicy#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/escalation_policy#target EscalationPolicy#target}
 	Target interface{} `field:"required" json:"target" yaml:"target"`
 	// escalation_rule_assignment_strategy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/escalation_policy#escalation_rule_assignment_strategy EscalationPolicy#escalation_rule_assignment_strategy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/escalation_policy#escalation_rule_assignment_strategy EscalationPolicy#escalation_rule_assignment_strategy}
 	EscalationRuleAssignmentStrategy *EscalationPolicyRuleEscalationRuleAssignmentStrategy `field:"optional" json:"escalationRuleAssignmentStrategy" yaml:"escalationRuleAssignmentStrategy"`
 }
 
