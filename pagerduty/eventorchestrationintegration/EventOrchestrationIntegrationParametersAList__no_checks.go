@@ -7,6 +7,10 @@ package eventorchestrationintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventOrchestrationIntegrationParametersAList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationIntegrationParametersAList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package eventorchestrationservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsVariableList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsVariableList) validateGetParameters(index *float64) error {
 	return nil
 }

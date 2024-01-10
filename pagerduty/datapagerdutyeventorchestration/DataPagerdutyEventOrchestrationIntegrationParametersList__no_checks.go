@@ -7,6 +7,10 @@ package datapagerdutyeventorchestration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataPagerdutyEventOrchestrationIntegrationParametersList) validateGetParameters(index *float64) error {
 	return nil
 }

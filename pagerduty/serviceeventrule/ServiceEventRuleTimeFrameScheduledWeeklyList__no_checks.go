@@ -7,6 +7,10 @@ package serviceeventrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyList) validateGetParameters(index *float64) error {
 	return nil
 }

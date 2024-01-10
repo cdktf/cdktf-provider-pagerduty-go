@@ -7,6 +7,10 @@ package slackconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SlackConnectionConfigAList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SlackConnectionConfigAList) validateGetParameters(index *float64) error {
 	return nil
 }

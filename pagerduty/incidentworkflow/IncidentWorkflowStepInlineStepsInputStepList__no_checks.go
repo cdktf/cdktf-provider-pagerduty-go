@@ -7,6 +7,10 @@ package incidentworkflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepList) validateGetParameters(index *float64) error {
 	return nil
 }

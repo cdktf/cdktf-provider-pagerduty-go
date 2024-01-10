@@ -7,6 +7,10 @@ package serviceintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList) validateGetParameters(index *float64) error {
 	return nil
 }

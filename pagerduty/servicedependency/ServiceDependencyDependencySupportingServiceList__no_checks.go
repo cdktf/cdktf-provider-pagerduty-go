@@ -7,6 +7,10 @@ package servicedependency
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceDependencyDependencySupportingServiceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDependencyDependencySupportingServiceList) validateGetParameters(index *float64) error {
 	return nil
 }

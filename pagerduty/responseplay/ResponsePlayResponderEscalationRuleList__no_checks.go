@@ -7,6 +7,10 @@ package responseplay
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResponsePlayResponderEscalationRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResponsePlayResponderEscalationRuleList) validateGetParameters(index *float64) error {
 	return nil
 }
