@@ -22,21 +22,21 @@ type SlackConnectionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#channel_id SlackConnection#channel_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#channel_id SlackConnection#channel_id}.
 	ChannelId *string `field:"required" json:"channelId" yaml:"channelId"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#config SlackConnection#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#config SlackConnection#config}
 	Config interface{} `field:"required" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#notification_type SlackConnection#notification_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#notification_type SlackConnection#notification_type}.
 	NotificationType *string `field:"required" json:"notificationType" yaml:"notificationType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#source_id SlackConnection#source_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#source_id SlackConnection#source_id}.
 	SourceId *string `field:"required" json:"sourceId" yaml:"sourceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#source_type SlackConnection#source_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#source_type SlackConnection#source_type}.
 	SourceType *string `field:"required" json:"sourceType" yaml:"sourceType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#workspace_id SlackConnection#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#workspace_id SlackConnection#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/resources/slack_connection#id SlackConnection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/slack_connection#id SlackConnection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
