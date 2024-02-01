@@ -5,11 +5,11 @@ package provider
 
 
 type PagerdutyProviderUseAppOauthScopedToken struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_client_id PagerdutyProvider#pd_client_id}.
-	PdClientId *string `field:"required" json:"pdClientId" yaml:"pdClientId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}.
-	PdClientSecret *string `field:"required" json:"pdClientSecret" yaml:"pdClientSecret"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}.
-	PdSubdomain *string `field:"required" json:"pdSubdomain" yaml:"pdSubdomain"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_client_id PagerdutyProvider#pd_client_id}.
+	PdClientId *string `field:"optional" json:"pdClientId" yaml:"pdClientId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}.
+	PdClientSecret *string `field:"optional" json:"pdClientSecret" yaml:"pdClientSecret"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}.
+	PdSubdomain *string `field:"optional" json:"pdSubdomain" yaml:"pdSubdomain"`
 }
 
