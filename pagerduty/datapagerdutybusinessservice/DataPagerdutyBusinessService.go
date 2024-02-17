@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.1/docs/data-sources/business_service pagerduty_business_service}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/data-sources/business_service pagerduty_business_service}.
 type DataPagerdutyBusinessService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataPagerdutyBusinessService) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.1/docs/data-sources/business_service pagerduty_business_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/data-sources/business_service pagerduty_business_service} Data Source.
 func NewDataPagerdutyBusinessService(scope constructs.Construct, id *string, config *DataPagerdutyBusinessServiceConfig) DataPagerdutyBusinessService {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataPagerdutyBusinessService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.1/docs/data-sources/business_service pagerduty_business_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/data-sources/business_service pagerduty_business_service} Data Source.
 func NewDataPagerdutyBusinessService_Override(d DataPagerdutyBusinessService, scope constructs.Construct, id *string, config *DataPagerdutyBusinessServiceConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.1/docs/resources/service_integration pagerduty_service_integration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/resources/service_integration pagerduty_service_integration}.
 type ServiceIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -584,7 +584,7 @@ func (j *jsiiProxy_ServiceIntegration) VendorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.1/docs/resources/service_integration pagerduty_service_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/resources/service_integration pagerduty_service_integration} Resource.
 func NewServiceIntegration(scope constructs.Construct, id *string, config *ServiceIntegrationConfig) ServiceIntegration {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewServiceIntegration(scope constructs.Construct, id *string, config *Servi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.1/docs/resources/service_integration pagerduty_service_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/resources/service_integration pagerduty_service_integration} Resource.
 func NewServiceIntegration_Override(s ServiceIntegration, scope constructs.Construct, id *string, config *ServiceIntegrationConfig) {
 	_init_.Initialize()
 
