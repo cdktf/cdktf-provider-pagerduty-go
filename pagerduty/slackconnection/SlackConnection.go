@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/resources/slack_connection pagerduty_slack_connection}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/slack_connection pagerduty_slack_connection}.
 type SlackConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -470,7 +470,7 @@ func (j *jsiiProxy_SlackConnection) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/resources/slack_connection pagerduty_slack_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/slack_connection pagerduty_slack_connection} Resource.
 func NewSlackConnection(scope constructs.Construct, id *string, config *SlackConnectionConfig) SlackConnection {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewSlackConnection(scope constructs.Construct, id *string, config *SlackCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.0/docs/resources/slack_connection pagerduty_slack_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/slack_connection pagerduty_slack_connection} Resource.
 func NewSlackConnection_Override(s SlackConnection, scope constructs.Construct, id *string, config *SlackConnectionConfig) {
 	_init_.Initialize()
 
