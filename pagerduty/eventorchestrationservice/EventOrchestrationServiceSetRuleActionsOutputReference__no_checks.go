@@ -55,6 +55,10 @@ func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsOutputReference) valid
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsOutputReference) validatePutIncidentCustomFieldUpdateParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsOutputReference) validatePutPagerdutyAutomationActionParameters(value *EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction) error {
 	return nil
 }

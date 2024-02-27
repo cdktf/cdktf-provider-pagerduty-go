@@ -5,13 +5,13 @@ package serviceeventrule
 
 
 type ServiceEventRuleActionsSuppress struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}.
 	ThresholdTimeAmount *float64 `field:"optional" json:"thresholdTimeAmount" yaml:"thresholdTimeAmount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}.
 	ThresholdTimeUnit *string `field:"optional" json:"thresholdTimeUnit" yaml:"thresholdTimeUnit"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/service_event_rule#threshold_value ServiceEventRule#threshold_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/service_event_rule#threshold_value ServiceEventRule#threshold_value}.
 	ThresholdValue *float64 `field:"optional" json:"thresholdValue" yaml:"thresholdValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/service_event_rule#value ServiceEventRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/service_event_rule#value ServiceEventRule#value}.
 	Value interface{} `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -43,6 +43,8 @@ type EventOrchestrationGlobalCatchAllActionsOutputReference interface {
 	ExtractionInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IncidentCustomFieldUpdate() EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateList
+	IncidentCustomFieldUpdateInput() interface{}
 	InternalValue() *EventOrchestrationGlobalCatchAllActions
 	SetInternalValue(val *EventOrchestrationGlobalCatchAllActions)
 	Priority() *string
@@ -96,12 +98,14 @@ type EventOrchestrationGlobalCatchAllActionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutomationAction(value *EventOrchestrationGlobalCatchAllActionsAutomationAction)
 	PutExtraction(value interface{})
+	PutIncidentCustomFieldUpdate(value interface{})
 	PutVariable(value interface{})
 	ResetAnnotate()
 	ResetAutomationAction()
 	ResetDropEvent()
 	ResetEventAction()
 	ResetExtraction()
+	ResetIncidentCustomFieldUpdate()
 	ResetPriority()
 	ResetRouteTo()
 	ResetSeverity()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) Fqn()
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) IncidentCustomFieldUpdate() EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateList {
+	var returns EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateList
+	_jsii_.Get(
+		j,
+		"incidentCustomFieldUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) IncidentCustomFieldUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"incidentCustomFieldUpdateInput",
 		&returns,
 	)
 	return returns
@@ -792,6 +816,17 @@ func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) PutEx
 	)
 }
 
+func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) PutIncidentCustomFieldUpdate(value interface{}) {
+	if err := e.validatePutIncidentCustomFieldUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putIncidentCustomFieldUpdate",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) PutVariable(value interface{}) {
 	if err := e.validatePutVariableParameters(value); err != nil {
 		panic(err)
@@ -839,6 +874,14 @@ func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		e,
 		"resetExtraction",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsOutputReference) ResetIncidentCustomFieldUpdate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIncidentCustomFieldUpdate",
 		nil, // no parameters
 	)
 }

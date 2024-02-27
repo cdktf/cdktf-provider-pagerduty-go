@@ -345,14 +345,6 @@ func (j *jsiiProxy_BusinessService) validateSetDescriptionParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_BusinessService) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_BusinessService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

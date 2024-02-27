@@ -5,7 +5,7 @@ package serviceeventrule
 
 
 type ServiceEventRuleActionsSeverity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/service_event_rule#value ServiceEventRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/service_event_rule#value ServiceEventRule#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

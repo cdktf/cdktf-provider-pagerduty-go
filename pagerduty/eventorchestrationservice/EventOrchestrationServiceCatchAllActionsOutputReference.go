@@ -40,6 +40,8 @@ type EventOrchestrationServiceCatchAllActionsOutputReference interface {
 	ExtractionInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IncidentCustomFieldUpdate() EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList
+	IncidentCustomFieldUpdateInput() interface{}
 	InternalValue() *EventOrchestrationServiceCatchAllActions
 	SetInternalValue(val *EventOrchestrationServiceCatchAllActions)
 	PagerdutyAutomationAction() EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference
@@ -95,12 +97,14 @@ type EventOrchestrationServiceCatchAllActionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutomationAction(value *EventOrchestrationServiceCatchAllActionsAutomationAction)
 	PutExtraction(value interface{})
+	PutIncidentCustomFieldUpdate(value interface{})
 	PutPagerdutyAutomationAction(value *EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction)
 	PutVariable(value interface{})
 	ResetAnnotate()
 	ResetAutomationAction()
 	ResetEventAction()
 	ResetExtraction()
+	ResetIncidentCustomFieldUpdate()
 	ResetPagerdutyAutomationAction()
 	ResetPriority()
 	ResetRouteTo()
@@ -238,6 +242,26 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) IncidentCustomFieldUpdate() EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList {
+	var returns EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList
+	_jsii_.Get(
+		j,
+		"incidentCustomFieldUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) IncidentCustomFieldUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"incidentCustomFieldUpdateInput",
 		&returns,
 	)
 	return returns
@@ -781,6 +805,17 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) PutE
 	)
 }
 
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) PutIncidentCustomFieldUpdate(value interface{}) {
+	if err := e.validatePutIncidentCustomFieldUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putIncidentCustomFieldUpdate",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) PutPagerdutyAutomationAction(value *EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction) {
 	if err := e.validatePutPagerdutyAutomationActionParameters(value); err != nil {
 		panic(err)
@@ -831,6 +866,14 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		e,
 		"resetExtraction",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) ResetIncidentCustomFieldUpdate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIncidentCustomFieldUpdate",
 		nil, // no parameters
 	)
 }

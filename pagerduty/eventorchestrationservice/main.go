@@ -328,6 +328,68 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate",
+		reflect.TypeOf((*EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList",
+		reflect.TypeOf((*EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference",
+		reflect.TypeOf((*EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference",
 		reflect.TypeOf((*EventOrchestrationServiceCatchAllActionsOutputReference)(nil)).Elem(),
@@ -354,6 +416,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "incidentCustomFieldUpdate", GoGetter: "IncidentCustomFieldUpdate"},
+			_jsii_.MemberProperty{JsiiProperty: "incidentCustomFieldUpdateInput", GoGetter: "IncidentCustomFieldUpdateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -363,12 +427,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutomationAction", GoMethod: "PutAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putExtraction", GoMethod: "PutExtraction"},
+			_jsii_.MemberMethod{JsiiMethod: "putIncidentCustomFieldUpdate", GoMethod: "PutIncidentCustomFieldUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "putPagerdutyAutomationAction", GoMethod: "PutPagerdutyAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putVariable", GoMethod: "PutVariable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotate", GoMethod: "ResetAnnotate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomationAction", GoMethod: "ResetAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventAction", GoMethod: "ResetEventAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtraction", GoMethod: "ResetExtraction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncidentCustomFieldUpdate", GoMethod: "ResetIncidentCustomFieldUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPagerdutyAutomationAction", GoMethod: "ResetPagerdutyAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouteTo", GoMethod: "ResetRouteTo"},
@@ -856,6 +922,68 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate",
+		reflect.TypeOf((*EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList",
+		reflect.TypeOf((*EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference",
+		reflect.TypeOf((*EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference",
 		reflect.TypeOf((*EventOrchestrationServiceSetRuleActionsOutputReference)(nil)).Elem(),
@@ -882,6 +1010,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "incidentCustomFieldUpdate", GoGetter: "IncidentCustomFieldUpdate"},
+			_jsii_.MemberProperty{JsiiProperty: "incidentCustomFieldUpdateInput", GoGetter: "IncidentCustomFieldUpdateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -891,12 +1021,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutomationAction", GoMethod: "PutAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putExtraction", GoMethod: "PutExtraction"},
+			_jsii_.MemberMethod{JsiiMethod: "putIncidentCustomFieldUpdate", GoMethod: "PutIncidentCustomFieldUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "putPagerdutyAutomationAction", GoMethod: "PutPagerdutyAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putVariable", GoMethod: "PutVariable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotate", GoMethod: "ResetAnnotate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomationAction", GoMethod: "ResetAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventAction", GoMethod: "ResetEventAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtraction", GoMethod: "ResetExtraction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncidentCustomFieldUpdate", GoMethod: "ResetIncidentCustomFieldUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPagerdutyAutomationAction", GoMethod: "ResetPagerdutyAutomationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouteTo", GoMethod: "ResetRouteTo"},

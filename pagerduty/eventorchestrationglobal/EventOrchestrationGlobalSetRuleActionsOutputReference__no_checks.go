@@ -55,6 +55,10 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) valida
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) validatePutIncidentCustomFieldUpdateParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) validatePutVariableParameters(value interface{}) error {
 	return nil
 }

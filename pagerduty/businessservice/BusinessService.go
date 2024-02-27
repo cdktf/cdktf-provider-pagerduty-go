@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/business_service pagerduty_business_service}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/business_service pagerduty_business_service}.
 type BusinessService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,8 +44,6 @@ type BusinessService interface {
 	FriendlyUniqueId() *string
 	HtmlUrl() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -126,7 +124,6 @@ type BusinessService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -266,16 +263,6 @@ func (j *jsiiProxy_BusinessService) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BusinessService) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -462,7 +449,7 @@ func (j *jsiiProxy_BusinessService) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/business_service pagerduty_business_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/business_service pagerduty_business_service} Resource.
 func NewBusinessService(scope constructs.Construct, id *string, config *BusinessServiceConfig) BusinessService {
 	_init_.Initialize()
 
@@ -480,7 +467,7 @@ func NewBusinessService(scope constructs.Construct, id *string, config *Business
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/business_service pagerduty_business_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/business_service pagerduty_business_service} Resource.
 func NewBusinessService_Override(b BusinessService, scope constructs.Construct, id *string, config *BusinessServiceConfig) {
 	_init_.Initialize()
 
@@ -536,17 +523,6 @@ func (j *jsiiProxy_BusinessService)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BusinessService)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -982,14 +958,6 @@ func (b *jsiiProxy_BusinessService) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BusinessService) ResetId() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetId",
 		nil, // no parameters
 	)
 }

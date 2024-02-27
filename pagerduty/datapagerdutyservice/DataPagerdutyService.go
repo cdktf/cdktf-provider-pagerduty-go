@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/data-sources/service pagerduty_service}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/service pagerduty_service}.
 type DataPagerdutyService interface {
 	cdktf.TerraformDataSource
 	AcknowledgementTimeout() *float64
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataPagerdutyService) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/data-sources/service pagerduty_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/service pagerduty_service} Data Source.
 func NewDataPagerdutyService(scope constructs.Construct, id *string, config *DataPagerdutyServiceConfig) DataPagerdutyService {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataPagerdutyService(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/data-sources/service pagerduty_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/service pagerduty_service} Data Source.
 func NewDataPagerdutyService_Override(d DataPagerdutyService, scope constructs.Construct, id *string, config *DataPagerdutyServiceConfig) {
 	_init_.Initialize()
 
