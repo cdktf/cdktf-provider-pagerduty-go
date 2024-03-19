@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user pagerduty_user}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user pagerduty_user}.
 type DataPagerdutyUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataPagerdutyUser interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	Email() *string
 	SetEmail(val *string)
 	EmailInput() *string
@@ -41,6 +42,7 @@ type DataPagerdutyUser interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	JobTitle() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -54,12 +56,14 @@ type DataPagerdutyUser interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Role() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeZone() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -148,6 +152,16 @@ func (j *jsiiProxy_DataPagerdutyUser) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyUser) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyUser) Email() *string {
 	var returns *string
 	_jsii_.Get(
@@ -218,6 +232,16 @@ func (j *jsiiProxy_DataPagerdutyUser) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyUser) JobTitle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jobTitle",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyUser) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -268,6 +292,16 @@ func (j *jsiiProxy_DataPagerdutyUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyUser) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -298,8 +332,18 @@ func (j *jsiiProxy_DataPagerdutyUser) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyUser) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user pagerduty_user} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user pagerduty_user} Data Source.
 func NewDataPagerdutyUser(scope constructs.Construct, id *string, config *DataPagerdutyUserConfig) DataPagerdutyUser {
 	_init_.Initialize()
 
@@ -317,7 +361,7 @@ func NewDataPagerdutyUser(scope constructs.Construct, id *string, config *DataPa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user pagerduty_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user pagerduty_user} Data Source.
 func NewDataPagerdutyUser_Override(d DataPagerdutyUser, scope constructs.Construct, id *string, config *DataPagerdutyUserConfig) {
 	_init_.Initialize()
 

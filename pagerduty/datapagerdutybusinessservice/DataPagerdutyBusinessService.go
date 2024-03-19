@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/business_service pagerduty_business_service}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/business_service pagerduty_business_service}.
 type DataPagerdutyBusinessService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataPagerdutyBusinessService interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,6 @@ type DataPagerdutyBusinessService interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,16 +180,6 @@ func (j *jsiiProxy_DataPagerdutyBusinessService) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyBusinessService) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -299,7 +286,7 @@ func (j *jsiiProxy_DataPagerdutyBusinessService) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/business_service pagerduty_business_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/business_service pagerduty_business_service} Data Source.
 func NewDataPagerdutyBusinessService(scope constructs.Construct, id *string, config *DataPagerdutyBusinessServiceConfig) DataPagerdutyBusinessService {
 	_init_.Initialize()
 
@@ -317,7 +304,7 @@ func NewDataPagerdutyBusinessService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/business_service pagerduty_business_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/business_service pagerduty_business_service} Data Source.
 func NewDataPagerdutyBusinessService_Override(d DataPagerdutyBusinessService, scope constructs.Construct, id *string, config *DataPagerdutyBusinessServiceConfig) {
 	_init_.Initialize()
 
@@ -351,17 +338,6 @@ func (j *jsiiProxy_DataPagerdutyBusinessService)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyBusinessService)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -678,14 +654,6 @@ func (d *jsiiProxy_DataPagerdutyBusinessService) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyBusinessService) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

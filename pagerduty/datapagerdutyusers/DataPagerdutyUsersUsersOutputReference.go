@@ -28,13 +28,16 @@ type DataPagerdutyUsersUsersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	Email() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	InternalValue() *DataPagerdutyUsersUsers
 	SetInternalValue(val *DataPagerdutyUsersUsers)
+	JobTitle() *string
 	Name() *string
+	Role() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +46,8 @@ type DataPagerdutyUsersUsersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TimeZone() *string
+	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -112,6 +117,16 @@ func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) CreationStack() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) Email() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,11 +167,31 @@ func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) InternalValue() *Data
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) JobTitle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jobTitle",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
 		&returns,
 	)
 	return returns
@@ -177,6 +212,26 @@ func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) TerraformResource() c
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyUsersUsersOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns
