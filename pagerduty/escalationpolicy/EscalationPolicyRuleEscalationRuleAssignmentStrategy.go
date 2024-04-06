@@ -5,7 +5,7 @@ package escalationpolicy
 
 
 type EscalationPolicyRuleEscalationRuleAssignmentStrategy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/escalation_policy#type EscalationPolicy#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/escalation_policy#type EscalationPolicy#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 
