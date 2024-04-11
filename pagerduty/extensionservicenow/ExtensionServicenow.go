@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/extension_servicenow pagerduty_extension_servicenow}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/resources/extension_servicenow pagerduty_extension_servicenow}.
 type ExtensionServicenow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_ExtensionServicenow) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
 func NewExtensionServicenow(scope constructs.Construct, id *string, config *ExtensionServicenowConfig) ExtensionServicenow {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewExtensionServicenow(scope constructs.Construct, id *string, config *Exte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
 func NewExtensionServicenow_Override(e ExtensionServicenow, scope constructs.Construct, id *string, config *ExtensionServicenowConfig) {
 	_init_.Initialize()
 
