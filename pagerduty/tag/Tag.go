@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag pagerduty_tag}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag pagerduty_tag}.
 type Tag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,8 +41,6 @@ type Tag interface {
 	FriendlyUniqueId() *string
 	HtmlUrl() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
@@ -112,7 +110,6 @@ type Tag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -234,16 +231,6 @@ func (j *jsiiProxy_Tag) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Tag) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Tag) Label() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,7 +342,7 @@ func (j *jsiiProxy_Tag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag pagerduty_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag pagerduty_tag} Resource.
 func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	_init_.Initialize()
 
@@ -373,7 +360,7 @@ func NewTag(scope constructs.Construct, id *string, config *TagConfig) Tag {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag pagerduty_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag pagerduty_tag} Resource.
 func NewTag_Override(t Tag, scope constructs.Construct, id *string, config *TagConfig) {
 	_init_.Initialize()
 
@@ -418,17 +405,6 @@ func (j *jsiiProxy_Tag)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Tag)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -824,14 +800,6 @@ func (t *jsiiProxy_Tag) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (t *jsiiProxy_Tag) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment pagerduty_tag_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment pagerduty_tag_assignment}.
 type TagAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,8 +46,6 @@ type TagAssignment interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,7 +114,6 @@ type TagAssignment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -268,16 +265,6 @@ func (j *jsiiProxy_TagAssignment) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TagAssignment) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_TagAssignment) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -379,7 +366,7 @@ func (j *jsiiProxy_TagAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment pagerduty_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment pagerduty_tag_assignment} Resource.
 func NewTagAssignment(scope constructs.Construct, id *string, config *TagAssignmentConfig) TagAssignment {
 	_init_.Initialize()
 
@@ -397,7 +384,7 @@ func NewTagAssignment(scope constructs.Construct, id *string, config *TagAssignm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment pagerduty_tag_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment pagerduty_tag_assignment} Resource.
 func NewTagAssignment_Override(t TagAssignment, scope constructs.Construct, id *string, config *TagAssignmentConfig) {
 	_init_.Initialize()
 
@@ -464,17 +451,6 @@ func (j *jsiiProxy_TagAssignment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TagAssignment)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -870,14 +846,6 @@ func (t *jsiiProxy_TagAssignment) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (t *jsiiProxy_TagAssignment) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

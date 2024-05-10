@@ -75,6 +75,10 @@ func (i *jsiiProxy_IncidentWorkflowTrigger) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IncidentWorkflowTrigger) validatePutPermissionsParameters(value *IncidentWorkflowTriggerPermissions) error {
+	return nil
+}
+
 func validateIncidentWorkflowTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

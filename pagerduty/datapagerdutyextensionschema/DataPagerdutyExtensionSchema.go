@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema pagerduty_extension_schema}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema pagerduty_extension_schema}.
 type DataPagerdutyExtensionSchema interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataPagerdutyExtensionSchema interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,6 @@ type DataPagerdutyExtensionSchema interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,16 +180,6 @@ func (j *jsiiProxy_DataPagerdutyExtensionSchema) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyExtensionSchema) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -299,7 +286,7 @@ func (j *jsiiProxy_DataPagerdutyExtensionSchema) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
 func NewDataPagerdutyExtensionSchema(scope constructs.Construct, id *string, config *DataPagerdutyExtensionSchemaConfig) DataPagerdutyExtensionSchema {
 	_init_.Initialize()
 
@@ -317,7 +304,7 @@ func NewDataPagerdutyExtensionSchema(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
 func NewDataPagerdutyExtensionSchema_Override(d DataPagerdutyExtensionSchema, scope constructs.Construct, id *string, config *DataPagerdutyExtensionSchemaConfig) {
 	_init_.Initialize()
 
@@ -351,17 +338,6 @@ func (j *jsiiProxy_DataPagerdutyExtensionSchema)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyExtensionSchema)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -678,14 +654,6 @@ func (d *jsiiProxy_DataPagerdutyExtensionSchema) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyExtensionSchema) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

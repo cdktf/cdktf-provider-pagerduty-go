@@ -107,10 +107,6 @@ func (j *jsiiProxy_TagAssignment) validateSetEntityTypeParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_TagAssignment) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_TagAssignment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

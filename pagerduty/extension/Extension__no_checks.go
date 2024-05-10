@@ -115,10 +115,6 @@ func (j *jsiiProxy_Extension) validateSetExtensionSchemaParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Extension) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Extension) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

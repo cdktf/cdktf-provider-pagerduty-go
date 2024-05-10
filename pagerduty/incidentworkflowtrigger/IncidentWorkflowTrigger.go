@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}.
 type IncidentWorkflowTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,6 +51,8 @@ type IncidentWorkflowTrigger interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Permissions() IncidentWorkflowTriggerPermissionsOutputReference
+	PermissionsInput() *IncidentWorkflowTriggerPermissions
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -122,11 +124,13 @@ type IncidentWorkflowTrigger interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPermissions(value *IncidentWorkflowTriggerPermissions)
 	ResetCondition()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPermissions()
 	ResetServices()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -286,6 +290,26 @@ func (j *jsiiProxy_IncidentWorkflowTrigger) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_IncidentWorkflowTrigger) Permissions() IncidentWorkflowTriggerPermissionsOutputReference {
+	var returns IncidentWorkflowTriggerPermissionsOutputReference
+	_jsii_.Get(
+		j,
+		"permissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentWorkflowTrigger) PermissionsInput() *IncidentWorkflowTriggerPermissions {
+	var returns *IncidentWorkflowTriggerPermissions
+	_jsii_.Get(
+		j,
+		"permissionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IncidentWorkflowTrigger) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_IncidentWorkflowTrigger) WorkflowInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
 func NewIncidentWorkflowTrigger(scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) IncidentWorkflowTrigger {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewIncidentWorkflowTrigger(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource.
 func NewIncidentWorkflowTrigger_Override(i IncidentWorkflowTrigger, scope constructs.Construct, id *string, config *IncidentWorkflowTriggerConfig) {
 	_init_.Initialize()
 
@@ -943,6 +967,17 @@ func (i *jsiiProxy_IncidentWorkflowTrigger) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (i *jsiiProxy_IncidentWorkflowTrigger) PutPermissions(value *IncidentWorkflowTriggerPermissions) {
+	if err := i.validatePutPermissionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putPermissions",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IncidentWorkflowTrigger) ResetCondition() {
 	_jsii_.InvokeVoid(
 		i,
@@ -963,6 +998,14 @@ func (i *jsiiProxy_IncidentWorkflowTrigger) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IncidentWorkflowTrigger) ResetPermissions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPermissions",
 		nil, // no parameters
 	)
 }

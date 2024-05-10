@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow pagerduty_extension_servicenow}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow pagerduty_extension_servicenow}.
 type ExtensionServicenow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,8 +50,6 @@ type ExtensionServicenow interface {
 	FriendlyUniqueId() *string
 	HtmlUrl() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -145,7 +143,6 @@ type ExtensionServicenow interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetEndpointUrl()
-	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -325,16 +322,6 @@ func (j *jsiiProxy_ExtensionServicenow) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExtensionServicenow) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -601,7 +588,7 @@ func (j *jsiiProxy_ExtensionServicenow) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
 func NewExtensionServicenow(scope constructs.Construct, id *string, config *ExtensionServicenowConfig) ExtensionServicenow {
 	_init_.Initialize()
 
@@ -619,7 +606,7 @@ func NewExtensionServicenow(scope constructs.Construct, id *string, config *Exte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource.
 func NewExtensionServicenow_Override(e ExtensionServicenow, scope constructs.Construct, id *string, config *ExtensionServicenowConfig) {
 	_init_.Initialize()
 
@@ -697,17 +684,6 @@ func (j *jsiiProxy_ExtensionServicenow)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ExtensionServicenow)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1198,14 +1174,6 @@ func (e *jsiiProxy_ExtensionServicenow) ResetEndpointUrl() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetEndpointUrl",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExtensionServicenow) ResetId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetId",
 		nil, // no parameters
 	)
 }

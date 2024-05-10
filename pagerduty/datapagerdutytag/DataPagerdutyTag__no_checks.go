@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataPagerdutyTag) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyTag) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyTag) validateSetLabelParameters(val *string) error {
 	return nil
 }
