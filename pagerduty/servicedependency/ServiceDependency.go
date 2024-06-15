@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency pagerduty_service_dependency}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency pagerduty_service_dependency}.
 type ServiceDependency interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,8 +27,8 @@ type ServiceDependency interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Dependency() ServiceDependencyDependencyOutputReference
-	DependencyInput() *ServiceDependencyDependency
+	Dependency() ServiceDependencyDependencyList
+	DependencyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,8 +42,6 @@ type ServiceDependency interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -109,8 +107,8 @@ type ServiceDependency interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDependency(value *ServiceDependencyDependency)
-	ResetId()
+	PutDependency(value interface{})
+	ResetDependency()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -172,8 +170,8 @@ func (j *jsiiProxy_ServiceDependency) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDependency) Dependency() ServiceDependencyDependencyOutputReference {
-	var returns ServiceDependencyDependencyOutputReference
+func (j *jsiiProxy_ServiceDependency) Dependency() ServiceDependencyDependencyList {
+	var returns ServiceDependencyDependencyList
 	_jsii_.Get(
 		j,
 		"dependency",
@@ -182,8 +180,8 @@ func (j *jsiiProxy_ServiceDependency) Dependency() ServiceDependencyDependencyOu
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDependency) DependencyInput() *ServiceDependencyDependency {
-	var returns *ServiceDependencyDependency
+func (j *jsiiProxy_ServiceDependency) DependencyInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dependencyInput",
@@ -237,16 +235,6 @@ func (j *jsiiProxy_ServiceDependency) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceDependency) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -333,7 +321,7 @@ func (j *jsiiProxy_ServiceDependency) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency pagerduty_service_dependency} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency pagerduty_service_dependency} Resource.
 func NewServiceDependency(scope constructs.Construct, id *string, config *ServiceDependencyConfig) ServiceDependency {
 	_init_.Initialize()
 
@@ -351,7 +339,7 @@ func NewServiceDependency(scope constructs.Construct, id *string, config *Servic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency pagerduty_service_dependency} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency pagerduty_service_dependency} Resource.
 func NewServiceDependency_Override(s ServiceDependency, scope constructs.Construct, id *string, config *ServiceDependencyConfig) {
 	_init_.Initialize()
 
@@ -396,17 +384,6 @@ func (j *jsiiProxy_ServiceDependency)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServiceDependency)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -794,7 +771,7 @@ func (s *jsiiProxy_ServiceDependency) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (s *jsiiProxy_ServiceDependency) PutDependency(value *ServiceDependencyDependency) {
+func (s *jsiiProxy_ServiceDependency) PutDependency(value interface{}) {
 	if err := s.validatePutDependencyParameters(value); err != nil {
 		panic(err)
 	}
@@ -805,10 +782,10 @@ func (s *jsiiProxy_ServiceDependency) PutDependency(value *ServiceDependencyDepe
 	)
 }
 
-func (s *jsiiProxy_ServiceDependency) ResetId() {
+func (s *jsiiProxy_ServiceDependency) ResetDependency() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetId",
+		"resetDependency",
 		nil, // no parameters
 	)
 }

@@ -32,8 +32,8 @@ type ServiceDependencyDependencyOutputReference interface {
 	DependentServiceInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ServiceDependencyDependency
-	SetInternalValue(val *ServiceDependencyDependency)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	SupportingService() ServiceDependencyDependencySupportingServiceList
 	SupportingServiceInput() interface{}
 	// Experimental.
@@ -73,6 +73,8 @@ type ServiceDependencyDependencyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDependentService(value interface{})
 	PutSupportingService(value interface{})
+	ResetDependentService()
+	ResetSupportingService()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,8 +151,8 @@ func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) InternalValue() *ServiceDependencyDependency {
-	var returns *ServiceDependencyDependency
+func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -220,29 +222,29 @@ func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) TypeInput() *stri
 }
 
 
-func NewServiceDependencyDependencyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceDependencyDependencyOutputReference {
+func NewServiceDependencyDependencyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceDependencyDependencyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewServiceDependencyDependencyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewServiceDependencyDependencyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ServiceDependencyDependencyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewServiceDependencyDependencyOutputReference_Override(s ServiceDependencyDependencyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServiceDependencyDependencyOutputReference_Override(s ServiceDependencyDependencyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -269,7 +271,7 @@ func (j *jsiiProxy_ServiceDependencyDependencyOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencyOutputReference)SetInternalValue(val *ServiceDependencyDependency) {
+func (j *jsiiProxy_ServiceDependencyDependencyOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,6 +520,22 @@ func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) PutSupportingServ
 		s,
 		"putSupportingService",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) ResetDependentService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDependentService",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) ResetSupportingService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSupportingService",
+		nil, // no parameters
 	)
 }
 

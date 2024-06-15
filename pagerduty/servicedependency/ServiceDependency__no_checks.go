@@ -75,7 +75,7 @@ func (s *jsiiProxy_ServiceDependency) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDependency) validatePutDependencyParameters(value *ServiceDependencyDependency) error {
+func (s *jsiiProxy_ServiceDependency) validatePutDependencyParameters(value interface{}) error {
 	return nil
 }
 
@@ -100,10 +100,6 @@ func (j *jsiiProxy_ServiceDependency) validateSetConnectionParameters(val interf
 }
 
 func (j *jsiiProxy_ServiceDependency) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ServiceDependency) validateSetIdParameters(val *string) error {
 	return nil
 }
 

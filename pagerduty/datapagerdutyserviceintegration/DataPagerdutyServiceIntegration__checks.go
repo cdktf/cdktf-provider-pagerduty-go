@@ -211,14 +211,6 @@ func (j *jsiiProxy_DataPagerdutyServiceIntegration) validateSetCountParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyServiceIntegration) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyServiceIntegration) validateSetIntegrationSummaryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

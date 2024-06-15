@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataPagerdutyServiceIntegration) validateSetCountParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyServiceIntegration) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyServiceIntegration) validateSetIntegrationSummaryParameters(val *string) error {
 	return nil
 }

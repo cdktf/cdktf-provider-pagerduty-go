@@ -67,7 +67,7 @@ func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) validateSetInternalValueParameters(val *ServiceDependencyDependency) error {
+func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_ServiceDependencyDependencyOutputReference) validateSetTypePa
 	return nil
 }
 
-func validateNewServiceDependencyDependencyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewServiceDependencyDependencyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

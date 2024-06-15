@@ -207,12 +207,32 @@ func (s *jsiiProxy_ServiceDependency) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDependency) validatePutDependencyParameters(value *ServiceDependencyDependency) error {
+func (s *jsiiProxy_ServiceDependency) validatePutDependencyParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ServiceDependencyDependency:
+		value := value.(*[]*ServiceDependencyDependency)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ServiceDependencyDependency:
+		value_ := value.([]*ServiceDependencyDependency)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ServiceDependencyDependency; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -348,14 +368,6 @@ func (j *jsiiProxy_ServiceDependency) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDependency) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ServiceDependency) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -419,9 +431,6 @@ func validateNewServiceDependencyParameters(scope constructs.Construct, id *stri
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

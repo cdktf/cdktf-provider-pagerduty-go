@@ -31,6 +31,10 @@ func validatePagerdutyProvider_IsTerraformProviderParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_PagerdutyProvider) validateSetInsecureTlsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagerdutyProvider) validateSetSkipCredentialsValidationParameters(val interface{}) error {
 	return nil
 }

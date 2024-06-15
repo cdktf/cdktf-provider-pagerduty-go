@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs pagerduty}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs pagerduty}.
 type PagerdutyProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -29,6 +29,9 @@ type PagerdutyProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	InsecureTls() interface{}
+	SetInsecureTls(val interface{})
+	InsecureTlsInput() interface{}
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
@@ -63,6 +66,7 @@ type PagerdutyProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
 	ResetApiUrlOverride()
+	ResetInsecureTls()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -164,6 +168,26 @@ func (j *jsiiProxy_PagerdutyProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagerdutyProvider) InsecureTls() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"insecureTls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagerdutyProvider) InsecureTlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"insecureTlsInput",
 		&returns,
 	)
 	return returns
@@ -330,7 +354,7 @@ func (j *jsiiProxy_PagerdutyProvider) UserTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs pagerduty} Resource.
 func NewPagerdutyProvider(scope constructs.Construct, id *string, config *PagerdutyProviderConfig) PagerdutyProvider {
 	_init_.Initialize()
 
@@ -348,7 +372,7 @@ func NewPagerdutyProvider(scope constructs.Construct, id *string, config *Pagerd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs pagerduty} Resource.
 func NewPagerdutyProvider_Override(p PagerdutyProvider, scope constructs.Construct, id *string, config *PagerdutyProviderConfig) {
 	_init_.Initialize()
 
@@ -371,6 +395,17 @@ func (j *jsiiProxy_PagerdutyProvider)SetApiUrlOverride(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUrlOverride",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagerdutyProvider)SetInsecureTls(val interface{}) {
+	if err := j.validateSetInsecureTlsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureTls",
 		val,
 	)
 }
@@ -558,6 +593,14 @@ func (p *jsiiProxy_PagerdutyProvider) ResetApiUrlOverride() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetApiUrlOverride",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagerdutyProvider) ResetInsecureTls() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetInsecureTls",
 		nil, // no parameters
 	)
 }
