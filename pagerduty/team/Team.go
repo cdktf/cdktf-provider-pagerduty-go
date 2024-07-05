@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team pagerduty_team}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team pagerduty_team}.
 type Team interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,8 +47,6 @@ type Team interface {
 	FriendlyUniqueId() *string
 	HtmlUrl() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -122,7 +120,6 @@ type Team interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDefaultRole()
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -285,16 +282,6 @@ func (j *jsiiProxy_Team) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Team) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Team) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -416,7 +403,7 @@ func (j *jsiiProxy_Team) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team pagerduty_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team pagerduty_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -434,7 +421,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team pagerduty_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team pagerduty_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 
@@ -501,17 +488,6 @@ func (j *jsiiProxy_Team)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Team)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -933,14 +909,6 @@ func (t *jsiiProxy_Team) ResetDescription() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_Team) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
 		nil, // no parameters
 	)
 }

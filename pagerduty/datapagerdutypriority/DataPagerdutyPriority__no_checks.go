@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataPagerdutyPriority) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyPriority) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyPriority) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

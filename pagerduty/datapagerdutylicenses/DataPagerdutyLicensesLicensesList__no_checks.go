@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataPagerdutyLicensesLicensesList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

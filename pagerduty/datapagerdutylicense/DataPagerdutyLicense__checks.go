@@ -154,14 +154,6 @@ func validateDataPagerdutyLicense_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetAllocationsAvailableParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -219,23 +211,7 @@ func (j *jsiiProxy_DataPagerdutyLicense) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetCurrentValueParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetHtmlUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -260,46 +236,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) validateSetLifecycleParameters(val *cdk
 }
 
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetRoleGroupParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetSelfAttributeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetSummaryParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetValidRolesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

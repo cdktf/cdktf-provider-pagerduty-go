@@ -14,8 +14,6 @@ import (
 type DataPagerdutyLicensesLicensesOutputReference interface {
 	cdktf.ComplexObject
 	AllocationsAvailable() *float64
-	SetAllocationsAvailable(val *float64)
-	AllocationsAvailableInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,33 +30,17 @@ type DataPagerdutyLicensesLicensesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CurrentValue() *float64
-	SetCurrentValue(val *float64)
-	CurrentValueInput() *float64
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	HtmlUrl() *string
-	SetHtmlUrl(val *string)
-	HtmlUrlInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataPagerdutyLicensesLicenses
+	SetInternalValue(val *DataPagerdutyLicensesLicenses)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	RoleGroup() *string
-	SetRoleGroup(val *string)
-	RoleGroupInput() *string
 	SelfAttribute() *string
-	SetSelfAttribute(val *string)
-	SelfAttributeInput() *string
 	Summary() *string
-	SetSummary(val *string)
-	SummaryInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,11 +50,7 @@ type DataPagerdutyLicensesLicensesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	ValidRoles() *[]*string
-	SetValidRoles(val *[]*string)
-	ValidRolesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -97,17 +75,6 @@ type DataPagerdutyLicensesLicensesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAllocationsAvailable()
-	ResetCurrentValue()
-	ResetDescription()
-	ResetHtmlUrl()
-	ResetId()
-	ResetName()
-	ResetRoleGroup()
-	ResetSelfAttribute()
-	ResetSummary()
-	ResetType()
-	ResetValidRoles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,16 +95,6 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) AllocationsAvai
 	_jsii_.Get(
 		j,
 		"allocationsAvailable",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) AllocationsAvailableInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"allocationsAvailableInput",
 		&returns,
 	)
 	return returns
@@ -183,31 +140,11 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) CurrentValue() 
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) CurrentValueInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"currentValueInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Description() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -233,16 +170,6 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) HtmlUrl() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) HtmlUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"htmlUrlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -253,18 +180,8 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) InternalValue() *DataPagerdutyLicensesLicenses {
+	var returns *DataPagerdutyLicensesLicenses
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -283,31 +200,11 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Name() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) RoleGroup() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"roleGroup",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) RoleGroupInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"roleGroupInput",
 		&returns,
 	)
 	return returns
@@ -323,31 +220,11 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) SelfAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) SelfAttributeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"selfAttributeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Summary() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"summary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) SummaryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"summaryInput",
 		&returns,
 	)
 	return returns
@@ -383,31 +260,11 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Type() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ValidRoles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"validRoles",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ValidRolesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"validRolesInput",
 		&returns,
 	)
 	return returns
@@ -441,17 +298,6 @@ func NewDataPagerdutyLicensesLicensesOutputReference_Override(d DataPagerdutyLic
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetAllocationsAvailable(val *float64) {
-	if err := j.validateSetAllocationsAvailableParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allocationsAvailable",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -474,101 +320,13 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetCurrentValue(val *float64) {
-	if err := j.validateSetCurrentValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"currentValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetHtmlUrl(val *string) {
-	if err := j.validateSetHtmlUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"htmlUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetInternalValue(val *DataPagerdutyLicensesLicenses) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetRoleGroup(val *string) {
-	if err := j.validateSetRoleGroupParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"roleGroup",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetSelfAttribute(val *string) {
-	if err := j.validateSetSelfAttributeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"selfAttribute",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetSummary(val *string) {
-	if err := j.validateSetSummaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"summary",
 		val,
 	)
 }
@@ -591,28 +349,6 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetTerraformReso
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference)SetValidRoles(val *[]*string) {
-	if err := j.validateSetValidRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"validRoles",
 		val,
 	)
 }
@@ -801,94 +537,6 @@ func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) InterpolationFo
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetAllocationsAvailable() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAllocationsAvailable",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetCurrentValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCurrentValue",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetHtmlUrl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHtmlUrl",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetRoleGroup() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRoleGroup",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetSelfAttribute() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSelfAttribute",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetSummary() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSummary",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) ResetValidRoles() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValidRoles",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

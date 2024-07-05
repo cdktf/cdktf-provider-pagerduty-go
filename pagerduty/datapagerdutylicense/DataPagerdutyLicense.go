@@ -12,12 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/license pagerduty_license}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/license pagerduty_license}.
 type DataPagerdutyLicense interface {
 	cdktf.TerraformDataSource
 	AllocationsAvailable() *float64
-	SetAllocationsAvailable(val *float64)
-	AllocationsAvailableInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,8 +25,6 @@ type DataPagerdutyLicense interface {
 	// Experimental.
 	SetCount(val interface{})
 	CurrentValue() *float64
-	SetCurrentValue(val *float64)
-	CurrentValueInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,8 +41,6 @@ type DataPagerdutyLicense interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HtmlUrl() *string
-	SetHtmlUrl(val *string)
-	HtmlUrlInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -66,14 +60,8 @@ type DataPagerdutyLicense interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RoleGroup() *string
-	SetRoleGroup(val *string)
-	RoleGroupInput() *string
 	SelfAttribute() *string
-	SetSelfAttribute(val *string)
-	SelfAttributeInput() *string
 	Summary() *string
-	SetSummary(val *string)
-	SummaryInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -81,11 +69,7 @@ type DataPagerdutyLicense interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	ValidRoles() *[]*string
-	SetValidRoles(val *[]*string)
-	ValidRolesInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,20 +95,12 @@ type DataPagerdutyLicense interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAllocationsAvailable()
-	ResetCurrentValue()
 	ResetDescription()
-	ResetHtmlUrl()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRoleGroup()
-	ResetSelfAttribute()
-	ResetSummary()
-	ResetType()
-	ResetValidRoles()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -149,16 +125,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) AllocationsAvailable() *float64 {
 	_jsii_.Get(
 		j,
 		"allocationsAvailable",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) AllocationsAvailableInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"allocationsAvailableInput",
 		&returns,
 	)
 	return returns
@@ -199,16 +165,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) CurrentValue() *float64 {
 	_jsii_.Get(
 		j,
 		"currentValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) CurrentValueInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"currentValueInput",
 		&returns,
 	)
 	return returns
@@ -279,16 +235,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) HtmlUrl() *string {
 	_jsii_.Get(
 		j,
 		"htmlUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) HtmlUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"htmlUrlInput",
 		&returns,
 	)
 	return returns
@@ -384,16 +330,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) RoleGroup() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) RoleGroupInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"roleGroupInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) SelfAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,31 +340,11 @@ func (j *jsiiProxy_DataPagerdutyLicense) SelfAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) SelfAttributeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"selfAttributeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) Summary() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"summary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) SummaryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"summaryInput",
 		&returns,
 	)
 	return returns
@@ -474,16 +390,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) ValidRoles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -494,18 +400,8 @@ func (j *jsiiProxy_DataPagerdutyLicense) ValidRoles() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) ValidRolesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"validRolesInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/license pagerduty_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/license pagerduty_license} Data Source.
 func NewDataPagerdutyLicense(scope constructs.Construct, id *string, config *DataPagerdutyLicenseConfig) DataPagerdutyLicense {
 	_init_.Initialize()
 
@@ -523,7 +419,7 @@ func NewDataPagerdutyLicense(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/license pagerduty_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/license pagerduty_license} Data Source.
 func NewDataPagerdutyLicense_Override(d DataPagerdutyLicense, scope constructs.Construct, id *string, config *DataPagerdutyLicenseConfig) {
 	_init_.Initialize()
 
@@ -534,17 +430,6 @@ func NewDataPagerdutyLicense_Override(d DataPagerdutyLicense, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense)SetAllocationsAvailable(val *float64) {
-	if err := j.validateSetAllocationsAvailableParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allocationsAvailable",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
@@ -552,17 +437,6 @@ func (j *jsiiProxy_DataPagerdutyLicense)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetCurrentValue(val *float64) {
-	if err := j.validateSetCurrentValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"currentValue",
 		val,
 	)
 }
@@ -590,17 +464,6 @@ func (j *jsiiProxy_DataPagerdutyLicense)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetHtmlUrl(val *string) {
-	if err := j.validateSetHtmlUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"htmlUrl",
 		val,
 	)
 }
@@ -642,61 +505,6 @@ func (j *jsiiProxy_DataPagerdutyLicense)SetProvider(val cdktf.TerraformProvider)
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetRoleGroup(val *string) {
-	if err := j.validateSetRoleGroupParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"roleGroup",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetSelfAttribute(val *string) {
-	if err := j.validateSetSelfAttributeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"selfAttribute",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetSummary(val *string) {
-	if err := j.validateSetSummaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"summary",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense)SetValidRoles(val *[]*string) {
-	if err := j.validateSetValidRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"validRoles",
 		val,
 	)
 }
@@ -986,34 +794,10 @@ func (d *jsiiProxy_DataPagerdutyLicense) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (d *jsiiProxy_DataPagerdutyLicense) ResetAllocationsAvailable() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAllocationsAvailable",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetCurrentValue() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCurrentValue",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataPagerdutyLicense) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetHtmlUrl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHtmlUrl",
 		nil, // no parameters
 	)
 }
@@ -1038,46 +822,6 @@ func (d *jsiiProxy_DataPagerdutyLicense) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetRoleGroup() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRoleGroup",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetSelfAttribute() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSelfAttribute",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetSummary() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSummary",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicense) ResetValidRoles() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValidRoles",
 		nil, // no parameters
 	)
 }

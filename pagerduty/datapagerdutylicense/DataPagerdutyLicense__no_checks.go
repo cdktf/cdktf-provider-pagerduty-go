@@ -71,23 +71,11 @@ func validateDataPagerdutyLicense_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetAllocationsAvailableParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetCurrentValueParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetHtmlUrlParameters(val *string) error {
 	return nil
 }
 
@@ -100,26 +88,6 @@ func (j *jsiiProxy_DataPagerdutyLicense) validateSetLifecycleParameters(val *cdk
 }
 
 func (j *jsiiProxy_DataPagerdutyLicense) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetRoleGroupParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetSelfAttributeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetSummaryParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicense) validateSetValidRolesParameters(val *[]*string) error {
 	return nil
 }
 

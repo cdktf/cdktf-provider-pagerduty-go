@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetAllocationsAvailableParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -63,39 +59,7 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetCurrentValueParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetHtmlUrlParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetRoleGroupParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetSelfAttributeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetSummaryParameters(val *string) error {
+func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetInternalValueParameters(val *DataPagerdutyLicensesLicenses) error {
 	return nil
 }
 
@@ -104,14 +68,6 @@ func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetTerr
 }
 
 func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyLicensesLicensesOutputReference) validateSetValidRolesParameters(val *[]*string) error {
 	return nil
 }
 

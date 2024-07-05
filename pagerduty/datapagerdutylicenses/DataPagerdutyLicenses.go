@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/licenses pagerduty_licenses}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/licenses pagerduty_licenses}.
 type DataPagerdutyLicenses interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,7 +39,6 @@ type DataPagerdutyLicenses interface {
 	SetId(val *string)
 	IdInput() *string
 	Licenses() DataPagerdutyLicensesLicensesList
-	LicensesInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -83,9 +82,7 @@ type DataPagerdutyLicenses interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLicenses(value interface{})
 	ResetId()
-	ResetLicenses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -208,16 +205,6 @@ func (j *jsiiProxy_DataPagerdutyLicenses) Licenses() DataPagerdutyLicensesLicens
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyLicenses) LicensesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"licensesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyLicenses) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -289,7 +276,7 @@ func (j *jsiiProxy_DataPagerdutyLicenses) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/licenses pagerduty_licenses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/licenses pagerduty_licenses} Data Source.
 func NewDataPagerdutyLicenses(scope constructs.Construct, id *string, config *DataPagerdutyLicensesConfig) DataPagerdutyLicenses {
 	_init_.Initialize()
 
@@ -307,7 +294,7 @@ func NewDataPagerdutyLicenses(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/licenses pagerduty_licenses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/licenses pagerduty_licenses} Data Source.
 func NewDataPagerdutyLicenses_Override(d DataPagerdutyLicenses, scope constructs.Construct, id *string, config *DataPagerdutyLicensesConfig) {
 	_init_.Initialize()
 
@@ -660,29 +647,10 @@ func (d *jsiiProxy_DataPagerdutyLicenses) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (d *jsiiProxy_DataPagerdutyLicenses) PutLicenses(value interface{}) {
-	if err := d.validatePutLicensesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putLicenses",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataPagerdutyLicenses) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyLicenses) ResetLicenses() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLicenses",
 		nil, // no parameters
 	)
 }
