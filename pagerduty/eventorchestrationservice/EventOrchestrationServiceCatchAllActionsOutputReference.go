@@ -33,6 +33,9 @@ type EventOrchestrationServiceCatchAllActionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EscalationPolicy() *string
+	SetEscalationPolicy(val *string)
+	EscalationPolicyInput() *string
 	EventAction() *string
 	SetEventAction(val *string)
 	EventActionInput() *string
@@ -102,6 +105,7 @@ type EventOrchestrationServiceCatchAllActionsOutputReference interface {
 	PutVariable(value interface{})
 	ResetAnnotate()
 	ResetAutomationAction()
+	ResetEscalationPolicy()
 	ResetEventAction()
 	ResetExtraction()
 	ResetIncidentCustomFieldUpdate()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) EscalationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) EscalationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationPolicyInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +518,17 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference)SetEscalationPolicy(val *string) {
+	if err := j.validateSetEscalationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"escalationPolicy",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		e,
 		"resetAutomationAction",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) ResetEscalationPolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEscalationPolicy",
 		nil, // no parameters
 	)
 }

@@ -28,6 +28,8 @@ type EventOrchestrationRouterSetRuleActionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DynamicRouteTo() EventOrchestrationRouterSetRuleActionsDynamicRouteToList
+	DynamicRouteToInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EventOrchestrationRouterSetRuleActions
@@ -67,6 +69,9 @@ type EventOrchestrationRouterSetRuleActionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDynamicRouteTo(value interface{})
+	ResetDynamicRouteTo()
+	ResetRouteTo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +112,26 @@ func (j *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) DynamicRouteTo() EventOrchestrationRouterSetRuleActionsDynamicRouteToList {
+	var returns EventOrchestrationRouterSetRuleActionsDynamicRouteToList
+	_jsii_.Get(
+		j,
+		"dynamicRouteTo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) DynamicRouteToInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicRouteToInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +475,33 @@ func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) PutDynamicRouteTo(value interface{}) {
+	if err := e.validatePutDynamicRouteToParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putDynamicRouteTo",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) ResetDynamicRouteTo() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDynamicRouteTo",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) ResetRouteTo() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRouteTo",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

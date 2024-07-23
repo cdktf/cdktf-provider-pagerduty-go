@@ -22,11 +22,11 @@ type TagAssignmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}.
 	EntityId *string `field:"required" json:"entityId" yaml:"entityId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}.
 	EntityType *string `field:"required" json:"entityType" yaml:"entityType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}.
 	TagId *string `field:"required" json:"tagId" yaml:"tagId"`
 }
 

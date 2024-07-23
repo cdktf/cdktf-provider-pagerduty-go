@@ -47,6 +47,10 @@ func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) valida
 	return nil
 }
 
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) validatePutDynamicRouteToParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

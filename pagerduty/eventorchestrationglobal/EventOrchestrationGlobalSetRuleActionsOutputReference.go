@@ -36,6 +36,9 @@ type EventOrchestrationGlobalSetRuleActionsOutputReference interface {
 	DropEvent() interface{}
 	SetDropEvent(val interface{})
 	DropEventInput() interface{}
+	EscalationPolicy() *string
+	SetEscalationPolicy(val *string)
+	EscalationPolicyInput() *string
 	EventAction() *string
 	SetEventAction(val *string)
 	EventActionInput() *string
@@ -103,6 +106,7 @@ type EventOrchestrationGlobalSetRuleActionsOutputReference interface {
 	ResetAnnotate()
 	ResetAutomationAction()
 	ResetDropEvent()
+	ResetEscalationPolicy()
 	ResetEventAction()
 	ResetExtraction()
 	ResetIncidentCustomFieldUpdate()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) DropEv
 	_jsii_.Get(
 		j,
 		"dropEventInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) EscalationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) EscalationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"escalationPolicyInput",
 		&returns,
 	)
 	return returns
@@ -505,6 +529,17 @@ func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference)SetDrop
 	_jsii_.Set(
 		j,
 		"dropEvent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference)SetEscalationPolicy(val *string) {
+	if err := j.validateSetEscalationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"escalationPolicy",
 		val,
 	)
 }
@@ -858,6 +893,14 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		e,
 		"resetDropEvent",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) ResetEscalationPolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEscalationPolicy",
 		nil, // no parameters
 	)
 }

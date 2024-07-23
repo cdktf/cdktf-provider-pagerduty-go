@@ -83,6 +83,10 @@ func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsOutputReference) validateSetEscalationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsOutputReference) validateSetEventActionParameters(val *string) error {
 	return nil
 }

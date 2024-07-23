@@ -83,6 +83,10 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) validateSetEscalationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsOutputReference) validateSetEventActionParameters(val *string) error {
 	return nil
 }
