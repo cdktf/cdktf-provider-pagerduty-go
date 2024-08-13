@@ -5,13 +5,13 @@ package eventorchestrationunrouted
 
 
 type EventOrchestrationUnroutedSetRuleActionsExtraction struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/event_orchestration_unrouted#target EventOrchestrationUnrouted#target}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/event_orchestration_unrouted#target EventOrchestrationUnrouted#target}.
 	Target *string `field:"required" json:"target" yaml:"target"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/event_orchestration_unrouted#regex EventOrchestrationUnrouted#regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/event_orchestration_unrouted#regex EventOrchestrationUnrouted#regex}.
 	Regex *string `field:"optional" json:"regex" yaml:"regex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/event_orchestration_unrouted#source EventOrchestrationUnrouted#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/event_orchestration_unrouted#source EventOrchestrationUnrouted#source}.
 	Source *string `field:"optional" json:"source" yaml:"source"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/event_orchestration_unrouted#template EventOrchestrationUnrouted#template}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/event_orchestration_unrouted#template EventOrchestrationUnrouted#template}.
 	Template *string `field:"optional" json:"template" yaml:"template"`
 }
 

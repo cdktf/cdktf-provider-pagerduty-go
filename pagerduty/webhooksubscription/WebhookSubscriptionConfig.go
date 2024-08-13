@@ -24,24 +24,24 @@ type WebhookSubscriptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// delivery_method block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#delivery_method WebhookSubscription#delivery_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#delivery_method WebhookSubscription#delivery_method}
 	DeliveryMethod interface{} `field:"required" json:"deliveryMethod" yaml:"deliveryMethod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#events WebhookSubscription#events}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#events WebhookSubscription#events}.
 	Events *[]*string `field:"required" json:"events" yaml:"events"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#filter WebhookSubscription#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#filter WebhookSubscription#filter}
 	Filter interface{} `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#active WebhookSubscription#active}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#active WebhookSubscription#active}.
 	Active interface{} `field:"optional" json:"active" yaml:"active"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#description WebhookSubscription#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#description WebhookSubscription#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#id WebhookSubscription#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#id WebhookSubscription#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/webhook_subscription#type WebhookSubscription#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/webhook_subscription#type WebhookSubscription#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 
