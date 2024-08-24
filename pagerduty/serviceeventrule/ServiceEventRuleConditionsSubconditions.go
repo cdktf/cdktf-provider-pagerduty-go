@@ -5,11 +5,11 @@ package serviceeventrule
 
 
 type ServiceEventRuleConditionsSubconditions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.5/docs/resources/service_event_rule#operator ServiceEventRule#operator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/resources/service_event_rule#operator ServiceEventRule#operator}.
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
 	// parameter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.5/docs/resources/service_event_rule#parameter ServiceEventRule#parameter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/resources/service_event_rule#parameter ServiceEventRule#parameter}
 	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
 }
 

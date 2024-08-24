@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.5/docs/data-sources/schedule pagerduty_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/schedule pagerduty_schedule}.
 type DataPagerdutySchedule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataPagerdutySchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.5/docs/data-sources/schedule pagerduty_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/schedule pagerduty_schedule} Data Source.
 func NewDataPagerdutySchedule(scope constructs.Construct, id *string, config *DataPagerdutyScheduleConfig) DataPagerdutySchedule {
 	_init_.Initialize()
 
@@ -306,7 +306,7 @@ func NewDataPagerdutySchedule(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.5/docs/data-sources/schedule pagerduty_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/schedule pagerduty_schedule} Data Source.
 func NewDataPagerdutySchedule_Override(d DataPagerdutySchedule, scope constructs.Construct, id *string, config *DataPagerdutyScheduleConfig) {
 	_init_.Initialize()
 

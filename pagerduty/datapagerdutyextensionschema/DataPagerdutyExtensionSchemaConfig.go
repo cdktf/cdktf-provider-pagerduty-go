@@ -22,7 +22,7 @@ type DataPagerdutyExtensionSchemaConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.5/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
