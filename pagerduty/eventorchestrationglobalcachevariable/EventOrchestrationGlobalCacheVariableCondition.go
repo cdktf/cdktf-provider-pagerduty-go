@@ -5,7 +5,7 @@ package eventorchestrationglobalcachevariable
 
 
 type EventOrchestrationGlobalCacheVariableCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/resources/event_orchestration_global_cache_variable#expression EventOrchestrationGlobalCacheVariable#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/event_orchestration_global_cache_variable#expression EventOrchestrationGlobalCacheVariable#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 

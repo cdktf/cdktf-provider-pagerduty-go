@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable}.
 type EventOrchestrationGlobalCacheVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_EventOrchestrationGlobalCacheVariable) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable} Resource.
 func NewEventOrchestrationGlobalCacheVariable(scope constructs.Construct, id *string, config *EventOrchestrationGlobalCacheVariableConfig) EventOrchestrationGlobalCacheVariable {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewEventOrchestrationGlobalCacheVariable(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/event_orchestration_global_cache_variable pagerduty_event_orchestration_global_cache_variable} Resource.
 func NewEventOrchestrationGlobalCacheVariable_Override(e EventOrchestrationGlobalCacheVariable, scope constructs.Construct, id *string, config *EventOrchestrationGlobalCacheVariableConfig) {
 	_init_.Initialize()
 
