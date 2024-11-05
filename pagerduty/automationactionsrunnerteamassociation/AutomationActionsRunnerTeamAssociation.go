@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association}.
 type AutomationActionsRunnerTeamAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AutomationActionsRunnerTeamAssociation) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association} Resource.
 func NewAutomationActionsRunnerTeamAssociation(scope constructs.Construct, id *string, config *AutomationActionsRunnerTeamAssociationConfig) AutomationActionsRunnerTeamAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAutomationActionsRunnerTeamAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/automation_actions_runner_team_association pagerduty_automation_actions_runner_team_association} Resource.
 func NewAutomationActionsRunnerTeamAssociation_Override(a AutomationActionsRunnerTeamAssociation, scope constructs.Construct, id *string, config *AutomationActionsRunnerTeamAssociationConfig) {
 	_init_.Initialize()
 

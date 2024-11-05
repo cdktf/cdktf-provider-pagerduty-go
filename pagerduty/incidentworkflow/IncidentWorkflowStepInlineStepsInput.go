@@ -5,11 +5,11 @@ package incidentworkflow
 
 
 type IncidentWorkflowStepInlineStepsInput struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/incident_workflow#name IncidentWorkflow#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/incident_workflow#name IncidentWorkflow#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// step block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/incident_workflow#step IncidentWorkflow#step}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/incident_workflow#step IncidentWorkflow#step}
 	Step interface{} `field:"optional" json:"step" yaml:"step"`
 }
 
