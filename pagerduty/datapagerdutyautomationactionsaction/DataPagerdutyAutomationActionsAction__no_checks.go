@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetModifyTimePa
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetOnlyInvocableOnUnresolvedIncidentsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetRunnerIdParameters(val *string) error {
 	return nil
 }

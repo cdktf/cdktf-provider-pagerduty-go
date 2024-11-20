@@ -135,6 +135,10 @@ func (j *jsiiProxy_AutomationActionsAction) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AutomationActionsAction) validateSetOnlyInvocableOnUnresolvedIncidentsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationActionsAction) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

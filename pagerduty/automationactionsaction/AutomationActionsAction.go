@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.2/docs/resources/automation_actions_action pagerduty_automation_actions_action}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/automation_actions_action pagerduty_automation_actions_action}.
 type AutomationActionsAction interface {
 	cdktf.TerraformResource
 	ActionClassification() *string
@@ -68,6 +68,9 @@ type AutomationActionsAction interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OnlyInvocableOnUnresolvedIncidents() interface{}
+	SetOnlyInvocableOnUnresolvedIncidents(val interface{})
+	OnlyInvocableOnUnresolvedIncidentsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -142,6 +145,7 @@ type AutomationActionsAction interface {
 	ResetDescription()
 	ResetId()
 	ResetModifyTime()
+	ResetOnlyInvocableOnUnresolvedIncidents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -426,6 +430,26 @@ func (j *jsiiProxy_AutomationActionsAction) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AutomationActionsAction) OnlyInvocableOnUnresolvedIncidents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyInvocableOnUnresolvedIncidents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationActionsAction) OnlyInvocableOnUnresolvedIncidentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyInvocableOnUnresolvedIncidentsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutomationActionsAction) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -547,7 +571,7 @@ func (j *jsiiProxy_AutomationActionsAction) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.2/docs/resources/automation_actions_action pagerduty_automation_actions_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/automation_actions_action pagerduty_automation_actions_action} Resource.
 func NewAutomationActionsAction(scope constructs.Construct, id *string, config *AutomationActionsActionConfig) AutomationActionsAction {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewAutomationActionsAction(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.2/docs/resources/automation_actions_action pagerduty_automation_actions_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/automation_actions_action pagerduty_automation_actions_action} Resource.
 func NewAutomationActionsAction_Override(a AutomationActionsAction, scope constructs.Construct, id *string, config *AutomationActionsActionConfig) {
 	_init_.Initialize()
 
@@ -698,6 +722,17 @@ func (j *jsiiProxy_AutomationActionsAction)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutomationActionsAction)SetOnlyInvocableOnUnresolvedIncidents(val interface{}) {
+	if err := j.validateSetOnlyInvocableOnUnresolvedIncidentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onlyInvocableOnUnresolvedIncidents",
 		val,
 	)
 }
@@ -1154,6 +1189,14 @@ func (a *jsiiProxy_AutomationActionsAction) ResetModifyTime() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetModifyTime",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomationActionsAction) ResetOnlyInvocableOnUnresolvedIncidents() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOnlyInvocableOnUnresolvedIncidents",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.2/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}.
 type DataPagerdutyAutomationActionsAction interface {
 	cdktf.TerraformDataSource
 	ActionClassification() *string
@@ -59,6 +59,9 @@ type DataPagerdutyAutomationActionsAction interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	OnlyInvocableOnUnresolvedIncidents() interface{}
+	SetOnlyInvocableOnUnresolvedIncidents(val interface{})
+	OnlyInvocableOnUnresolvedIncidentsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -109,6 +112,7 @@ type DataPagerdutyAutomationActionsAction interface {
 	ResetCreationTime()
 	ResetDescription()
 	ResetModifyTime()
+	ResetOnlyInvocableOnUnresolvedIncidents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) Node() constructs.Node 
 	return returns
 }
 
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) OnlyInvocableOnUnresolvedIncidents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyInvocableOnUnresolvedIncidents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) OnlyInvocableOnUnresolvedIncidentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyInvocableOnUnresolvedIncidentsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -465,7 +489,7 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.2/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
 func NewDataPagerdutyAutomationActionsAction(scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsActionConfig) DataPagerdutyAutomationActionsAction {
 	_init_.Initialize()
 
@@ -483,7 +507,7 @@ func NewDataPagerdutyAutomationActionsAction(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.2/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
 func NewDataPagerdutyAutomationActionsAction_Override(d DataPagerdutyAutomationActionsAction, scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsActionConfig) {
 	_init_.Initialize()
 
@@ -583,6 +607,17 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetModifyTime(val *strin
 	_jsii_.Set(
 		j,
 		"modifyTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetOnlyInvocableOnUnresolvedIncidents(val interface{}) {
+	if err := j.validateSetOnlyInvocableOnUnresolvedIncidentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onlyInvocableOnUnresolvedIncidents",
 		val,
 	)
 }
@@ -941,6 +976,14 @@ func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetModifyTime() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetModifyTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetOnlyInvocableOnUnresolvedIncidents() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnlyInvocableOnUnresolvedIncidents",
 		nil, // no parameters
 	)
 }
