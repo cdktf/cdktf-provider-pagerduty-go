@@ -7,15 +7,15 @@ package jiracloudaccountmappingrule
 type JiraCloudAccountMappingRuleConfigJiraStatusMapping struct {
 	// triggered block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/jira_cloud_account_mapping_rule#triggered JiraCloudAccountMappingRule#triggered}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/jira_cloud_account_mapping_rule#triggered JiraCloudAccountMappingRule#triggered}
 	Triggered *JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggered `field:"required" json:"triggered" yaml:"triggered"`
 	// acknowledged block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/jira_cloud_account_mapping_rule#acknowledged JiraCloudAccountMappingRule#acknowledged}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/jira_cloud_account_mapping_rule#acknowledged JiraCloudAccountMappingRule#acknowledged}
 	Acknowledged *JiraCloudAccountMappingRuleConfigJiraStatusMappingAcknowledged `field:"optional" json:"acknowledged" yaml:"acknowledged"`
 	// resolved block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/jira_cloud_account_mapping_rule#resolved JiraCloudAccountMappingRule#resolved}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/jira_cloud_account_mapping_rule#resolved JiraCloudAccountMappingRule#resolved}
 	Resolved *JiraCloudAccountMappingRuleConfigJiraStatusMappingResolved `field:"optional" json:"resolved" yaml:"resolved"`
 }
 
