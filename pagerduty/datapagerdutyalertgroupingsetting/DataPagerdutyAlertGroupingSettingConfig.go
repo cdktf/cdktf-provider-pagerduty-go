@@ -22,11 +22,11 @@ type DataPagerdutyAlertGroupingSettingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/data-sources/alert_grouping_setting#config DataPagerdutyAlertGroupingSetting#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/data-sources/alert_grouping_setting#config DataPagerdutyAlertGroupingSetting#config}
 	Config *DataPagerdutyAlertGroupingSettingConfigA `field:"optional" json:"config" yaml:"config"`
 }
 
