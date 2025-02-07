@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs/resources/incident_workflow pagerduty_incident_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/incident_workflow pagerduty_incident_workflow}.
 type IncidentWorkflow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type IncidentWorkflow interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsEnabled() *string
+	SetIsEnabled(val *string)
+	IsEnabledInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -121,6 +124,7 @@ type IncidentWorkflow interface {
 	PutStep(value interface{})
 	ResetDescription()
 	ResetId()
+	ResetIsEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_IncidentWorkflow) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentWorkflow) IsEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentWorkflow) IsEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"isEnabledInput",
 		&returns,
 	)
 	return returns
@@ -405,7 +429,7 @@ func (j *jsiiProxy_IncidentWorkflow) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs/resources/incident_workflow pagerduty_incident_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/incident_workflow pagerduty_incident_workflow} Resource.
 func NewIncidentWorkflow(scope constructs.Construct, id *string, config *IncidentWorkflowConfig) IncidentWorkflow {
 	_init_.Initialize()
 
@@ -423,7 +447,7 @@ func NewIncidentWorkflow(scope constructs.Construct, id *string, config *Inciden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs/resources/incident_workflow pagerduty_incident_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/incident_workflow pagerduty_incident_workflow} Resource.
 func NewIncidentWorkflow_Override(i IncidentWorkflow, scope constructs.Construct, id *string, config *IncidentWorkflowConfig) {
 	_init_.Initialize()
 
@@ -490,6 +514,17 @@ func (j *jsiiProxy_IncidentWorkflow)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IncidentWorkflow)SetIsEnabled(val *string) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isEnabled",
 		val,
 	)
 }
@@ -922,6 +957,14 @@ func (i *jsiiProxy_IncidentWorkflow) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IncidentWorkflow) ResetIsEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIsEnabled",
 		nil, // no parameters
 	)
 }

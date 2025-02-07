@@ -111,6 +111,10 @@ func (j *jsiiProxy_IncidentWorkflow) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_IncidentWorkflow) validateSetIsEnabledParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IncidentWorkflow) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

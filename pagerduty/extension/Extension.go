@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs/resources/extension pagerduty_extension}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/extension pagerduty_extension}.
 type Extension interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_Extension) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs/resources/extension pagerduty_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/extension pagerduty_extension} Resource.
 func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfig) Extension {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs/resources/extension pagerduty_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/extension pagerduty_extension} Resource.
 func NewExtension_Override(e Extension, scope constructs.Construct, id *string, config *ExtensionConfig) {
 	_init_.Initialize()
 
