@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/incident_type pagerduty_incident_type}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/incident_type pagerduty_incident_type}.
 type DataPagerdutyIncidentType interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataPagerdutyIncidentType) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/incident_type pagerduty_incident_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/incident_type pagerduty_incident_type} Data Source.
 func NewDataPagerdutyIncidentType(scope constructs.Construct, id *string, config *DataPagerdutyIncidentTypeConfig) DataPagerdutyIncidentType {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataPagerdutyIncidentType(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/incident_type pagerduty_incident_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/incident_type pagerduty_incident_type} Data Source.
 func NewDataPagerdutyIncidentType_Override(d DataPagerdutyIncidentType, scope constructs.Construct, id *string, config *DataPagerdutyIncidentTypeConfig) {
 	_init_.Initialize()
 

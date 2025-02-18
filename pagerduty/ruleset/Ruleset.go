@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/ruleset pagerduty_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/resources/ruleset pagerduty_ruleset}.
 type Ruleset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_Ruleset) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/ruleset pagerduty_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/resources/ruleset pagerduty_ruleset} Resource.
 func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) Ruleset {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/resources/ruleset pagerduty_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/resources/ruleset pagerduty_ruleset} Resource.
 func NewRuleset_Override(r Ruleset, scope constructs.Construct, id *string, config *RulesetConfig) {
 	_init_.Initialize()
 
