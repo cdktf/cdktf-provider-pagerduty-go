@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/resources/incident_type pagerduty_incident_type}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/incident_type pagerduty_incident_type}.
 type IncidentType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_IncidentType) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/resources/incident_type pagerduty_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/incident_type pagerduty_incident_type} Resource.
 func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTypeConfig) IncidentType {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTyp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/resources/incident_type pagerduty_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/incident_type pagerduty_incident_type} Resource.
 func NewIncidentType_Override(i IncidentType, scope constructs.Construct, id *string, config *IncidentTypeConfig) {
 	_init_.Initialize()
 
