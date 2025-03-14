@@ -75,6 +75,14 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetActionClassi
 	return nil
 }
 
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetAllowInvocationFromEventOrchestrationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetAllowInvocationManuallyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -92,6 +100,10 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetIdParameters
 }
 
 func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) validateSetMapToAllServicesParameters(val interface{}) error {
 	return nil
 }
 

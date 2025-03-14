@@ -103,6 +103,14 @@ func (j *jsiiProxy_AutomationActionsAction) validateSetActionTypeParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AutomationActionsAction) validateSetAllowInvocationFromEventOrchestrationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AutomationActionsAction) validateSetAllowInvocationManuallyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationActionsAction) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -124,6 +132,10 @@ func (j *jsiiProxy_AutomationActionsAction) validateSetIdParameters(val *string)
 }
 
 func (j *jsiiProxy_AutomationActionsAction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_AutomationActionsAction) validateSetMapToAllServicesParameters(val interface{}) error {
 	return nil
 }
 

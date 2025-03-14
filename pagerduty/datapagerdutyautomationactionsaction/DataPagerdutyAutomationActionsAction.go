@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}.
 type DataPagerdutyAutomationActionsAction interface {
 	cdktf.TerraformDataSource
 	ActionClassification() *string
@@ -20,6 +20,12 @@ type DataPagerdutyAutomationActionsAction interface {
 	ActionClassificationInput() *string
 	ActionDataReference() DataPagerdutyAutomationActionsActionActionDataReferenceList
 	ActionType() *string
+	AllowInvocationFromEventOrchestration() interface{}
+	SetAllowInvocationFromEventOrchestration(val interface{})
+	AllowInvocationFromEventOrchestrationInput() interface{}
+	AllowInvocationManually() interface{}
+	SetAllowInvocationManually(val interface{})
+	AllowInvocationManuallyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -53,6 +59,9 @@ type DataPagerdutyAutomationActionsAction interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MapToAllServices() interface{}
+	SetMapToAllServices(val interface{})
+	MapToAllServicesInput() interface{}
 	ModifyTime() *string
 	SetModifyTime(val *string)
 	ModifyTimeInput() *string
@@ -109,8 +118,11 @@ type DataPagerdutyAutomationActionsAction interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetActionClassification()
+	ResetAllowInvocationFromEventOrchestration()
+	ResetAllowInvocationManually()
 	ResetCreationTime()
 	ResetDescription()
+	ResetMapToAllServices()
 	ResetModifyTime()
 	ResetOnlyInvocableOnUnresolvedIncidents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -173,6 +185,46 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) ActionType() *string {
 	_jsii_.Get(
 		j,
 		"actionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) AllowInvocationFromEventOrchestration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInvocationFromEventOrchestration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) AllowInvocationFromEventOrchestrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInvocationFromEventOrchestrationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) AllowInvocationManually() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInvocationManually",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) AllowInvocationManuallyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowInvocationManuallyInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +365,26 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) Lifecycle() *cdktf.Terr
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) MapToAllServices() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mapToAllServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) MapToAllServicesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mapToAllServicesInput",
 		&returns,
 	)
 	return returns
@@ -489,7 +561,7 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
 func NewDataPagerdutyAutomationActionsAction(scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsActionConfig) DataPagerdutyAutomationActionsAction {
 	_init_.Initialize()
 
@@ -507,7 +579,7 @@ func NewDataPagerdutyAutomationActionsAction(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source.
 func NewDataPagerdutyAutomationActionsAction_Override(d DataPagerdutyAutomationActionsAction, scope constructs.Construct, id *string, config *DataPagerdutyAutomationActionsActionConfig) {
 	_init_.Initialize()
 
@@ -525,6 +597,28 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetActionClassification(
 	_jsii_.Set(
 		j,
 		"actionClassification",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetAllowInvocationFromEventOrchestration(val interface{}) {
+	if err := j.validateSetAllowInvocationFromEventOrchestrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowInvocationFromEventOrchestration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetAllowInvocationManually(val interface{}) {
+	if err := j.validateSetAllowInvocationManuallyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowInvocationManually",
 		val,
 	)
 }
@@ -596,6 +690,17 @@ func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetLifecycle(val *cdktf.
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataPagerdutyAutomationActionsAction)SetMapToAllServices(val interface{}) {
+	if err := j.validateSetMapToAllServicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mapToAllServices",
 		val,
 	)
 }
@@ -956,6 +1061,22 @@ func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetActionClassificati
 	)
 }
 
+func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetAllowInvocationFromEventOrchestration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowInvocationFromEventOrchestration",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetAllowInvocationManually() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowInvocationManually",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetCreationTime() {
 	_jsii_.InvokeVoid(
 		d,
@@ -968,6 +1089,14 @@ func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataPagerdutyAutomationActionsAction) ResetMapToAllServices() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMapToAllServices",
 		nil, // no parameters
 	)
 }

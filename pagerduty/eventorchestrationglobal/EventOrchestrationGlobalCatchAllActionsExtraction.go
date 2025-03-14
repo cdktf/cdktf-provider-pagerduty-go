@@ -5,13 +5,13 @@ package eventorchestrationglobal
 
 
 type EventOrchestrationGlobalCatchAllActionsExtraction struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}.
 	Target *string `field:"required" json:"target" yaml:"target"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}.
 	Regex *string `field:"optional" json:"regex" yaml:"regex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}.
 	Source *string `field:"optional" json:"source" yaml:"source"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}.
 	Template *string `field:"optional" json:"template" yaml:"template"`
 }
 

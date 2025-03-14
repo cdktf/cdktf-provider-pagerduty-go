@@ -24,7 +24,7 @@ type ServiceDependencyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// dependency block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/service_dependency#dependency ServiceDependency#dependency}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/service_dependency#dependency ServiceDependency#dependency}
 	Dependency interface{} `field:"optional" json:"dependency" yaml:"dependency"`
 }
 

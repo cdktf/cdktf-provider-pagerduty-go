@@ -5,7 +5,7 @@ package eventorchestrationunrouted
 
 
 type EventOrchestrationUnroutedSetRuleCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/event_orchestration_unrouted#expression EventOrchestrationUnrouted#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/event_orchestration_unrouted#expression EventOrchestrationUnrouted#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 
