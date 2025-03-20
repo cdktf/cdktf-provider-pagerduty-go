@@ -28,6 +28,7 @@ type DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationOutputRefer
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataType() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataPagerdutyEventOrchestrationServiceCacheVariableConfiguration
@@ -108,6 +109,16 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrationServiceCacheVariableConfigurat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationOutputReference) DataType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataType",
 		&returns,
 	)
 	return returns

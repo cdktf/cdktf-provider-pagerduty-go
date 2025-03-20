@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/extension_schema pagerduty_extension_schema}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.23.0/docs/data-sources/extension_schema pagerduty_extension_schema}.
 type DataPagerdutyExtensionSchema interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataPagerdutyExtensionSchema) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.23.0/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
 func NewDataPagerdutyExtensionSchema(scope constructs.Construct, id *string, config *DataPagerdutyExtensionSchemaConfig) DataPagerdutyExtensionSchema {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataPagerdutyExtensionSchema(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.23.0/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source.
 func NewDataPagerdutyExtensionSchema_Override(d DataPagerdutyExtensionSchema, scope constructs.Construct, id *string, config *DataPagerdutyExtensionSchemaConfig) {
 	_init_.Initialize()
 

@@ -59,6 +59,10 @@ func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference) validateSetDataTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference) validateSetInternalValueParameters(val *EventOrchestrationGlobalCacheVariableConfiguration) error {
 	return nil
 }

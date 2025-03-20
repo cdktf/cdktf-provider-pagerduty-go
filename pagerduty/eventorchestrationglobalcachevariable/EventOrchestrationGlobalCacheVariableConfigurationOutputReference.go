@@ -28,6 +28,9 @@ type EventOrchestrationGlobalCacheVariableConfigurationOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataType() *string
+	SetDataType(val *string)
+	DataTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EventOrchestrationGlobalCacheVariableConfiguration
@@ -76,6 +79,7 @@ type EventOrchestrationGlobalCacheVariableConfigurationOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDataType()
 	ResetRegex()
 	ResetSource()
 	ResetTtlSeconds()
@@ -119,6 +123,26 @@ func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference) DataType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference) DataTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTypeInput",
 		&returns,
 	)
 	return returns
@@ -290,6 +314,17 @@ func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputRefer
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference)SetDataType(val *string) {
+	if err := j.validateSetDataTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataType",
 		val,
 	)
 }
@@ -555,6 +590,14 @@ func (e *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputRefer
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference) ResetDataType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDataType",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EventOrchestrationGlobalCacheVariableConfigurationOutputReference) ResetRegex() {

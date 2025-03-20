@@ -22,7 +22,7 @@ type DataPagerdutyBusinessServiceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.23.0/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
