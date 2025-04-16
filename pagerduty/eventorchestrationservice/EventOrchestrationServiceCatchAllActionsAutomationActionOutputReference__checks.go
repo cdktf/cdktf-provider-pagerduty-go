@@ -280,6 +280,14 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsAutomationActionOutpu
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference) validateSetTriggerTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

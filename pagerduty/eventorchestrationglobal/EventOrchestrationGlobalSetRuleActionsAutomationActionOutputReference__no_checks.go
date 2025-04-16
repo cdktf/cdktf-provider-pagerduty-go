@@ -87,6 +87,10 @@ func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsAutomationActionOutputR
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference) validateSetTriggerTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference) validateSetUrlParameters(val *string) error {
 	return nil
 }

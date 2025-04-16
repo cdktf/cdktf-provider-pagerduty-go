@@ -43,6 +43,9 @@ type EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputRefe
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TriggerTypes() *[]*string
+	SetTriggerTypes(val *[]*string)
+	TriggerTypesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTriggerTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAc
 	return returns
 }
 
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) TriggerTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"triggerTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) TriggerTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"triggerTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewEventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference {
 	_init_.Initialize()
@@ -262,6 +286,17 @@ func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference)SetTriggerTypes(val *[]*string) {
+	if err := j.validateSetTriggerTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggerTypes",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAc
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) ResetTriggerTypes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTriggerTypes",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -75,6 +75,10 @@ func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAct
 	return nil
 }
 
+func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsPagerdutyAutomationActionOutputReference) validateSetTriggerTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewEventOrchestrationServiceSetRuleActionsPagerdutyAutomationActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

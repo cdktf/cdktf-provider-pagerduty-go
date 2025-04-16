@@ -50,6 +50,9 @@ type EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TriggerTypes() *[]*string
+	SetTriggerTypes(val *[]*string)
+	TriggerTypesInput() *[]*string
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -82,6 +85,7 @@ type EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference inte
 	ResetAutoSend()
 	ResetHeader()
 	ResetParameter()
+	ResetTriggerTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -247,6 +251,26 @@ func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutput
 	return returns
 }
 
+func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference) TriggerTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"triggerTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference) TriggerTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"triggerTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutput
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference)SetTriggerTypes(val *[]*string) {
+	if err := j.validateSetTriggerTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggerTypes",
 		val,
 	)
 }
@@ -611,6 +646,14 @@ func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutput
 	_jsii_.InvokeVoid(
 		e,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference) ResetTriggerTypes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTriggerTypes",
 		nil, // no parameters
 	)
 }

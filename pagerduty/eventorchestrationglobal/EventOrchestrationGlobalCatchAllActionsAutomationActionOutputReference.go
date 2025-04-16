@@ -50,6 +50,9 @@ type EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TriggerTypes() *[]*string
+	SetTriggerTypes(val *[]*string)
+	TriggerTypesInput() *[]*string
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -82,6 +85,7 @@ type EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference inte
 	ResetAutoSend()
 	ResetHeader()
 	ResetParameter()
+	ResetTriggerTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -247,6 +251,26 @@ func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutput
 	return returns
 }
 
+func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference) TriggerTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"triggerTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference) TriggerTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"triggerTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutput
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference)SetTriggerTypes(val *[]*string) {
+	if err := j.validateSetTriggerTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggerTypes",
 		val,
 	)
 }
@@ -611,6 +646,14 @@ func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutput
 	_jsii_.InvokeVoid(
 		e,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference) ResetTriggerTypes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTriggerTypes",
 		nil, // no parameters
 	)
 }
