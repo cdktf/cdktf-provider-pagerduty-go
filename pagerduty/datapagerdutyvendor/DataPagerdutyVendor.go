@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/vendor pagerduty_vendor}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/vendor pagerduty_vendor}.
 type DataPagerdutyVendor interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataPagerdutyVendor interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,6 @@ type DataPagerdutyVendor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,16 +180,6 @@ func (j *jsiiProxy_DataPagerdutyVendor) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyVendor) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -299,7 +286,7 @@ func (j *jsiiProxy_DataPagerdutyVendor) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/vendor pagerduty_vendor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/vendor pagerduty_vendor} Data Source.
 func NewDataPagerdutyVendor(scope constructs.Construct, id *string, config *DataPagerdutyVendorConfig) DataPagerdutyVendor {
 	_init_.Initialize()
 
@@ -317,7 +304,7 @@ func NewDataPagerdutyVendor(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/vendor pagerduty_vendor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/vendor pagerduty_vendor} Data Source.
 func NewDataPagerdutyVendor_Override(d DataPagerdutyVendor, scope constructs.Construct, id *string, config *DataPagerdutyVendorConfig) {
 	_init_.Initialize()
 
@@ -351,17 +338,6 @@ func (j *jsiiProxy_DataPagerdutyVendor)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyVendor)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -678,14 +654,6 @@ func (d *jsiiProxy_DataPagerdutyVendor) OverrideLogicalId(newLogicalId *string) 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyVendor) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

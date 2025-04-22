@@ -75,6 +75,10 @@ func (u *jsiiProxy_UserNotificationRule) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (u *jsiiProxy_UserNotificationRule) validatePutContactMethodParameters(value *UserNotificationRuleContactMethod) error {
+	return nil
+}
+
 func validateUserNotificationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -95,15 +99,7 @@ func (j *jsiiProxy_UserNotificationRule) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_UserNotificationRule) validateSetContactMethodParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_UserNotificationRule) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_UserNotificationRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 

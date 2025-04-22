@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/user_notification_rule pagerduty_user_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/user_notification_rule pagerduty_user_notification_rule}.
 type UserNotificationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,8 @@ type UserNotificationRule interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	ContactMethod() *map[string]*string
-	SetContactMethod(val *map[string]*string)
-	ContactMethodInput() *map[string]*string
+	ContactMethod() UserNotificationRuleContactMethodOutputReference
+	ContactMethodInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -43,8 +42,6 @@ type UserNotificationRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -119,7 +116,7 @@ type UserNotificationRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutContactMethod(value *UserNotificationRuleContactMethod)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -171,8 +168,8 @@ func (j *jsiiProxy_UserNotificationRule) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_UserNotificationRule) ContactMethod() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_UserNotificationRule) ContactMethod() UserNotificationRuleContactMethodOutputReference {
+	var returns UserNotificationRuleContactMethodOutputReference
 	_jsii_.Get(
 		j,
 		"contactMethod",
@@ -181,8 +178,8 @@ func (j *jsiiProxy_UserNotificationRule) ContactMethod() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_UserNotificationRule) ContactMethodInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_UserNotificationRule) ContactMethodInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"contactMethodInput",
@@ -246,16 +243,6 @@ func (j *jsiiProxy_UserNotificationRule) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_UserNotificationRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -402,7 +389,7 @@ func (j *jsiiProxy_UserNotificationRule) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/user_notification_rule pagerduty_user_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/user_notification_rule pagerduty_user_notification_rule} Resource.
 func NewUserNotificationRule(scope constructs.Construct, id *string, config *UserNotificationRuleConfig) UserNotificationRule {
 	_init_.Initialize()
 
@@ -420,7 +407,7 @@ func NewUserNotificationRule(scope constructs.Construct, id *string, config *Use
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/user_notification_rule pagerduty_user_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/user_notification_rule pagerduty_user_notification_rule} Resource.
 func NewUserNotificationRule_Override(u UserNotificationRule, scope constructs.Construct, id *string, config *UserNotificationRuleConfig) {
 	_init_.Initialize()
 
@@ -438,17 +425,6 @@ func (j *jsiiProxy_UserNotificationRule)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_UserNotificationRule)SetContactMethod(val *map[string]*string) {
-	if err := j.validateSetContactMethodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contactMethod",
 		val,
 	)
 }
@@ -476,17 +452,6 @@ func (j *jsiiProxy_UserNotificationRule)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_UserNotificationRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -907,11 +872,14 @@ func (u *jsiiProxy_UserNotificationRule) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (u *jsiiProxy_UserNotificationRule) ResetId() {
+func (u *jsiiProxy_UserNotificationRule) PutContactMethod(value *UserNotificationRuleContactMethod) {
+	if err := u.validatePutContactMethodParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
-		"resetId",
-		nil, // no parameters
+		"putContactMethod",
+		[]interface{}{value},
 	)
 }
 

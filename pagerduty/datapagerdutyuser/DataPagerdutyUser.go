@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/user pagerduty_user}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/user pagerduty_user}.
 type DataPagerdutyUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,8 +40,6 @@ type DataPagerdutyUser interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	JobTitle() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -89,7 +87,6 @@ type DataPagerdutyUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -222,16 +219,6 @@ func (j *jsiiProxy_DataPagerdutyUser) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyUser) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyUser) JobTitle() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,7 +330,7 @@ func (j *jsiiProxy_DataPagerdutyUser) TimeZone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/user pagerduty_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/user pagerduty_user} Data Source.
 func NewDataPagerdutyUser(scope constructs.Construct, id *string, config *DataPagerdutyUserConfig) DataPagerdutyUser {
 	_init_.Initialize()
 
@@ -361,7 +348,7 @@ func NewDataPagerdutyUser(scope constructs.Construct, id *string, config *DataPa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/user pagerduty_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/user pagerduty_user} Data Source.
 func NewDataPagerdutyUser_Override(d DataPagerdutyUser, scope constructs.Construct, id *string, config *DataPagerdutyUserConfig) {
 	_init_.Initialize()
 
@@ -406,17 +393,6 @@ func (j *jsiiProxy_DataPagerdutyUser)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyUser)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -722,14 +698,6 @@ func (d *jsiiProxy_DataPagerdutyUser) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyUser) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 
