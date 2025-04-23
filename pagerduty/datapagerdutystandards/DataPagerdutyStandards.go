@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/standards pagerduty_standards}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/standards pagerduty_standards}.
 type DataPagerdutyStandards interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataPagerdutyStandards) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/standards pagerduty_standards} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/standards pagerduty_standards} Data Source.
 func NewDataPagerdutyStandards(scope constructs.Construct, id *string, config *DataPagerdutyStandardsConfig) DataPagerdutyStandards {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataPagerdutyStandards(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/standards pagerduty_standards} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/standards pagerduty_standards} Data Source.
 func NewDataPagerdutyStandards_Override(d DataPagerdutyStandards, scope constructs.Construct, id *string, config *DataPagerdutyStandardsConfig) {
 	_init_.Initialize()
 
