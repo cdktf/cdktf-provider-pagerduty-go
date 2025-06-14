@@ -24,13 +24,13 @@ type UserNotificationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// contact_method block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/resources/user_notification_rule#contact_method UserNotificationRule#contact_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/user_notification_rule#contact_method UserNotificationRule#contact_method}
 	ContactMethod *UserNotificationRuleContactMethod `field:"required" json:"contactMethod" yaml:"contactMethod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
 	StartDelayInMinutes *float64 `field:"required" json:"startDelayInMinutes" yaml:"startDelayInMinutes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/user_notification_rule#urgency UserNotificationRule#urgency}.
 	Urgency *string `field:"required" json:"urgency" yaml:"urgency"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/user_notification_rule#user_id UserNotificationRule#user_id}.
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 }
 
