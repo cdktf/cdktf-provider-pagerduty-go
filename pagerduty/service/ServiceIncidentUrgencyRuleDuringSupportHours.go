@@ -5,9 +5,9 @@ package service
 
 
 type ServiceIncidentUrgencyRuleDuringSupportHours struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/service#type Service#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/service#type Service#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/service#urgency Service#urgency}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/service#urgency Service#urgency}.
 	Urgency *string `field:"optional" json:"urgency" yaml:"urgency"`
 }
 
