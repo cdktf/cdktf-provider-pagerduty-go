@@ -5,7 +5,7 @@ package eventorchestrationrouter
 
 
 type EventOrchestrationRouterCatchAllActions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}.
 	RouteTo *string `field:"required" json:"routeTo" yaml:"routeTo"`
 }
 
