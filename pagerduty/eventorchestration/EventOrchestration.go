@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/resources/event_orchestration pagerduty_event_orchestration}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/event_orchestration pagerduty_event_orchestration}.
 type EventOrchestration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_EventOrchestration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
 func NewEventOrchestration(scope constructs.Construct, id *string, config *EventOrchestrationConfig) EventOrchestration {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewEventOrchestration(scope constructs.Construct, id *string, config *Event
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/event_orchestration pagerduty_event_orchestration} Resource.
 func NewEventOrchestration_Override(e EventOrchestration, scope constructs.Construct, id *string, config *EventOrchestrationConfig) {
 	_init_.Initialize()
 

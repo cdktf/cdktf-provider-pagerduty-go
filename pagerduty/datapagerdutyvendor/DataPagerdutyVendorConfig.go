@@ -22,7 +22,7 @@ type DataPagerdutyVendorConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
