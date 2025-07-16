@@ -24,17 +24,17 @@ type UserHandoffNotificationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The number of minutes before the handoff to notify the user. Must be greater than or equal to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
 	NotifyAdvanceInMinutes *float64 `field:"required" json:"notifyAdvanceInMinutes" yaml:"notifyAdvanceInMinutes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}.
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// contact_method block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
 	ContactMethod interface{} `field:"optional" json:"contactMethod" yaml:"contactMethod"`
 	// The type of handoff to notify for. Possible values are 'both', 'oncall', 'offcall'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
 	HandoffType *string `field:"optional" json:"handoffType" yaml:"handoffType"`
 }
 

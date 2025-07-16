@@ -22,7 +22,7 @@ type DataPagerdutyScheduleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
