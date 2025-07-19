@@ -5,11 +5,11 @@ package jiracloudaccountmappingrule
 
 
 type JiraCloudAccountMappingRuleConfigA struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/jira_cloud_account_mapping_rule#service JiraCloudAccountMappingRule#service}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/jira_cloud_account_mapping_rule#service JiraCloudAccountMappingRule#service}.
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// jira block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/jira_cloud_account_mapping_rule#jira JiraCloudAccountMappingRule#jira}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/jira_cloud_account_mapping_rule#jira JiraCloudAccountMappingRule#jira}
 	Jira *JiraCloudAccountMappingRuleConfigJira `field:"optional" json:"jira" yaml:"jira"`
 }
 
