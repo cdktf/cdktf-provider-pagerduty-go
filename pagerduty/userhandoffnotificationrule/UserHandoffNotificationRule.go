@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule}.
 type UserHandoffNotificationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_UserHandoffNotificationRule) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule} Resource.
 func NewUserHandoffNotificationRule(scope constructs.Construct, id *string, config *UserHandoffNotificationRuleConfig) UserHandoffNotificationRule {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewUserHandoffNotificationRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule} Resource.
 func NewUserHandoffNotificationRule_Override(u UserHandoffNotificationRule, scope constructs.Construct, id *string, config *UserHandoffNotificationRuleConfig) {
 	_init_.Initialize()
 
