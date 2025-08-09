@@ -5,7 +5,7 @@ package rulesetrule
 
 
 type RulesetRuleActionsAnnotate struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/ruleset_rule#value RulesetRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/ruleset_rule#value RulesetRule#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

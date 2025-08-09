@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/service_custom_field pagerduty_service_custom_field}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/service_custom_field pagerduty_service_custom_field}.
 type ServiceCustomField interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_ServiceCustomField) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/service_custom_field pagerduty_service_custom_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/service_custom_field pagerduty_service_custom_field} Resource.
 func NewServiceCustomField(scope constructs.Construct, id *string, config *ServiceCustomFieldConfig) ServiceCustomField {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewServiceCustomField(scope constructs.Construct, id *string, config *Servi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/service_custom_field pagerduty_service_custom_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/service_custom_field pagerduty_service_custom_field} Resource.
 func NewServiceCustomField_Override(s ServiceCustomField, scope constructs.Construct, id *string, config *ServiceCustomFieldConfig) {
 	_init_.Initialize()
 
