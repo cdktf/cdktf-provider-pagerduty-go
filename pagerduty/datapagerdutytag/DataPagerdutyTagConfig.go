@@ -24,7 +24,7 @@ type DataPagerdutyTagConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The label of the tag to find in the PagerDuty API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/tag#label DataPagerdutyTag#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/tag#label DataPagerdutyTag#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 }
 
