@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method pagerduty_user_contact_method}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method pagerduty_user_contact_method}.
 type UserContactMethod interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -38,6 +38,9 @@ type UserContactMethod interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeviceType() *string
+	SetDeviceType(val *string)
+	DeviceTypeInput() *string
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -48,8 +51,6 @@ type UserContactMethod interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
@@ -128,7 +129,7 @@ type UserContactMethod interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCountryCode()
-	ResetId()
+	ResetDeviceType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -251,6 +252,26 @@ func (j *jsiiProxy_UserContactMethod) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_UserContactMethod) DeviceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserContactMethod) DeviceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_UserContactMethod) Enabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -296,16 +317,6 @@ func (j *jsiiProxy_UserContactMethod) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_UserContactMethod) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -472,7 +483,7 @@ func (j *jsiiProxy_UserContactMethod) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
 func NewUserContactMethod(scope constructs.Construct, id *string, config *UserContactMethodConfig) UserContactMethod {
 	_init_.Initialize()
 
@@ -490,7 +501,7 @@ func NewUserContactMethod(scope constructs.Construct, id *string, config *UserCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method pagerduty_user_contact_method} Resource.
 func NewUserContactMethod_Override(u UserContactMethod, scope constructs.Construct, id *string, config *UserContactMethodConfig) {
 	_init_.Initialize()
 
@@ -553,21 +564,21 @@ func (j *jsiiProxy_UserContactMethod)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserContactMethod)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_UserContactMethod)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_UserContactMethod)SetDeviceType(val *string) {
+	if err := j.validateSetDeviceTypeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"deviceType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_UserContactMethod)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -1007,10 +1018,10 @@ func (u *jsiiProxy_UserContactMethod) ResetCountryCode() {
 	)
 }
 
-func (u *jsiiProxy_UserContactMethod) ResetId() {
+func (u *jsiiProxy_UserContactMethod) ResetDeviceType() {
 	_jsii_.InvokeVoid(
 		u,
-		"resetId",
+		"resetDeviceType",
 		nil, // no parameters
 	)
 }

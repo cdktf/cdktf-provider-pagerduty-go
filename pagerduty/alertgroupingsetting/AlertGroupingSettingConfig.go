@@ -22,17 +22,17 @@ type AlertGroupingSettingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}.
 	Services *[]*string `field:"required" json:"services" yaml:"services"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
 	Config *AlertGroupingSettingConfigA `field:"optional" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

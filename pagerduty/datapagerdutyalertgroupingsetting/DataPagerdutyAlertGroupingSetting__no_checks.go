@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataPagerdutyAlertGroupingSetting) validateOverrideLogicalIdP
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSetting) validatePutConfigParameters(value *DataPagerdutyAlertGroupingSettingConfigA) error {
-	return nil
-}
-
 func validateDataPagerdutyAlertGroupingSetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

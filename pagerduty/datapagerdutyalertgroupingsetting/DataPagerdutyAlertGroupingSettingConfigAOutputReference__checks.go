@@ -101,14 +101,6 @@ func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetAggregateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -167,14 +159,6 @@ func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) vali
 }
 
 func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetFieldsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

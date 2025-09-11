@@ -182,6 +182,14 @@ func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateSetFields
 	return nil
 }
 
+func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateSetIagFieldsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case *AlertGroupingSettingConfigA:

@@ -51,19 +51,11 @@ func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetAggregateParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateSetFieldsParameters(val *[]*string) error {
 	return nil
 }
 

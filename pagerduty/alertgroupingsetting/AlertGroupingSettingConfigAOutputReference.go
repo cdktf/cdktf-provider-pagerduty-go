@@ -36,6 +36,9 @@ type AlertGroupingSettingConfigAOutputReference interface {
 	FieldsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	IagFields() *[]*string
+	SetIagFields(val *[]*string)
+	IagFieldsInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -78,6 +81,7 @@ type AlertGroupingSettingConfigAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregate()
 	ResetFields()
+	ResetIagFields()
 	ResetTimeout()
 	ResetTimeWindow()
 	// Produce the Token's value at resolution time.
@@ -170,6 +174,26 @@ func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) IagFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iagFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) IagFieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iagFieldsInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference)SetFields(val *[]*
 	_jsii_.Set(
 		j,
 		"fields",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference)SetIagFields(val *[]*string) {
+	if err := j.validateSetIagFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iagFields",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) ResetFields() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetFields",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) ResetIagFields() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIagFields",
 		nil, // no parameters
 	)
 }

@@ -107,7 +107,7 @@ func (j *jsiiProxy_UserContactMethod) validateSetCountryCodeParameters(val *floa
 	return nil
 }
 
-func (j *jsiiProxy_UserContactMethod) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_UserContactMethod) validateSetDeviceTypeParameters(val *string) error {
 	return nil
 }
 

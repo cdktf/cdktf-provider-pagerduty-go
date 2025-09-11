@@ -67,6 +67,10 @@ func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateSetFields
 	return nil
 }
 
+func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateSetIagFieldsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -12,13 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
 type DataPagerdutyAlertGroupingSetting interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() DataPagerdutyAlertGroupingSettingConfigAOutputReference
-	ConfigInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -87,8 +86,6 @@ type DataPagerdutyAlertGroupingSetting interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfig(value *DataPagerdutyAlertGroupingSettingConfigA)
-	ResetConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -126,16 +123,6 @@ func (j *jsiiProxy_DataPagerdutyAlertGroupingSetting) Config() DataPagerdutyAler
 	_jsii_.Get(
 		j,
 		"config",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSetting) ConfigInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"configInput",
 		&returns,
 	)
 	return returns
@@ -332,7 +319,7 @@ func (j *jsiiProxy_DataPagerdutyAlertGroupingSetting) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting} Data Source.
 func NewDataPagerdutyAlertGroupingSetting(scope constructs.Construct, id *string, config *DataPagerdutyAlertGroupingSettingConfig) DataPagerdutyAlertGroupingSetting {
 	_init_.Initialize()
 
@@ -350,7 +337,7 @@ func NewDataPagerdutyAlertGroupingSetting(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting} Data Source.
 func NewDataPagerdutyAlertGroupingSetting_Override(d DataPagerdutyAlertGroupingSetting, scope constructs.Construct, id *string, config *DataPagerdutyAlertGroupingSettingConfig) {
 	_init_.Initialize()
 
@@ -700,25 +687,6 @@ func (d *jsiiProxy_DataPagerdutyAlertGroupingSetting) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSetting) PutConfig(value *DataPagerdutyAlertGroupingSettingConfigA) {
-	if err := d.validatePutConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putConfig",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSetting) ResetConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetConfig",
-		nil, // no parameters
 	)
 }
 

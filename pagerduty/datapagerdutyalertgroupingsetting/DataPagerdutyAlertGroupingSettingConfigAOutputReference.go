@@ -14,8 +14,6 @@ import (
 type DataPagerdutyAlertGroupingSettingConfigAOutputReference interface {
 	cdktf.ComplexObject
 	Aggregate() *string
-	SetAggregate(val *string)
-	AggregateInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,10 +30,9 @@ type DataPagerdutyAlertGroupingSettingConfigAOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Fields() *[]*string
-	SetFields(val *[]*string)
-	FieldsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	IagFields() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -72,8 +69,6 @@ type DataPagerdutyAlertGroupingSettingConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAggregate()
-	ResetFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -94,16 +89,6 @@ func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) Aggr
 	_jsii_.Get(
 		j,
 		"aggregate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) AggregateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"aggregateInput",
 		&returns,
 	)
 	return returns
@@ -149,21 +134,21 @@ func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) Fiel
 	return returns
 }
 
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) FieldsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"fieldsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) IagFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iagFields",
 		&returns,
 	)
 	return returns
@@ -247,17 +232,6 @@ func NewDataPagerdutyAlertGroupingSettingConfigAOutputReference_Override(d DataP
 	)
 }
 
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference)SetAggregate(val *string) {
-	if err := j.validateSetAggregateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"aggregate",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -276,17 +250,6 @@ func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference)SetFields(val *[]*string) {
-	if err := j.validateSetFieldsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"fields",
 		val,
 	)
 }
@@ -508,22 +471,6 @@ func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) Inte
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) ResetAggregate() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAggregate",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) ResetFields() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFields",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

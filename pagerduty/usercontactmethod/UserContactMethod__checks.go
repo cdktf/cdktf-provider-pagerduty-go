@@ -353,7 +353,7 @@ func (j *jsiiProxy_UserContactMethod) validateSetCountryCodeParameters(val *floa
 	return nil
 }
 
-func (j *jsiiProxy_UserContactMethod) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_UserContactMethod) validateSetDeviceTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
