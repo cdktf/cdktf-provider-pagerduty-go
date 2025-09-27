@@ -22,7 +22,7 @@ type DataPagerdutyUsersConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
 	TeamIds *[]*string `field:"optional" json:"teamIds" yaml:"teamIds"`
 }
 
