@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule}.
 type JiraCloudAccountMappingRule interface {
 	cdktf.TerraformResource
 	AccountMapping() *string
@@ -38,6 +38,9 @@ type JiraCloudAccountMappingRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +120,7 @@ type JiraCloudAccountMappingRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *JiraCloudAccountMappingRuleConfigA)
 	ResetConfig()
+	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_JiraCloudAccountMappingRule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JiraCloudAccountMappingRule) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JiraCloudAccountMappingRule) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -389,7 +413,7 @@ func (j *jsiiProxy_JiraCloudAccountMappingRule) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule} Resource.
 func NewJiraCloudAccountMappingRule(scope constructs.Construct, id *string, config *JiraCloudAccountMappingRuleConfig) JiraCloudAccountMappingRule {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewJiraCloudAccountMappingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/resources/jira_cloud_account_mapping_rule pagerduty_jira_cloud_account_mapping_rule} Resource.
 func NewJiraCloudAccountMappingRule_Override(j JiraCloudAccountMappingRule, scope constructs.Construct, id *string, config *JiraCloudAccountMappingRuleConfig) {
 	_init_.Initialize()
 
@@ -455,6 +479,17 @@ func (j *jsiiProxy_JiraCloudAccountMappingRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JiraCloudAccountMappingRule)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -876,6 +911,14 @@ func (j *jsiiProxy_JiraCloudAccountMappingRule) ResetConfig() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetConfig",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JiraCloudAccountMappingRule) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

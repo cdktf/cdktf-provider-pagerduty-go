@@ -22,11 +22,11 @@ type TeamMembershipConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/resources/team_membership#team_id TeamMembership#team_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/resources/team_membership#team_id TeamMembership#team_id}.
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/resources/team_membership#user_id TeamMembership#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/resources/team_membership#user_id TeamMembership#user_id}.
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.1/docs/resources/team_membership#role TeamMembership#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/resources/team_membership#role TeamMembership#role}.
 	Role *string `field:"optional" json:"role" yaml:"role"`
 }
 

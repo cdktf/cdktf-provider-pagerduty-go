@@ -107,6 +107,10 @@ func (j *jsiiProxy_JiraCloudAccountMappingRule) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_JiraCloudAccountMappingRule) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JiraCloudAccountMappingRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
