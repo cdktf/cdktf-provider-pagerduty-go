@@ -24,7 +24,7 @@ type DataPagerdutyServiceCustomFieldConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the field. This must be unique across an account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.0/docs/data-sources/service_custom_field#display_name DataPagerdutyServiceCustomField#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/data-sources/service_custom_field#display_name DataPagerdutyServiceCustomField#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 }
 
