@@ -5,7 +5,7 @@ package rulesetrule
 
 
 type RulesetRuleActionsSuspend struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/ruleset_rule#value RulesetRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.3/docs/resources/ruleset_rule#value RulesetRule#value}.
 	Value *float64 `field:"optional" json:"value" yaml:"value"`
 }
 
