@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.3/docs/data-sources/event_orchestrations pagerduty_event_orchestrations}.
+// Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.4/docs/data-sources/event_orchestrations pagerduty_event_orchestrations}.
 type DataPagerdutyEventOrchestrations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataPagerdutyEventOrchestrations) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.3/docs/data-sources/event_orchestrations pagerduty_event_orchestrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.4/docs/data-sources/event_orchestrations pagerduty_event_orchestrations} Data Source.
 func NewDataPagerdutyEventOrchestrations(scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationsConfig) DataPagerdutyEventOrchestrations {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataPagerdutyEventOrchestrations(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.3/docs/data-sources/event_orchestrations pagerduty_event_orchestrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.4/docs/data-sources/event_orchestrations pagerduty_event_orchestrations} Data Source.
 func NewDataPagerdutyEventOrchestrations_Override(d DataPagerdutyEventOrchestrations, scope constructs.Construct, id *string, config *DataPagerdutyEventOrchestrationsConfig) {
 	_init_.Initialize()
 
