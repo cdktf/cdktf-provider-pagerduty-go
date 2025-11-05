@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsExtractionList) validat
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsExtractionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsExtractionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

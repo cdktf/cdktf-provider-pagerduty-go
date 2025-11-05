@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

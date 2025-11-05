@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceIntegrationEmailFilterList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIntegrationEmailFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceIntegrationEmailFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

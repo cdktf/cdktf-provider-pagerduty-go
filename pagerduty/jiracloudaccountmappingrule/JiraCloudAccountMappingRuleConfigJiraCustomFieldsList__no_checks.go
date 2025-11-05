@@ -15,7 +15,7 @@ func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraCustomFieldsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraCustomFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraCustomFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

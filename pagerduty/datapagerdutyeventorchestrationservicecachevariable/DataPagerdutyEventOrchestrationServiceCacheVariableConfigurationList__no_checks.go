@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrationServiceCacheVariableConfigurat
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

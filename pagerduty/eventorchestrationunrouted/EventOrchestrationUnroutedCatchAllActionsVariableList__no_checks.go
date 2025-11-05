@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsVariableList) valida
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllActionsVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

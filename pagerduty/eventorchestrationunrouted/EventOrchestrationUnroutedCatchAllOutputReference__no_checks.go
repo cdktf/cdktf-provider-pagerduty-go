@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllOutputReference) validatePu
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationUnroutedCatchAllOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

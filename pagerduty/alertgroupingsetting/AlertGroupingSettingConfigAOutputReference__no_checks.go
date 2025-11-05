@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertGroupingSettingConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

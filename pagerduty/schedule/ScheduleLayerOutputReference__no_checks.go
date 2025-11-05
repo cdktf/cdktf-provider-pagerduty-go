@@ -43,7 +43,7 @@ func (s *jsiiProxy_ScheduleLayerOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleLayerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ScheduleLayerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ScheduleLayerOutputReference) validatePutRestrictionParameter
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleLayerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ScheduleLayerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

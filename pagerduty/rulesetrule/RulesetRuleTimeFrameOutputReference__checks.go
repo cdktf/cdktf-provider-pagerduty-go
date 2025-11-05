@@ -85,9 +85,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -155,9 +155,9 @@ func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validatePutScheduledWeek
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

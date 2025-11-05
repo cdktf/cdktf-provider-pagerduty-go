@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) validatePutSuppor
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDependencyDependencyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

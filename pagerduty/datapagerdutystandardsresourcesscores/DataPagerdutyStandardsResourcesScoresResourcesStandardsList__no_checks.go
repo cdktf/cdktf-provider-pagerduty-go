@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyStandardsResourcesScoresResourcesStandardsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

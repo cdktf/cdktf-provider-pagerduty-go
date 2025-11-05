@@ -15,7 +15,7 @@ func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraPrioritiesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraPrioritiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraPrioritiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

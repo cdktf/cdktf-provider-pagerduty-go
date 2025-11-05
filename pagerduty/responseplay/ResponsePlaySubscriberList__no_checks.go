@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResponsePlaySubscriberList) validateGetParameters(index *floa
 	return nil
 }
 
-func (r *jsiiProxy_ResponsePlaySubscriberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResponsePlaySubscriberList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

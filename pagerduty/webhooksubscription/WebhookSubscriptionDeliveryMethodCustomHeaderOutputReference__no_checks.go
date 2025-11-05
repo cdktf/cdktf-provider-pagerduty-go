@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

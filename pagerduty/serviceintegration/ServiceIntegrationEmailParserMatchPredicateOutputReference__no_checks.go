@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicateOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicateOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceIntegrationEmailParserMatchPredicateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

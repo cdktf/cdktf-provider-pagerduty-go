@@ -43,11 +43,11 @@ func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodOutputReference) vali
 	return nil
 }
 
-func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionHeader
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

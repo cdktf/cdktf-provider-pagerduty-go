@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataPagerdutyTeamsTeamsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyTeamsTeamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPagerdutyTeamsTeamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyTeamsTeamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyTeamsTeamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

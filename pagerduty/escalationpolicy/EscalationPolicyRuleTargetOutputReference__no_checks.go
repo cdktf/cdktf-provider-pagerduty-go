@@ -43,11 +43,11 @@ func (e *jsiiProxy_EscalationPolicyRuleTargetOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EscalationPolicyRuleTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPolicyRuleTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

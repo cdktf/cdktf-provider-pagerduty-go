@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationUnroutedSetList) validateGetParameters(inde
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationUnroutedSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationUnroutedSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

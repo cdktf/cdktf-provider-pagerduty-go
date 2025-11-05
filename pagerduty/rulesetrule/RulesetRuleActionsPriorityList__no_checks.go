@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRuleActionsPriorityList) validateGetParameters(index *
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleActionsPriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRuleActionsPriorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

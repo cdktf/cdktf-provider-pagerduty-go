@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleOutputReference) validatePutCo
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

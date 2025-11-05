@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataPagerdutyServiceCustomFieldValueCustomFieldsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyServiceCustomFieldValueCustomFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPagerdutyServiceCustomFieldValueCustomFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyServiceCustomFieldValueCustomFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyServiceCustomFieldValueCustomFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

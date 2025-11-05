@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodList) validateGetParameters(
 	return nil
 }
 
-func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

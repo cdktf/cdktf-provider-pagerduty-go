@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPagerdutyEventOrchestrationsEventOrchestrationsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyEventOrchestrationsEventOrchestrationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyEventOrchestrationsEventOrchestrationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validatePutInputParamete
 	return nil
 }
 
-func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentWorkflowStepOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

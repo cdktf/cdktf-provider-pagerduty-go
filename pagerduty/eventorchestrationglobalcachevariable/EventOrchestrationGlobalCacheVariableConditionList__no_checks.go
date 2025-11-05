@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalCacheVariableConditionList) validateG
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalCacheVariableConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationGlobalCacheVariableConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPagerdutyIncidentTypeCustomFieldFieldOptionsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyIncidentTypeCustomFieldFieldOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyIncidentTypeCustomFieldFieldOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

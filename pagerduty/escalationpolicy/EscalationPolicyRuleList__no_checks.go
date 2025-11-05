@@ -15,7 +15,7 @@ func (e *jsiiProxy_EscalationPolicyRuleList) validateGetParameters(index *float6
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebhookSubscriptionDeliveryMethodCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

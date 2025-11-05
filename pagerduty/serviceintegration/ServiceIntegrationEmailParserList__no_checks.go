@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIntegrationEmailParserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceIntegrationEmailParserList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

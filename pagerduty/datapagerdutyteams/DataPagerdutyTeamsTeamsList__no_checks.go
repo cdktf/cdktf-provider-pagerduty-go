@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPagerdutyTeamsTeamsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyTeamsTeamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyTeamsTeamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

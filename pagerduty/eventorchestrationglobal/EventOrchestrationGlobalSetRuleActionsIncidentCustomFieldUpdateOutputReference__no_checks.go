@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpda
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

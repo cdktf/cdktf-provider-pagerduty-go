@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceEventRuleVariableList) validateGetParameters(index *fl
 	return nil
 }
 
-func (s *jsiiProxy_ServiceEventRuleVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceEventRuleVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

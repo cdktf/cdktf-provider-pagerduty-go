@@ -43,11 +43,11 @@ func (e *jsiiProxy_EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputRef
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

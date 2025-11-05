@@ -5,11 +5,11 @@ package eventorchestrationrouter
 
 
 type EventOrchestrationRouterSetRuleActionsDynamicRouteTo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.4/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.5/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}.
 	LookupBy *string `field:"required" json:"lookupBy" yaml:"lookupBy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.4/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.5/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}.
 	Regex *string `field:"required" json:"regex" yaml:"regex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.4/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.5/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}.
 	Source *string `field:"required" json:"source" yaml:"source"`
 }
 

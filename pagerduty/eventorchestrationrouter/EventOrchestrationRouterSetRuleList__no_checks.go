@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationRouterSetRuleList) validateGetParameters(in
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationRouterSetRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

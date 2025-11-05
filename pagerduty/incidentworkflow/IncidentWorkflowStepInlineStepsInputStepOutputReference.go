@@ -71,12 +71,12 @@ type IncidentWorkflowStepInlineStepsInputStepOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutInput(value interface{})
 	ResetInput()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -494,8 +494,8 @@ func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) Inte
 	return returns
 }
 
-func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -503,7 +503,7 @@ func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) Inte
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -529,8 +529,8 @@ func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) Rese
 	)
 }
 
-func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -538,7 +538,7 @@ func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputStepOutputReference) Reso
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

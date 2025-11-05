@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleConditionOutputReference) va
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationUnroutedSetRuleConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

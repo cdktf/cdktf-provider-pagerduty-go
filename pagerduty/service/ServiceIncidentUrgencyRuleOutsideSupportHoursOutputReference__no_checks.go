@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

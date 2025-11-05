@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsAutomationActionParam
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsAutomationActionParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsAutomationActionParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

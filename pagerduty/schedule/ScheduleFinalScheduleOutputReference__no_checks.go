@@ -43,11 +43,11 @@ func (s *jsiiProxy_ScheduleFinalScheduleOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleFinalScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ScheduleFinalScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleFinalScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ScheduleFinalScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResponsePlayResponderTeamOutputReference) validateGetStringMa
 	return nil
 }
 
-func (r *jsiiProxy_ResponsePlayResponderTeamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResponsePlayResponderTeamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResponsePlayResponderTeamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResponsePlayResponderTeamOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputList) validateGetParamete
 	return nil
 }
 
-func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentWorkflowStepInlineStepsInputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

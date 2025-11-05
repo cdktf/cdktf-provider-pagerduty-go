@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventOrchestrationRouterSetRuleConditionOutputReference) vali
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationRouterSetRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationRouterSetRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

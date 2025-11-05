@@ -43,11 +43,11 @@ func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOu
 	return nil
 }
 
-func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JiraCloudAccountMappingRuleConfigJiraStatusMappingTriggeredOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

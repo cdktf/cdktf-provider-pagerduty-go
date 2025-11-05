@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceEventRuleActionsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_ServiceEventRuleActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceEventRuleActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (s *jsiiProxy_ServiceEventRuleActionsOutputReference) validatePutSuspendPar
 	return nil
 }
 
-func (s *jsiiProxy_ServiceEventRuleActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceEventRuleActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

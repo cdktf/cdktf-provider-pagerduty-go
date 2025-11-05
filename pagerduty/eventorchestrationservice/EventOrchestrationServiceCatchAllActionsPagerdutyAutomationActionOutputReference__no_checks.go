@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAc
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

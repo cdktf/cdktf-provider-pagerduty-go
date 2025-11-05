@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceCustomFieldFieldOptionOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomFieldFieldOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceCustomFieldFieldOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomFieldFieldOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceCustomFieldFieldOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

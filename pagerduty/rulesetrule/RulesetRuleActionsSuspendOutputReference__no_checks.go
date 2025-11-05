@@ -43,11 +43,11 @@ func (r *jsiiProxy_RulesetRuleActionsSuspendOutputReference) validateGetStringMa
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleActionsSuspendOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRuleActionsSuspendOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleActionsSuspendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRuleActionsSuspendOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IncidentWorkflowStepList) validateGetParameters(index *float6
 	return nil
 }
 
-func (i *jsiiProxy_IncidentWorkflowStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentWorkflowStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

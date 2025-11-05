@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorList) validateGetP
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceIntegrationEmailParserValueExtractorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

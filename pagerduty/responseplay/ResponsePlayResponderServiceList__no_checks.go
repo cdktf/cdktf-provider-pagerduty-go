@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResponsePlayResponderServiceList) validateGetParameters(index
 	return nil
 }
 
-func (r *jsiiProxy_ResponsePlayResponderServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResponsePlayResponderServiceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

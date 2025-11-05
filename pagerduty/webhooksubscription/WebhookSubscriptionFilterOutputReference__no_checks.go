@@ -43,11 +43,11 @@ func (w *jsiiProxy_WebhookSubscriptionFilterOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WebhookSubscriptionFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WebhookSubscriptionFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WebhookSubscriptionFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebhookSubscriptionFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

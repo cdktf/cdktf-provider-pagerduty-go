@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsDynamicRouteToList) val
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsDynamicRouteToList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationRouterSetRuleActionsDynamicRouteToList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

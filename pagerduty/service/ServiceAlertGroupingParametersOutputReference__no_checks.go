@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAlertGroupingParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceAlertGroupingParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceAlertGroupingParametersOutputReference) validatePutCon
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAlertGroupingParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceAlertGroupingParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

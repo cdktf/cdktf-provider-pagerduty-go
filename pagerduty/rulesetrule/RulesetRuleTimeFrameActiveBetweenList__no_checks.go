@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) validateGetParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRuleTimeFrameActiveBetweenList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

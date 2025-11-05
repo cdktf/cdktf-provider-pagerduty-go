@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceScheduledActionsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_ServiceScheduledActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceScheduledActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

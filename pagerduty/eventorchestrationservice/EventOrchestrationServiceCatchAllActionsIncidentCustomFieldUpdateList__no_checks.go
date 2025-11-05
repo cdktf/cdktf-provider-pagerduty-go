@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUp
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

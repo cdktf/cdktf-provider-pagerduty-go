@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionHeader
 	return nil
 }
 
-func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

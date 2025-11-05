@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceAutoPauseNotificationsParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

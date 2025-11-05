@@ -43,11 +43,11 @@ func (i *jsiiProxy_IncidentWorkflowTriggerPermissionsOutputReference) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_IncidentWorkflowTriggerPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IncidentWorkflowTriggerPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IncidentWorkflowTriggerPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IncidentWorkflowTriggerPermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

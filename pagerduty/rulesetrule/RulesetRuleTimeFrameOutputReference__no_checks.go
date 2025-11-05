@@ -43,7 +43,7 @@ func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validatePutScheduledWeek
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRuleTimeFrameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

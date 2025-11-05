@@ -15,7 +15,7 @@ func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodList) validateGetPara
 	return nil
 }
 
-func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserHandoffNotificationRuleContactMethodList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

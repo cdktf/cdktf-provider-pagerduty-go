@@ -98,7 +98,7 @@ type EventOrchestrationGlobalSetRuleActionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAutomationAction(value *EventOrchestrationGlobalSetRuleActionsAutomationAction)
 	PutExtraction(value interface{})
 	PutIncidentCustomFieldUpdate(value interface{})
@@ -118,7 +118,7 @@ type EventOrchestrationGlobalSetRuleActionsOutputReference interface {
 	ResetVariable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -813,8 +813,8 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) Interp
 	return returns
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -822,7 +822,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) Interp
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -977,8 +977,8 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) ResetV
 	)
 }
 
-func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -986,7 +986,7 @@ func (e *jsiiProxy_EventOrchestrationGlobalSetRuleActionsOutputReference) Resolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

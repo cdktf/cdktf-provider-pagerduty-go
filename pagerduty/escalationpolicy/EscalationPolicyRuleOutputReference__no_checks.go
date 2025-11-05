@@ -43,7 +43,7 @@ func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validatePutTargetParamet
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPolicyRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

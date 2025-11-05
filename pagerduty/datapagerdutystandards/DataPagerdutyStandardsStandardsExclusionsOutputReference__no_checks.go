@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataPagerdutyStandardsStandardsExclusionsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyStandardsStandardsExclusionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPagerdutyStandardsStandardsExclusionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyStandardsStandardsExclusionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyStandardsStandardsExclusionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

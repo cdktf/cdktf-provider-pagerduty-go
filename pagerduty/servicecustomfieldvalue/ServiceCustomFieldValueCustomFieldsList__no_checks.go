@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceCustomFieldValueCustomFieldsList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomFieldValueCustomFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceCustomFieldValueCustomFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

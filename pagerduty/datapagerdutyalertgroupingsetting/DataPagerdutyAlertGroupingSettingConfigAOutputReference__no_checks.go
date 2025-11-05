@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyAlertGroupingSettingConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

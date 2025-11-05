@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetOutputReference) val
 	return nil
 }
 
-func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResponsePlayResponderEscalationRuleTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRuleActionsSuppressList) validateGetParameters(index *
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleActionsSuppressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRuleActionsSuppressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

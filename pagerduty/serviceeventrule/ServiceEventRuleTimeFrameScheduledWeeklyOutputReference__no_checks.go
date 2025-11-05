@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceEventRuleTimeFrameScheduledWeeklyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

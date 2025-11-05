@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataPagerdutyUsersUsersList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataPagerdutyUsersUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPagerdutyUsersUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

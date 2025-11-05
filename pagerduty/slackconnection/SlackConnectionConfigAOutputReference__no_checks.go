@@ -43,11 +43,11 @@ func (s *jsiiProxy_SlackConnectionConfigAOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_SlackConnectionConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SlackConnectionConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SlackConnectionConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SlackConnectionConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

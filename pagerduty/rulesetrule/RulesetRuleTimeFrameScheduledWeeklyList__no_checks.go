@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) validateGetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRuleTimeFrameScheduledWeeklyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
