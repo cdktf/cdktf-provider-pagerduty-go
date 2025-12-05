@@ -24,11 +24,11 @@ type ServiceCustomFieldValueConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The custom field values to set for the service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.7/docs/resources/service_custom_field_value#custom_fields ServiceCustomFieldValue#custom_fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field_value#custom_fields ServiceCustomFieldValue#custom_fields}
 	CustomFields interface{} `field:"required" json:"customFields" yaml:"customFields"`
 	// The ID of the service to set custom field values for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.7/docs/resources/service_custom_field_value#service_id ServiceCustomFieldValue#service_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/service_custom_field_value#service_id ServiceCustomFieldValue#service_id}
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
 }
 

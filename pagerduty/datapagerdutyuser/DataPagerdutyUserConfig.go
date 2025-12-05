@@ -22,7 +22,7 @@ type DataPagerdutyUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.7/docs/data-sources/user#email DataPagerdutyUser#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/data-sources/user#email DataPagerdutyUser#email}.
 	Email *string `field:"required" json:"email" yaml:"email"`
 }
 
